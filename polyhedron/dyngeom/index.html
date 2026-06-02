@@ -1,0 +1,477 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<TITLE>Interactive Geometry with Polyhedra</TITLE>
+<script>
+function displayFigure(file,name,Height,Width) {
+  features="dependent=1,height="+Height+",width="+Width
+  wnd=window.open(file, name, features)
+  wnd.focus()
+  return false
+}
+</script>
+<link rel="stylesheet" type="text/css" href="../../stelian/stelian.css">
+</head>
+
+<BODY BGCOLOR=White>
+<A NAME="dyngeom_top"></A>
+<p class="title">Interactive Geometry with Polyhedra</p>
+<p class="subtitle">by S. Dumitrascu and Z. Peter
+<br>1997
+</p>
+
+<br><TABLE CELLPADDING=5 WIDTH="100%" >
+<TR>
+<TD VALIGN=BOTTOM><FONT COLOR="#0000AA"><FONT SIZE=+2>Introduction</FONT></FONT>&nbsp;</TD>
+
+<TD WIDTH="60%" BGCOLOR="#CCFFFF">
+<LI>
+<FONT SIZE=-1><B><FONT COLOR="#FF0000">To bring up a figure</FONT></B>, click the relevant link</FONT></LI>
+
+<LI>
+<FONT SIZE=-1>As you scroll up and down the
+text, a <B><FONT COLOR="#0000AA">figure may hide</FONT></B> behind another window. To bring it up, click the same link</FONT></LI>
+</TD>
+</TR>
+</TABLE>
+<P>This paper aims at a difficult though exciting target: the mathematics
+teachers' interest for computers as teaching tools. In spite of the increasing
+number of computer endowed schools and a lot of students owning home computers,
+the classroom remains, to a large extent, a computer free area. Amongst
+various factors responsible for this sad phenomenon, the lack of professional
+software cannot be neglected. There is a lot of applications devoted to
+primary school students, particularly in what concerns their counting skill
+and ability to compose and solve elementary equations. Also high school
+algebra benefits from many good quality programs. However, all this stuff
+is seldom available in languages other than English, partially German and
+French. As for geometry software, it is scarce and, except for a few well
+known examples, unprofessional.
+<BR>&nbsp;&nbsp;&nbsp; Geometry provides two important educational tools:
+shape and motion. Both of them can be modeled on the computer screen. Traditionally,
+the secondary school students are being taught geometry in two steps: plane
+geometry, then solid geometry. This order seems natural though has its
+drawbacks. Dienes [1]&nbsp; remarks: "All really existing things have a
+single legitimate representative: three dimensional solids. So it looks
+evident that the study of geometry should begin with real three dimensional
+objects. The plane does not exist, therefore one cannot really experience
+the two dimensional geometry" (quoted from the Hungarian translation, p.
+242-243). The last sentence looks disputable. Of course, all we see we
+see in space, though all we measure we measure in plane. Indeed, all common
+geometric instruments such as ruler, compass, setsquare, protractor are
+designed to be pressed against a flat surface while being used. Even a
+tailor putting his tape measure around some tender waist actually acts
+in an imaginary planar cross-section.
+<BR>&nbsp;&nbsp;&nbsp; We are going to discuss here a geometry software
+named <I>POLYHEDRON</I>, which was made at the University of Timisoara. It is
+basically intended to remove some of the artificial obstacles that persist
+on the geometry's way toward the child's brain and heart and so often determine
+the child to reject geometry. It particularly concerns the mentioned above
+perceptive difference between the ways plane and solid geometry are being
+taught in school, unnecessary conceptual distinction between calculation
+and construction problems, and the domination of the deductive element
+over the intuitive one.
+<BR>&nbsp;&nbsp;&nbsp; Now that the software has been briefly introduced,
+the reader is invited to answer a short test just to let him or her decide
+whether it is worth going on with this paper or change it for a more useful
+reading.
+<UL><B><I><FONT COLOR="#FF0000">Test.</FONT></I></B> Are you eager to learn
+more about <I>POLYHEDRON</I>?</UL>
+Below is the key.
+<UL>
+<LI>
+<B><I><FONT COLOR="#0000AA">Yes.</FONT></I></B> You seem a credulous person.
+You may have become an easy prey to a cheap publicity. Perhaps you should
+change your mind. Repeat the test.</LI>
+
+<LI>
+<B><I><FONT COLOR="#0000AA">No.</FONT></I></B> We urge you read this paper
+very attentively. We do think you will find answers to some worrying questions.</LI>
+</UL>
+This test, which, at a first sight, looks like a simple joke, had a double
+purpose: first, to attenuate the reciprocal distrust between the supporters
+and opponents of the computer as teaching tool and second, to inoculate
+the reader with a good dose of skepticism, which is indispensable to any
+serious and discerning reading.
+
+<P><FONT COLOR="#0000AA"><FONT SIZE=+2>Questions and answers</FONT></FONT>
+
+<P>The first question you would probably ask is:
+<UL><I><FONT COLOR="#0000AA">Why <I>POLYHEDRON</I>?</FONT></I></UL>
+<I>POLYHEDRON</I> is a collection of 250 problems built into a computer program.
+The problems deal with cubes, parallelepipeds, prisms, pyramids, truncated
+pyramids, and a few combined polyhedra.
+<UL><I><FONT COLOR="#0000AA">The problems have been selected from books,
+haven't they?</FONT></I></UL>
+No, they have not. All problems included in the latest version 2.1 are
+original.
+<UL><I><FONT COLOR="#0000AA">How can one choose a problem to solve?</FONT></I></UL>
+<I>POLYHEDRON</I> was primarily intended to run in the classroom. That is why
+the first choice is the teacher's. There are two basic modes in which a
+<I>POLYHEDRON</I> session runs: independent and supervised. In the former case,
+the student undertakes the teacher's role and thus is free to choose a
+subject by himself and interrupt the resolution whenever he or she wants.
+In the latter case, the subject is selected by the teacher as follows:
+problem type (calculation or construction), shape (one of the six above),
+topic (distance, angle, perpendicularity, parallelism, area, volume, other),
+and complexity level (from 1 to 6). As the student finishes solving a problem
+and gets displayed the computer's verdict, it is up to the teacher either
+to select another subject or run the resolution's film asking for details
+when necessary.
+<UL><I><FONT COLOR="#0000AA">What does the computer's appraisal look like?</FONT></I></UL>
+The student provides an answer thereby telling the computer the resolution
+has been finished. The computer evaluates the answer, compares it to the
+correct one, and displays the answer's quality: correct, approximate or
+wrong.
+<UL><I><FONT COLOR="#0000AA">Thus, the computer does not bother to analyze
+the resolution, it only checks the answer. What if the student obtains
+the correct answer accidentally, from a wrong reasoning?</FONT></I></UL>
+The problems have been composed in such a way that it is practically impossible
+to guess the answer. On the other hand, even the resolution of the simplest
+problems assumes a series of measurings, constructions, and calculations.
+Usually, there are several equally efficient algorithms for the same problem.
+The probability that an erroneous algorithm conducts to the same result
+as a correct one is negligible. However, there is but one way to achieve
+this certainty: practicing with <I>POLYHEDRON</I>.
+<UL><I><FONT COLOR="#0000AA">What if the student knows the answer from
+somewhere or just copies it from the next computer?</FONT></I></UL>
+It often occurs, indeed, in the classroom, when the students are asked
+to solve a problem from a book or the blackboard. And it is almost impossible
+in a <I>POLYHEDRON</I> session. Firstly, about a half of problems are construction
+problems and it is quite difficult to copy accurately enough a construction
+from another display. As for calculation problems, there is a special feature
+that helps <I>POLYHEDRON</I> avoid to be cheated. Immediately after a subject
+has been selected, the computer randomizes a ratio <I>k</I> in which all
+lengths are going to be scaled. The correct answer will be scaled as well.
+The problem may ask for an area or a volume, then the answer will be scaled
+<I>k</I>&sup2; or <I>k</I>&sup3;, respectively. The teacher can thus offer
+the same problem to 10, 100, 1000 students without worrying about copying,
+as the correct answer is never the same.
+<UL><I><FONT COLOR="#0000AA">Does it mean that <I>POLYHEDRON</I> is actually
+a set of problems with thousands of variants each?</FONT></I></UL>
+Exactly, for calculation problems. For better understanding, consider the
+following "traditional" problem: Find the volume of a tetrahedron in which
+five edges are of length 2 and the sixth - 1. Suppose the teacher wants
+to offer this problem to all 25 students of his. To avoid the copying,
+the teacher may make several distinct variants of problem data by multiplying&nbsp;
+the lengths 1, 2 by a constant factor <I>k </I>= 2, 3, 4,.... In such a
+way the students are proposed apparently distinct problems having distinct
+answers (respectively, <I>V</I>, 8<I>V</I>, 27<I>V</I>,...). It is exactly
+the way <I>POLYHEDRON</I> "cooks" its problems before serving them, except for...
+You know, a <I>POLYHEDRON</I> problem never looks like the above.
+<UL><I><FONT COLOR="#0000AA">How, then?</FONT></I></UL>
+For example: Find the volume of <B>this</B> tetrahedron.
+<UL><I><FONT COLOR="#0000AA">That's all??</FONT></I></UL>
+No, of course. That is why we better say <I><FONT COLOR="#000000">subjects</FONT></I>
+but <I><FONT COLOR="#000000">problems</FONT></I> when talking about <I>POLYHEDRON</I>.
+Beside of the problem itself (name it better <I><FONT COLOR="#000000">hypothesis</FONT></I>),
+a subject includes a set of available tools and allowed basic constructions
+(some may be forbidden, for didactic reasons) and a polyhedron model on
+the screen. The student&nbsp; is free to find any length or angle by measuring,
+there is no need to give them in the hypothesis. In difficult problems
+all tools are usually available.
+<UL><I><FONT COLOR="#0000AA">Tell us about them.</FONT></I></UL>
+There are two measuring tools (the <I><FONT COLOR="#000000">graduated ruler</FONT></I>
+and <I><FONT COLOR="#000000">protractor</FONT></I>), three constructing
+tools (the <I><FONT COLOR="#000000">ruler</FONT></I>, <I><FONT COLOR="#000000">setsquare</FONT></I>,
+and compass), and three special features (<I>segment bisecting</I>, i.e.
+dividing in half, <I>angle bisecting</I>, and <I>cutting the polyhedron</I>
+with a plane through three given points).
+<UL><I><FONT COLOR="#0000AA">The bisections may be done with bare ruler
+and compass, can't they?</FONT></I></UL>
+That's true. We just aimed to free, whenever possible, the student from
+routine job and so let him concentrate on the essential details of the
+resolution.
+<UL><I><FONT COLOR="#0000AA">As for cutting... Was it really necessary
+to include it as a separate feature?</FONT></I></UL>
+The planar cuttings play an outstanding role in <I>POLYHEDRON</I> problems.
+As a matter of fact, even the simplest calculation problems may require
+at least one cutting since none of the tools is applicable in the solid's
+<I>interior</I>. For example, one cannot measure the altitude <I>DH</I>
+in <B><A HREF="fig1.html" onClick="return displayFigure('fig1.html', 'Figure1',230, 230)">Figure
+1</A></B> directly, without a prior plane cut.
+<UL><I><FONT COLOR="#0000AA">Why not?</FONT></I></UL>
+<I>POLYHEDRON</I> was conceived as a computer based realization of the so called
+"carpenter workshop" philosophy. Imagine a carpenter workshop. You are
+given a chunk of wood shaped as in <B><A HREF="fig1.html" onClick="return displayFigure('fig1.html', 'Figure1', 230, 230)">Figure
+1</A></B> and asked to find its volume. Obviously, nothing can prevent
+you from measuring the edges and computing the volume in your notepad.
+But you must agree that it is going to be a tough computation if the tetrahedron
+lacks any "regularity". A <I>saw</I> would relieve you. You draw the perpendiculars
+<I>DE </I>on <I>AB</I> and <I>EF </I>on <I>AB</I> then cut the chunk along
+<I>DE</I> and <I>EF</I>. Once the freshly cut surface shows up, you draw
+the perpendicular <I>DH </I>on <I>EF</I>, measure it and finish the resolution
+with an elementary calculation.
+<UL><I><FONT COLOR="#0000AA">OK, but a real chunk can be turned in hands...</FONT></I></UL>
+You can equally do it with its image on the screen. Moreover, you can switch
+from the initial, <I>opaque</I>, model to a <I>transparent</I> one (like
+the drawing in <B><A HREF="fig1.html" onClick="return displayFigure('fig1.html', 'Figure1', 230, 230)">Figure
+1</A></B>) and conversely. You may order the vertices to be <I>labeled</I>,
+for the sake of measuring and drawing accuracy, or you may hide the labels,
+to do some drawing by hand. You can remove a faulty or unnecessary drawing
+by the <I>eraser</I>. The intermediate results may be written down on screen.
+A <I>calculator</I> is available for simple calculations. Lastly, you can
+ask at any moment for <I>context sensitive help</I>.
+<UL><I><FONT COLOR="#0000AA">It looks interesting. Let us solve a couple
+of problems.</FONT></I></UL>
+<FONT COLOR="#0000AA"><FONT SIZE=+2>Examples of solved problems</FONT></FONT>
+
+<P><B>Problem 1. </B>A straight line passes through vertex <I>C</I> of
+this regular pyramid (<B><A HREF="fig2a.html" onClick="return displayFigure('fig2a.html', 'Figure2a', 220, 220)">Figure
+2a</A></B>) and makes equal angles with the edges issuing from the same
+vertex. Find the second point in which the line intersects the pyramid's
+surface.
+
+<P>The required point <I>O</I> is obviously located within face <I>ABD</I>.
+Since triangles <I>COA</I> and <I>COB</I> are congruent, <I>O</I> is equidistant
+from <I>A</I> and <I>B</I> and thus belongs to the perpendicular <I>DN
+</I>to <I>AB</I>. Since the sought line <I>CO</I> makes equal angles with
+<I>CA</I> and <I>CD</I>, it lies in a plane <FONT FACE="Symbol">p</FONT>
+that passes through the bisector of angle <I>ACD</I> and is perpendicular
+to face <I>ACD</I>. Therefore <I>O </I>is the intersection of <FONT FACE="Symbol">p
+</FONT>and <I>DN</I>.
+<BR>&nbsp;&nbsp;&nbsp; <I>POLYHEDRON</I> tool bag supplies suitable features
+to realize the plan outlined above. First, one bisects angle <I>ACD</I>.
+Let <I>CE</I> be the bisector. Second, one draws (with the setsquare) the
+altitude <I>DF</I> in triangle <I>ACD</I> and cuts the pyramid through
+<I>B</I>, <I>F</I>, <I>D</I> into two congruent parts (<B><A HREF="fig2b.html" onClick="return displayFigure('fig2b.html', 'Figure2b', 225, 375)">Figure
+2b</A></B>). On either of them (e.g. [<I>DBFC</I>]) one draws the perpendicular
+<I>BG </I>to <I>FD</I>. <FONT FACE="Symbol">p</FONT> is parallel to <I>BG</I>
+and passes through a point that corresponds to <I>J </I>in which <I>CE
+</I>intersects <I>DF</I> in <B><A HREF="fig2a.html" onClick="return displayFigure('fig2a.html', 'Figure2a', 220, 220)">Figure
+2a</A></B>. By means of a special <I>POLYHEDRON</I> feature, one marks the intersection
+point <I>J</I>, measures (with the graduated ruler) <I>DJ</I>, lays off
+(with the compass) a same length segment [<I>DK</I>] on <I>DF</I>, and
+draws the perpendicular <I>KL</I> to <I>DF</I>.
+<BR>&nbsp;&nbsp;&nbsp; Note that to fulfil the last construction one has
+to switch to the opaque model. That is because the command "Draw a perpendicular
+in <I>K</I> to <I>DF</I>" is ambiguous: such a perpendicular may be drawn
+in either <I>FDB</I> or <I>FDC</I>. <I>POLYHEDRON</I> will detect the ambiguity
+and ask one to choose one of the two faces, which may be done with a mouse
+click on the corresponding face in the opaque model. [<I>KL</I>] once drawn,
+one may switch back to the transparent model.
+<BR>&nbsp;&nbsp;&nbsp; Obviously, <I>KL </I>is the intersection of <FONT FACE="Symbol">p
+</FONT>and <I>DFB</I>. To locate <I>L</I>'s alias on the initial tetrahedron,
+one measures <I>DL</I> and lays it off on <I>DB</I> thus getting <I>DM
+</I>= <I>DL</I>. One can see that <FONT FACE="Symbol">p </FONT>= <I>CEM</I>.
+Lastly, one draws <I>EM</I>, the perpendicular <I>DN </I>to <I>AB </I>and
+marks the intersection O of <I>EM </I>and <I>DN</I>. <I>CO</I> is the sought
+straight line. One types <I>O</I> in the answer dialogue box and gets back
+"Correct solution". The resolution is finished.
+
+<P><B>Problem 2. </B>This wooden cube (<B><A HREF="fig3a.html" onClick="return displayFigure('fig3a.html', 'Figure3a', 210, 210)">Figure
+3a</A></B>) must be cut off to a cylindrical top whose diameter makes a
+quarter of the cube's edge. What is the maximal length of the top?
+
+<P>One may remark that, by virtue of symmetry, the sought cylinder should
+have one of the cube's diagonals as its axis. Therefore, one can reduce
+the problem to a planar one by considering one of the cube's diagonal sections
+in which the cylinder is represented by a rectangle that is symmetrical
+about the cube's diagonal and touches two of its opposite faces (<B><A HREF="fig3b.html" onClick="return displayFigure('fig3b.html', 'Figure3b', 215, 400)">Figure
+3b</A></B>). So one cuts the cube through <I>B</I>, <I>D</I>, <I>H</I>,
+draws the diagonal <I>BH</I> and proceeds locating the centers <I>I</I>,
+<I>K</I> of the cylinder bases on [<I>BH</I>]. Since the cylinder's diameter
+is <I>AB</I>/4, its radius, i.e. <I>IJ</I>, is equal to <I>AB</I>/8.
+<BR>&nbsp;&nbsp;&nbsp; Then <I>HI </I>= (<I>AB</I>/8)cot<I>BHF</I>. So
+one measures length <I>AB</I>, then angle <I>BHF</I> (with the protractor)
+and compute <I>HI</I> on the built-in calculator. Or one may notice cot<I>BHF</I>
+= <I>HF</I>/<I>BF</I> = <I>AB</I>sqrt(2)/<I>AB</I> = sqrt(2) thus easing
+a bit one's task. Now one goes straight to the end: since <I>HI </I>= <I>BK</I>,
+one has <I>IK </I>= <I>HB</I>-2<I>HI</I>. The length <I>IK</I> is the solution.
+
+<P><B>Problem 3. </B>Draw on the upper base of this truncated pyramid (<B><A HREF="fig4a.html" onClick="return displayFigure('fig4a.html', 'Figure4a', 200, 185)">Figure
+4a</A></B>) a line parallel to <I>AB</I> so that the distance between it
+and <I>AB</I> is equal to the length of edge [<I>AD</I>].
+
+<P>Since <I>DE</I> is parallel to <I>AB</I>, the sought line is parallel
+to <I>DE</I>. Therefore it forms together with [<I>AB</I>] the bases of
+a trapezoid, which lies inside the truncated pyramid and whose altitude
+equals <I>AD</I>. To enable the construction of this altitude, one cuts
+the pyramid with a plane perpendicular to <I>AB</I>. For example, one may
+draw the perpendiculars <I>FG</I> to <I>DE</I>, <I>GH </I>to <I>AB</I>
+and cut through <I>F</I>, <I>G</I>, <I>H</I>. The pyramid is not regular,
+so that of the two resulted pieces (<B><A HREF="fig4b.html" onClick="return displayFigure('fig4b.html', 'Figure4b', 195, 335)">Figure
+4b</A></B>) one is a truncated pyramid, too, and the other is not. One
+selects the latter and seeks for a point <I>J</I> on <I>FG</I> such that
+<I>HJ </I>= <I>AD</I>.
+<BR>&nbsp;&nbsp;&nbsp; <I>GJ</I> can be found in triangle <I>HJG</I> by
+solving the quadratic equation
+<UL><I>JH</I>&sup2; = <I>GH</I>&sup2; + <I>GJ</I>&sup2;- 2<I>GH</I>&times;<I>GJ</I>cos<I>HGJ</I></UL>
+where <I>GJ</I> is the only unknown, but it would be against
+<FONT COLOR="#0000AA"><I>POLYHEDRON</I>'s motto:</FONT>
+<B><FONT COLOR=red>Less computation, more geometry</FONT></B>.
+So one measures the altitude
+<I>h</I> of trapezoid <I>IHGF</I> (dropped, e.g., from <I>F</I>), then
+the length of [<I>AD</I>], and compute <I>HK</I> = sqrt(<I>JH</I>&sup2;
+- <I>h</I>&sup2;) = sqrt(<I>AD</I>&sup2; - <I>h</I>&sup2;). Now <I>K</I>
+may be actually located by laying off <I>HK</I> from <I>H</I>. Finally,
+one raises the perpendicular <I>KJ </I>from <I>IH</I> thus locating <I>J</I>
+and draws the perpendicular <I>JL </I>to <I>FG</I> in the upper base. <I>JL</I>
+is the solution.
+
+<P><B>Problem 4. </B>Cut this prism (<B><A HREF="fig5a.html" onClick="return displayFigure('fig5a.html', 'Figure5a', 200,215)">Figure
+5a</A></B>) with a plane such that the section is a rectangle.
+
+<P>This problem is perhaps one of the most representative for <I>POLYHEDRON</I>
+due to its suppleness and elegance. Same is the resolution below. (It does
+not involve a single calculation!)
+<BR>&nbsp;&nbsp;&nbsp; First one tries to guess where such a section might
+be constructed. Any plane parallel to the prism's bases gives a triangular
+section. By cutting in the lateral edge's direction one generally gets
+a parallelogram, since the given prism is not a right one. There are infinitely
+many parallelogram-shaped sections. Let's have a closer look at them. Let
+us choose one of the three lateral edges, for instance <I>FC</I>, and figure
+out a plane that is "anchored" at that edge but is able to rotate about
+the corresponding axis (i.e. <I>FC</I>). The section provided by such a
+plane varies from <I>FEBC</I> to <I>FDAC</I>. Is there a position in which
+the section turns out rectangular? One measures angles <I>EFC</I> and <I>DFC</I>
+and finds both are obtuse. Therefore all intermediate sections have obviously
+obtuse angles at vertex <I>F</I>.
+<BR>&nbsp;&nbsp;&nbsp; Hard luck. Never mind, there are other two lateral
+edges to experiment with. The lateral faces that join at edge <I>EB</I>
+look, in <B><A HREF="fig5a.html" onClick="return displayFigure('fig5a.html', 'Figure5a', 200,215)">Figure
+5a</A></B>, as if their angles at <I>E</I> are both acute. Is that true?
+One turns the prism vertically as depicted in <B><A HREF="fig5b.html" onClick="return displayFigure('fig5b.html', 'Figure5b', 200, 270)">Figure
+5b</A></B>. This time angle <I>BED</I> looks obtuse. (Notice that angle
+<I>BEF</I> is certainly acute, since angle <I>EFC</I> proved obtuse.) One
+measures it with the protractor and gets, indeed,
+<BR>BED > <FONT FACE="Symbol">p</FONT>/2. Thus, there exists, for continuity
+reasons, a plane that passes through <I>FC</I> and gives a rectangular
+section.
+<BR>&nbsp;&nbsp;&nbsp; Notice that angle <I>BED</I> might happen to be
+acute, too, but then <I>EDA</I> &lt; <FONT FACE="Symbol">p</FONT>/2 and
+<I>FDA </I>> <FONT FACE="Symbol">p</FONT>/2 hold, so one has to take edge
+[<I>AD</I>] instead of [<I>BE</I>] to draw a rectangular section through.
+<BR>&nbsp;&nbsp;&nbsp; Thus one only has to find a point <I>H</I> on <I>DF</I>
+such that <I>EH</I> is perpendicular to <I>EB</I>. <I>H</I> lays in a plane
+<FONT FACE="Symbol">p</FONT> that passes through <I>E</I> and is perpendicular
+to <I>EB</I>. <FONT FACE="Symbol">p</FONT> is also perpendicular to <I>DA</I>,
+hence it contains the perpendicular <I>EG</I> to <I>DA</I> and the perpendicular
+raised from <I>G</I> in face <I>ADFC</I>. One draws the perpendiculars
+<I>EG</I> to <I>DA</I>, then <I>GH</I> to <I>AD</I>. <I>H</I> is the sought
+point. One just have to cut through <I>B</I>, <I>E</I>, <I>H</I> to get
+a rectangular section.
+
+<P><FONT COLOR="#0000AA"><FONT SIZE=+2>WWW and other references</FONT></FONT>
+
+<P>&nbsp;&nbsp;&nbsp;The <I>POLYHEDRON</I> package (English and Romanian versions) is available on the World
+Wide Web for free download <A HREF="/polyhedron"><B>here</B></A>.
+<BR>&nbsp;&nbsp;&nbsp; A <I>POLYHEDRON</I> manual [2] is available at the Timisoara
+University Library.
+<BR>&nbsp;&nbsp;&nbsp; The readers may wish to resolve Problems 1-4 in
+a real <I>POLYHEDRON</I> session. They should select, in the "Problem type"
+page, the following options:
+<BR>&nbsp;
+<TABLE BORDER COLS=6 WIDTH="100%" >
+<TR>
+<TD></TD>
+
+<TD>
+<CENTER>Type</CENTER>
+</TD>
+
+<TD>
+<CENTER>Shape</CENTER>
+</TD>
+
+<TD>
+<CENTER>Topic</CENTER>
+</TD>
+
+<TD>
+<CENTER>Complexity</CENTER>
+</TD>
+
+<TD>
+<CENTER>List No</CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD>Problem 1</TD>
+
+<TD>Construction</TD>
+
+<TD>Pyramid</TD>
+
+<TD>Angle</TD>
+
+<TD>
+<CENTER>6</CENTER>
+</TD>
+
+<TD>
+<CENTER>1</CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD>Problem 2</TD>
+
+<TD>Calculation</TD>
+
+<TD>Cube</TD>
+
+<TD>Other</TD>
+
+<TD>
+<CENTER>6</CENTER>
+</TD>
+
+<TD>
+<CENTER>1</CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD>Problem 3</TD>
+
+<TD>Construction</TD>
+
+<TD>Trunk</TD>
+
+<TD>Parallelism</TD>
+
+<TD>
+<CENTER>5</CENTER>
+</TD>
+
+<TD>
+<CENTER>1</CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD>Problem 4</TD>
+
+<TD>Construction</TD>
+
+<TD>Prism</TD>
+
+<TD>Other</TD>
+
+<TD>
+<CENTER>5</CENTER>
+</TD>
+
+<TD>
+<CENTER>1</CENTER>
+</TD>
+</TR>
+</TABLE>
+<P><FONT COLOR="#000000">In all cases "List" rather than "Random" is the default
+option.</FONT>
+
+<P><FONT COLOR="#0000AA"><FONT SIZE=+2>Bibliography</FONT></FONT>
+
+<P>[1] Dienes Z., Building Up Mathematics. Hutchinson Educational 1960.
+(There is a Hungarian translation: Epitsuk fel a matematikat. Gondolat,
+Budapest, 1973.)
+<P>[2] Dumitrascu S., Polyhedron, versiunea 1.1. Universitatea din Timisoara,
+1994 (in Romanian).
+</p>
+<hr>
+<div class="footer">
+&copy; Copyright <a href="../stelian/index.html">Stelian Dumitrascu</a>
+</BODY>
+</HTML>
