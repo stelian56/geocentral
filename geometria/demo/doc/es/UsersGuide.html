@@ -1,0 +1,2319 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Geometria 4.0</title><link rel="stylesheet" type="text/css" href="../../css/doc.css"><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div lang="es" class="book"><div class="titlepage"><div><div><h1 class="title"><a name="GeometriaUsersGuide"></a>Geometria 4.0</h1></div><div><h2 class="subtitle">Guía de Uso</h2></div></div><hr></div><div class="toc"><dl class="toc"><dt><span class="chapter"><a href="#General">1. General</a></span></dt><dd><dl><dt><span class="sect1"><a href="#QuickStart">1. Inicio Rápido</a></span></dt><dd><dl><dt><span class="sect2"><a href="#Installation">1.1. Instalación</a></span></dt><dt><span class="sect2"><a href="#Troubleshooting">1.2. Inconvenientes</a></span></dt></dl></dd><dt><span class="sect1"><a href="#License">2. Licencia</a></span></dt><dt><span class="sect1"><a href="#Acknowledgments">3. Reconocimientos</a></span></dt><dt><span class="sect1"><a href="#Overview">4. Pantallazo</a></span></dt><dd><dl><dt><span class="sect2"><a href="#EditorsAndSolvers">4.1. Edición y Resolución</a></span></dt></dl></dd><dt><span class="sect1"><a href="#Variables">5. Variables</a></span></dt><dd><dl><dt><span class="sect2"><a href="#CreatingAVariable">5.1. Creando una Variable</a></span></dt><dt><span class="sect2"><a href="#ValueOfAVariable">5.2. Valor de una Variable</a></span></dt><dt><span class="sect2"><a href="#PinnedVariable">5.3. Variable Extraviada</a></span></dt><dt><span class="sect2"><a href="#LifetimeOfAVariable">5.4. Persistencia de una Variable</a></span></dt><dt><span class="sect2"><a href="#RenameVariable">5.5. Renombrar Variables</a></span></dt></dl></dd><dt><span class="sect1"><a href="#Calculator">6. Calculadora</a></span></dt><dd><dl><dt><span class="sect2"><a href="#Expressions">6.1. Expresiones</a></span></dt><dt><span class="sect2"><a href="#Operators">6.2. Operadores</a></span></dt><dt><span class="sect2"><a href="#Functions">6.3. Funciones</a></span></dt><dt><span class="sect2"><a href="#Examples">6.4. Ejemplos</a></span></dt></dl></dd><dt><span class="sect1"><a href="#Notepad">7. Anotador</a></span></dt><dd><dl><dt><span class="sect2"><a href="#ClearNotepad">7.1. Limpiar Anotador</a></span></dt></dl></dd><dt><span class="sect1"><a href="#Undo">8. Deshacer Acciones</a></span></dt><dt><span class="sect1"><a href="#Redo">9. Rehacer Acciones</a></span></dt><dt><span class="sect1"><a href="#Language">10. Idioma</a></span></dt><dt><span class="sect1"><a href="#Help">11. Ayuda</a></span></dt><dt><span class="sect1"><a href="#KnownLimitations">12. Detalles sobre Limitaciones</a></span></dt><dd><dl><dt><span class="sect2"><a href="#InordinateSizeOrShape">12.1. Medida o Forma discordantes</a></span></dt><dt><span class="sect2"><a href="#PreviousVersionsOfGeometria">12.2. Versiones Previas de Geometria</a></span></dt><dt><span class="sect2"><a href="#SolutionLanguage">12.3. Idioma de la Solución</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="#Documents">2. Documentos</a></span></dt><dd><dl><dt><span class="sect1"><a href="#ProblemText">1. Texto del Problema</a></span></dt><dt><span class="sect1"><a href="#DocumentProperties">2. Propiedades del Documento</a></span></dt><dt><span class="sect1"><a href="#Answer">3. Respuesta</a></span></dt><dd><dl><dt><span class="sect2"><a href="#EditorsAnswer">3.1. Respuesta Editada</a></span></dt><dt><span class="sect2"><a href="#SolversAnswer">3.2. De la Solución a la Respuesta</a></span></dt></dl></dd><dt><span class="sect1"><a href="#Navigator">4. Navigador</a></span></dt><dd><dl><dt><span class="sect2"><a href="#NewFolder">4.1. Nueva Carpeta</a></span></dt><dt><span class="sect2"><a href="#RenameFile">4.2. Renombrando Archivos</a></span></dt><dt><span class="sect2"><a href="#MoveFile">4.3. Mover un Archivo</a></span></dt><dt><span class="sect2"><a href="#DeleteFile">4.4. Borrar un Archivo</a></span></dt></dl></dd><dt><span class="sect1"><a href="#NewProblem">5. Nuevo Problema</a></span></dt><dt><span class="sect1"><a href="#OpenProblem">6. Abrir Problema</a></span></dt><dt><span class="sect1"><a href="#SaveProblem">7. Guardar Problema</a></span></dt><dt><span class="sect1"><a href="#LockProblem">8. Sellar Problema</a></span></dt><dt><span class="sect1"><a href="#SolveProblem">9. Resolver el Problema</a></span></dt><dt><span class="sect1"><a href="#OpenSolution">10. Abrir Solución</a></span></dt><dt><span class="sect1"><a href="#SaveSolution">11. Guardar Solución</a></span></dt><dt><span class="sect1"><a href="#SolutionLog">12. Registro de Solución</a></span></dt><dd><dl><dt><span class="sect2"><a href="#Playback">12.1. Reproducción</a></span></dt><dt><span class="sect2"><a href="#SolutionComments">12.2. Comentarios en la Solución</a></span></dt></dl></dd><dt><span class="sect1"><a href="#ShareDocument">13. Compartir un Documento</a></span></dt><dd><dl><dt><span class="sect2"><a href="#ExportDocument">13.1. Exportar Documento</a></span></dt><dt><span class="sect2"><a href="#ImportDocument">13.2. Importa Documento</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="#figures">3. Figuras</a></span></dt><dd><dl><dt><span class="sect1"><a href="#Newfigure">1. Nueva Figura</a></span></dt><dt><span class="sect1"><a href="#Openfigure">2. Abre Figura</a></span></dt><dt><span class="sect1"><a href="#Clonefigure">3. Reproducir Figura</a></span></dt><dt><span class="sect1"><a href="#Savefigure">4. Guardar Figura</a></span></dt><dt><span class="sect1"><a href="#Printfigure">5. Imprime Figura</a></span></dt><dt><span class="sect1"><a href="#Renamefigure">6. Renombra Figura</a></span></dt><dt><span class="sect1"><a href="#RenamePoint">7. Renombra Punto</a></span></dt><dt><span class="sect1"><a href="#Removefigure">8. Elimina Figura</a></span></dt><dt><span class="sect1"><a href="#EraseElements">9. Borra Elementos</a></span></dt><dd><dl><dt><span class="sect2"><a href="#EraseSegment">9.1. Borra Segmento</a></span></dt><dt><span class="sect2"><a href="#EraseSelection">9.2. Borra Selección</a></span></dt></dl></dd><dt><span class="sect1"><a href="#View">10. Vista</a></span></dt><dd><dl><dt><span class="sect2"><a href="#Attitude">10.1. Comportamiento</a></span></dt><dt><span class="sect2"><a href="#Rotatefigure">10.2. Rota Figura</a></span></dt><dt><span class="sect2"><a href="#SelectElements">10.3. Selección de Elementos</a></span></dt><dt><span class="sect2"><a href="#ViewModes">10.4. Modos de Vista</a></span></dt><dt><span class="sect2"><a href="#Zoomfigure">10.5. Amplía Figura</a></span></dt></dl></dd><dt><span class="sect1"><a href="#Measure">11. Medida</a></span></dt><dd><dl><dt><span class="sect2"><a href="#MeasureDistance">11.1. Medir Distancia</a></span></dt><dt><span class="sect2"><a href="#MeasureAngle">11.2. Mide Ángulo</a></span></dt><dt><span class="sect2"><a href="#ComputeArea">11.3. Cálculo de Área</a></span></dt><dt><span class="sect2"><a href="#ComputeTotalArea">11.4. Calcula Área Total</a></span></dt><dt><span class="sect2"><a href="#ComputeVolume">11.5. Calcula Volumen</a></span></dt></dl></dd><dt><span class="sect1"><a href="#Draw">12. Dibuja</a></span></dt><dd><dl><dt><span class="sect2"><a href="#JoinPoints">12.1. Une Puntos</a></span></dt><dt><span class="sect2"><a href="#DrawPerpendicular">12.2. Trazar Perpendicular</a></span></dt><dt><span class="sect2"><a href="#DivideSegment">12.3. Divide Segmento</a></span></dt><dt><span class="sect2"><a href="#DrawMidpoint">12.4. Traza Punto Medio</a></span></dt><dt><span class="sect2"><a href="#DivideAngle">12.5. Divide Ángulo</a></span></dt><dt><span class="sect2"><a href="#DrawBisector">12.6. Traza Bisectriz</a></span></dt><dt><span class="sect2"><a href="#DrawIntersection">12.7. Traza Intersección</a></span></dt><dt><span class="sect2"><a href="#LayDistance">12.8. Traza Distancia</a></span></dt><dt><span class="sect2"><a href="#LayAngle">12.9. Traza Ángulo</a></span></dt></dl></dd><dt><span class="sect1"><a href="#Transform">13. Transforma</a></span></dt><dd><dl><dt><span class="sect2"><a href="#Scalefigure">13.1. Redimensiona Figura</a></span></dt><dt><span class="sect2"><a href="#Shearfigure">13.2. Desliza Figura</a></span></dt><dt><span class="sect2"><a href="#Cutfigure">13.3. Cortar Figura</a></span></dt><dt><span class="sect2"><a href="#Joinfigures">13.4. Unir Figuras</a></span></dt></dl></dd></dl></dd></dl></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="General"></a>Capítulo 1. General</h1></div></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="QuickStart"></a>1. Inicio Rápido</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="Installation"></a>1.1. Instalación</h3></div></div></div><p>
+Geometria se ejecuta en navegadores de equipos de escritorio o laptop. Los navegadores aceptables son:
+
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+Firefox
+</li><li class="listitem">
+Google Chrome
+</li><li class="listitem">
+Internet Explorer 10+
+</li></ul></div><p>
+
+</p><p>
+Se instala Geometria en el equipo, descargándolo el paquete de usuario desde:
+<a class="ulink" href="http://geocentral.net/geometria" target="_blank">
+http://geocentral.net/geometria</a>
+y decomprimiendo el archivo en un directorio que es el que luego, debe abrirse.
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="WindowsUsers"></a>1.1.1. Para Windows</h4></div></div></div><p>
+Iniciar Geometria:
+
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+Doble clic sobre Startup.exe.
+</li><li class="listitem">
+Abrir un navegador web y dirigirlo a
+<span class="emphasis"><em>localhost:8080</em></span> .
+</li></ul></div><p>
+
+</p><p>
+Salir de Geometria, ubicar el ícono
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Mongoose"></span>
+en la bandeja del sistema, seleccionarlo con un clic
+<span class="emphasis"><em>Salir</em></span>.
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="LinuxUsers"></a>1.1.2. Para Linux</h4></div></div></div><p>
+Iniciar Geometria:
+
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+Abrir una terminal.
+</li><li class="listitem">
+Ubicar el archivo de inicio correspondiente al sistema operativo (32-bit o 64-bit).
+</li><li class="listitem">
+Establecer un archivo de inicio ejecutable. Por ejemplo:
+<pre class="programlisting">
+$ chmod +x Startup_Linux64
+</pre></li><li class="listitem">
+Ejecutar el archivo de inicio. Por ejemplo:
+<pre class="programlisting">
+$ ./Startup_Linux64
+</pre></li><li class="listitem">
+Abrir un navegador y dirigirlo a
+<span class="emphasis"><em>localhost:8080</em></span> .
+</li></ul></div><p>
+
+</p><p>
+Salir de Geometria, volver a la terminal y detener el proceso con Ctrl + C.
+</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="Troubleshooting"></a>1.2. Inconvenientes</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="Port"></a>1.2.1. Port</h4></div></div></div><p>
+Por omisión, Geometria inicia un navegador web básico dirigido al port 8080.
+Si el navegador muestra un error o contenido inesperado, podría haber otro proceso en simultáneo designado al port 8080. En tal caso, basta con detener Geometria para intentar otro port
+cambiando el valor de los ports asignados <span class="emphasis"><em>listening_ports</em></span> (Windows)
+o <span class="emphasis"><em>listening_port</em></span> (Linux) en el archivo de configuración mongoose.conf.
+Por ejemplo:
+</p><pre class="programlisting">
+listening_ports 8081
+</pre>
+
+puede modificarse para que el navegador apunte a
+<span class="emphasis"><em>localhost:8081</em></span>.
+
+</div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="AccessDenied"></a>1.2.2. Acceso Denegado</h4></div></div></div><p>
+Aunque Geometria no precisa conexión a Internet para ejecutarse, en caso de estar activa una protección de tipo "firewall", puede surgir este mensaje de error. Esto se debe a que el sistema de administración se ha configurado como un "web proxy" que bloquea el acceso al port 8080 pese a que se opere desde un equipo propio. Bastará con desactivar el proxy durante el trabajo con Geometria y reponerlo al terminar. No funcionarán los enlaces externos presentes en la documentación de Geometria,
+<a class="link" href="#ProblemText" title="1. Texto del Problema">planteos de problemas</a>
+ni
+<a class="link" href="#DocumentProperties" title="2. Propiedades del Documento">las propiedades del documento</a>
+mientras estuviera desactivado el "proxy".
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="Font"></a>1.2.3. Letra</h4></div></div></div><p>
+Geometria emplea, por omisión, tipografía "sans-serif" en la interfaz de uso. La medida de la letra
+puede ajustarse desde el navegador del siguiente modo:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+En Firefox, basta con tildar:
+<span class="emphasis"><em>Solo ampliar texto</em></span>
+en el menú Ver/Tamaño. Para agrandar la letra, basta pulsar + en simultáneo con Ctrl.
+Con - mientras se mantiene pulsado Ctrl, se reduce. Para recuperar la medida usual,
+de la letra, basta con seleccionar
+<span class="emphasis"><em>Inicio</em></span>
+en el menú Ver/Tamaño.
+</li><li class="listitem">
+En Chrome, tras abrir Configuración, basta con elegir
+<span class="emphasis"><em>Contenido Web</em></span>
+y cambiar
+<span class="emphasis"><em>Tamaño de fuente</em></span>
+a la deseada.
+</li><li class="listitem">
+En Internet Explorer, basta elegir el tamaño de letra deseado en el menú Ver/Medida Texto.
+</li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="Firebug"></a>1.2.4. Firebug</h4></div></div></div><p>
+En Firefox, es preciso que Firebug esté desactivado o, al menos, lo esté su Panel "Script". Cuando su Panel está habilitado, Firebug reporta ciertos errores de "guiones" de cuestiones conocidas pero no relacionadas con Geometria.
+</p></div></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="License"></a>2. Licencia</h2></div></div></div>
+Geometria es un software libre bajo 
+<a class="ulink" href="http://opensource.org/licenses/MIT" target="_blank">Licencia MIT</a>.
+</div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Acknowledgments"></a>3. Reconocimientos</h2></div></div></div>
+
+Geometria emplea los siguientes recursos de código abierto:
+
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><a class="ulink" href="http://dojotoolkit.org" target="_blank">Dojo Toolkit</a></li><li class="listitem"><a class="ulink" href="http://jquery.com" target="_blank">jQuery</a></li><li class="listitem"><a class="ulink" href="https://github.com/toji/gl-matrix" target="_blank">gl-matrix</a></li><li class="listitem"><a class="ulink" href="http://mathjs.org" target="_blank">mathjs</a></li><li class="listitem"><a class="ulink" href="https://github.com/cesanta/mongoose" target="_blank">Mongoose</a></li><li class="listitem"><a class="ulink" href="http://www.lua.org" target="_blank">Lua</a></li><li class="listitem"><a class="ulink" href="http://www.sqlite.org" target="_blank">SQLite</a></li><li class="listitem"><a class="ulink" href="http://www.docbook.org" target="_blank">DocBook</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Overview"></a>4. Pantallazo</h2></div></div></div><p>
+Geometria ofrece una interfaz gráfica para crear y resolver problemas de geometría sólida.
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="EditorsAndSolvers"></a>4.1. Edición y Resolución</h3></div></div></div><p>
+Por ahora, quienes emplean Geometria se dedican a plantear desde la edición o a resolver problemas. Son, entonces la:
+<span class="emphasis"><em>Edición</em></span>
+(tarea Docente) del planteo y la
+<span class="emphasis"><em>Resolución</em></span>
+(Estudiante en general).
+</p></div><p>
+Tanto el texto del planteo como el de resolución de problemas se denominan
+<span class="emphasis"><em>documentos</em></span>.
+Los documentos se guardan en archivos. El modo de dedicarse a un problema de Geometria es el siguiente:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+Al
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Editar</a>
+se crea un problema, incluyendo una
+<a class="link" href="#EditorsAnswer" title="3.1. Respuesta Editada">respuesta</a>,
+<a class="link" href="#SaveProblem" title="7. Guardar Problema">se guarda</a>
+el problema y se lo pasa a
+<a class="link" href="#ShareDocument" title="13. Compartir un Documento">compartir</a>
+con quienes lo van a
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Resolver</a>.
+</li><li class="listitem">
+Al
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Resolver</a> 
+<a class="link" href="#OpenProblem" title="6. Abrir Problema">se abre</a>
+el planteo para
+<a class="link" href="#SolveProblem" title="9. Resolver el Problema">resolver</a>
+tal problema.
+</li><li class="listitem">
+La resolución comprende una serie de acciones. Las acciones integran
+la solución
+<a class="link" href="#SolutionLog" title="12. Registro de Solución">registrada</a>.
+</li><li class="listitem">
+Al
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Resolver</a> 
+<a class="link" href="#SolversAnswer" title="3.2. De la Solución a la Respuesta">se responde</a>
+el problema. La respuesta de la
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Resolución</a>
+se considera correcta si concuerda con la incluida en la
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Edición</a>.
+</li><li class="listitem">
+Al
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Resolver</a> 
+<a class="link" href="#SaveSolution" title="11. Guardar Solución">se guarda</a>
+y se
+<a class="link" href="#ShareDocument" title="13. Compartir un Documento">comparte</a>
+tal solución como parte de la
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Edición</a>.
+</li><li class="listitem">
+La solución se puede
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducir</a>
+al
+<a class="link" href="#OpenSolution" title="10. Abrir Solución">abrirla</a>
+para el seguimiento de la
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Resolución</a>
+por cada una de sus acciones..
+</li></ul></div><p>
+Obviamente Geometria no realiza análisis semántico alguno del problema para
+determinar si la respuesta
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">editada</a>
+es efectivamente correcta. La respuesta puede ser incorrecta y hasta desatinada.
+El problema puede no tener sentido. Por ejemplo, un problema podría plantear:
+</p><p>
+<span class="emphasis"><em>
+¿Cómo se llama el lado mayor del triángulo rectángulo?
+</em></span>
+</p><p>
+y la respuesta propuesta podría ser:
+</p><p>
+<span class="emphasis"><em>
+El vértice Z en la figura MiCubo.
+</em></span>
+</p><p>
+Si tal disparate se hubiera planteado en la
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Edición</a>
+como respuesta correcta al problema, Geometria la dejará registrada como tal
+La desestimarán, posiblemente, quienes se dediquen a la
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">resolución</a>.
+</p><p>
+Cada documento contendrá el texto del
+<a class="link" href="#ProblemText" title="1. Texto del Problema">planteo del problema</a>,
+<a class="link" href="#DocumentProperties" title="2. Propiedades del Documento">las propiedades del documento</a>,
+una serie de
+<a class="link" href="#figures" title="Capítulo 3. Figuras">figuras</a>,
+y un número de anotaciones
+<a class="link" href="#Notepad" title="7. Anotador">registradas</a>.
+Además, una solución contiene el
+<a class="link" href="#SolutionLog" title="12. Registro de Solución">registro de la solución</a>.
+</p><p>
+Las figuras se limitan a representar poliedros convexos. Las figuras pueden
+<a class="link" href="#Measure" title="11. Medida">medirse</a>,
+<a class="link" href="#Draw" title="12. Dibuja">redibujarse</a>,
+<a class="link" href="#Transform" title="13. Transforma">transformarse</a>,
+<a class="link" href="#Rotatefigure" title="10.2. Rota Figura">rotarse</a>,
+<a class="link" href="#ViewModes" title="10.4. Modos de Vista">apreciarse</a>
+como estructura simple o etiquetada,
+<a class="link" href="#Printfigure" title="5. Imprime Figura">imprimirse</a>.
+</p><p>
+Se pueden realizar trazados sobre la superficie de una figura. Los que se quieran realizar en el interior
+requieren, para empezar, un 
+<a class="link" href="#Cutfigure" title="13.3. Cortar Figura">corte</a>
+de la figura con un plano adecuado, para poder dibujar sobre el fragmento de superficie establecido.
+</p><p>
+Los rótulos y
+<a class="link" href="#Variables" title="5. Variables">variables</a>
+ofrecen una conveniente abstracción respecto de las coordenadas numéricas
+y medidas.
+<a class="link" href="#Variables" title="5. Variables">Las variables</a>
+se usan en
+<a class="link" href="#Calculator" title="6. Calculadora">operaciones</a>
+y en las referencias a medidas y gráficos. Los rótulos y las variables también se emplean en las
+<a class="link" href="#Answer" title="3. Respuesta">respuestas</a>
+de los problemas.
+</p><p>
+Las
+<a class="link" href="#Answer" title="3. Respuesta">respuestas</a>
+no son necesariamente numéricas. De hecho, algunas de los retos más desafiantes
+corresponden a problemas que no se responden con un número. Se puede inquirir sobre un
+punto, segmento, trayecto o plano a construir con cierto propósito. Por ejemplo:
+</p><p>
+<span class="emphasis"><em>
+Hallar un plano paralelo a la diagonal del cubo que lo secciona en dos piezas de volúmenes en razón 2:3.
+</em></span>
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Calculator" title="6. Calculadora">Operaciones</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Anotador">Anotador</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Variables"></a>5. Variables</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="CreatingAVariable"></a>5.1. Creando una Variable</h3></div></div></div><p>
+Una <span class="emphasis"><em>variable</em></span> se crea como resultado de una
+<a class="link" href="#Measure" title="11. Medida">medición</a>
+o una
+<a class="link" href="#Calculator" title="6. Calculadora">operación</a>.
+Cada variable creada presenta
+un nombre y una definición. Por ejemplo, la variable miDistancia en el
+siguiente ejemplo se define como la distancia entre los puntos
+<span class="emphasis"><em>P</em></span>
+y
+<span class="emphasis"><em>W</em></span>
+en la figura
+a
+<span class="emphasis"><em>MiCubo</em></span>:
+</p><pre class="programlisting">
+miDistancia = |PW| : MiCubo
+</pre><p>
+En otro ejemplo, la variable
+<span class="emphasis"><em>miArea</em></span>
+resulta de un cálculo entre 
+variables previamente definidas 
+<span class="emphasis"><em>miVolumen</em></span>
+y
+<span class="emphasis"><em>miDistancia</em></span>:
+</p><pre class="programlisting">
+miArea = 2 * miVolumen / miDistancia
+</pre><p>
+Ni bien se crea una nueva variable, queda automáticamente registrada,
+junto a su definición en el 
+<a class="link" href="#Notepad" title="7. Anotador">anotador</a>.
+</p><p>
+Los nombres de variables pueden incluir caracteres alfanuméricos con una letra inicial.
+No pueden contener letras acentuadas o caracteres acentuados ni
+espacios.
+</p><p>
+Los nombres de variables distinguen mayúsculas de minúsculas. Así,
+<span class="emphasis"><em>miArea</em></span>
+y
+<span class="emphasis"><em>MiArea</em></span>
+refieren a dos variables diferentes.
+</p><p>
+<span class="emphasis"><em>PI</em></span>
+se reserva para la relación 
+<a class="ulink" href="http://en.wikipedia.org/wiki/Pi" target="_blank">entre la longitud de una circunferencia
+y su diámetro</a>
+y no puede usarse para nominar a cualquier
+variable creada. Sin embargo, se puede usar al operar con la
+<a class="link" href="#Calculator" title="6. Calculadora">como valor.</a>.
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="ValueOfAVariable"></a>5.2. Valor de una Variable</h3></div></div></div><p>
+Cada variable tiene un valor numérico. Sin embargo, en muchos casos, este valor
+permanece transparente a los usuarios. Se pueden crear y resolver
+problemas de Geometria sin conocer los valores subyacentes de las
+variables que se hubieran definido. Para conocer el valor numérico de una variable,
+basta con anotar el nombre de la variable en la
+<a class="link" href="#Calculator" title="6. Calculadora">calculadora</a>
+y pulsar la tecla de entrada Intro o Enter.
+Debido a errores de redondeo, los valores numéricos pueden diferir ligeramente entre el que se obtiene en
+la edición del que presenta la resolución del problema.
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="PinnedVariable"></a>5.3. Variable Extraviada</h3></div></div></div><p>
+Tras ciertas acciones, la definición de una variable puede resultar obsoleto.
+Por ejemplo, si el punto
+<span class="emphasis"><em>P</em></span>
+o el punto
+<span class="emphasis"><em>W</em></span>
+se
+<a class="link" href="#EraseElements" title="9. Borra Elementos">borraran</a>,
+la definición de la variable
+<span class="emphasis"><em>miDistancia</em></span>
+<a class="link" href="#CreatingAVariable" title="5.1. Creando una Variable">referida</a>
+devendrá obsoleta. Ídem si la figura
+<span class="emphasis"><em>MiCubo</em></span>
+se
+<a class="link" href="#Transform" title="13. Transforma">transforma</a>
+o
+<a class="link" href="#Removefigure" title="8. Elimina Figura">borra</a>.
+Tal variable queda <span class="emphasis"><em>extraviada</em></span>.
+</p><p>
+Una variable extraviada tiene un valor fijo ya no más dependiente de su definición original. Por ejemplo,
+<a class="link" href="#EraseElements" title="9. Borra Elementos">borrar</a>
+el punto
+<span class="emphasis"><em>P</em></span>
+en la figura
+<span class="emphasis"><em>MiCubo</em></span>
+"extraviará" a la variable
+<span class="emphasis"><em>miDistancia</em></span>.
+De modo análogo,
+<a class="link" href="#Scalefigure" title="13.1. Redimensiona Figura">escalar</a> 
+<span class="emphasis"><em>MiCubo</em></span>
+"extraviará" a la variable
+<span class="emphasis"><em>miDistancia</em></span>.
+Su valor no resultará afectado por el re-escalamiento.
+</p><p>
+Si la acción que "extravía" una variable se
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshace</a>,
+la definición de la variable se restaura.
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="LifetimeOfAVariable"></a>5.4. Persistencia de una Variable</h3></div></div></div><p>
+Una vez que una variable se define, se puede usar en
+<a class="link" href="#Calculator" title="6. Calculadora">operaciones</a> y
+referirse en acciones como las de
+<a class="link" href="#Measure" title="11. Medida">medir</a>,
+<a class="link" href="#Draw" title="12. Dibuja">trazar</a>
+y
+<a class="link" href="#Transform" title="13. Transforma">transformar</a>
+figuras. Una variable también puede usarse en la
+<a class="link" href="#Answer" title="3. Respuesta">respuesta</a> de un problema. Una variable
+<a class="link" href="#PinnedVariable" title="5.3. Variable Extraviada">extraviada</a>
+también puede usarse en cálculos y referencias.
+</p><p>
+Una variable existe en tanto se la registra en el
+<a class="link" href="#Notepad" title="7. Anotador">anotador</a>.
+<a class="link" href="#ClearNotepad" title="7.1. Limpiar Anotador">Limpiar</a>
+el anotador eliminará todas las variables. Esta acción, irrevocable, debe usarse con cuidado; no se
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshace</a>.
+</p><p>
+Cuando el documento, sea un problema o una solución, se guarda,
+se guardan todas las variables registradas en el
+<a class="link" href="#Notepad" title="7. Anotador">anotador</a>
+también quedan almacenadas. 
+</p></div><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Anotador">Anotador</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Calculator" title="6. Calculadora">Calculadora</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SaveProblem" title="7. Guardar Problema">Guardar Problema</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SaveSolution" title="11. Guardar Solución">Guardar Solución</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="RenameVariable"></a>5.5. Renombrar Variables</h3></div></div></div><p>
+Para renombrar una variable, basta con seleccionar
+<span class="emphasis"><em>Renombra Variable</em></span>
+en el menú
+<span class="emphasis"><em>Edita</em></span>
+. En el cuadro de diálogo emergente, se elige la variable a renombrar de la lista desplegable,
+anotar el nuevo nombre de la variable y pulsar sobre 
+<span class="emphasis"><em>OK</em></span>.
+Este nuevo nombre debe cumplir los requisitos para un
+<a class="link" href="#CreatingAVariable" title="5.1. Creando una Variable">válido</a>
+nombre de variable.
+</p><p>
+Al renombrar una variable, en el anotador, los 
+<a class="link" href="#Notepad" title="7. Anotador">registros</a>
+implicados se actualizarán adecuadamente.
+</p><p>
+Esta acción se puede
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Las variables no se pueden renombrar durante el
+<a class="link" href="#Playback" title="12.1. Reproducción">desenvolvimiento</a>.
+de la resolución. Es preciso detenerlo primero. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Acciones Revertibles</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Anotador">Anotador</a></li></ul></div></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Calculator"></a>6. Calculadora</h2></div></div></div><p>
+La Calculadora se encuentra en la zona inferior de la ventana, justo bajo el
+<a class="link" href="#Notepad" title="7. Anotador">anotador</a>.
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="Expressions"></a>6.1. Expresiones</h3></div></div></div><p>
+La calculadora opera en el contexto del documento activo.
+Las operaciones se realizan respecto de expresiones válidas. Las expresiones pueden contener
+números,
+<a class="link" href="#Variables" title="5. Variables">variables</a>,
+la constante
+<span class="emphasis"><em>PI</em></span>,
+operadores, funciones y paréntesis.
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="Assign"></a>6.1.1. Asignaciones</h4></div></div></div><p>
+Para evaluar una expresión
+<span class="emphasis"><em>miExpresiOn</em></span>
+y asignarle el resultado a una nueva variable
+<span class="emphasis"><em>miVariable</em></span>,
+basta con anotar:
+</p><pre class="programlisting">
+miVariable = miExpresiOn
+</pre><p>
+y pulsar la tecla de entrada Intro o
+<span class="emphasis"><em>Enter</em></span>.
+El nombre de la variable debe ser único en cada contexto y
+documento. Se añadirá un nuevo registro al 
+<a class="link" href="#Notepad" title="7. Anotador">anotador</a>. La variable recién creada puede
+usarse en subsecuentes operaciones y referencias.
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="Evaluate"></a>6.1.2. Evaluaciones</h4></div></div></div><p>
+Para evaluar una expresión sin asignarle su valor a una variable, basta con anotar:
+
+</p><pre class="programlisting">
+miExpresiOn
+</pre><p>
+
+y pulsar la tecla de entrada Intro o
+<span class="emphasis"><em>Enter</em></span>.
+El valor numérico de 
+<span class="emphasis"><em>miExpresiOn</em></span>
+aparecerá sin que se cree una nueva variable.
+</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="Operators"></a>6.2. Operadores</h3></div></div></div><p>
+Pueden emplearse los siguientes operadores:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
++ (suma)
+</li><li class="listitem">
+- (negativo, resta)
+</li><li class="listitem">
+* (producto)
+</li><li class="listitem">
+/ (división)
+</li><li class="listitem">
+^ (operador exponencial o de potenciación )
+</li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="Functions"></a>6.3. Funciones</h3></div></div></div><p>
+Puede operarse con las siguientes funciones:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+sqrt (raíz cuadrada)
+</li><li class="listitem">
+sin (seno)
+</li><li class="listitem">
+cos (coseno)
+</li><li class="listitem">
+tan (tangente)
+</li><li class="listitem">
+asin (arcoseno)
+</li><li class="listitem">
+acos (arcocoseno)
+</li><li class="listitem">
+atan (arcotangente)
+</li></ul></div><p>
+Los argumentos de las funciones deben anotarse entre paréntesis.
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="Examples"></a>6.4. Ejemplos</h3></div></div></div><p>
+Calcular el lado de un cubo cuyo volumen es
+<span class="emphasis"><em>miVolumen</em></span>:
+</p><pre class="programlisting">
+miLado = miVolumen ^ (1/3)
+</pre><p>
+Calcular el lado adyacente al ángulo
+<span class="emphasis"><em>miAngulo</em></span>
+en un triángulo rectángulo cuya hipotenusa es
+<span class="emphasis"><em>miHipotenusa</em></span>:
+</p><pre class="programlisting">
+miLado = miHipotenusa * cos(miAngulo)
+</pre></div><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Anotador">Anotador</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Notepad"></a>7. Anotador</h2></div></div></div><p>
+El anotador está ubicado bajo el
+<a class="link" href="#ProblemText" title="1. Texto del Problema">texto del problema</a>.
+</p><p>
+Cada vez que una nueva
+<a class="link" href="#CreatingAVariable" title="5.1. Creando una Variable">variable</a>
+se crea como resultado de una medición o de la
+<a class="link" href="#Assign" title="6.1.1. Asignaciones">asignación</a>
+en una operación, se añade un registro en el anotador automáticamente.
+Cada registro consiste de un único nombre de variable y una expresión.
+Los registros de mediciones también contienen el nombre de
+la figura desde la que se toma la medida. Por ejemplo, los siguientes registros:
+</p><pre class="programlisting">
+miDistancia = |AB| : MiCubo
+</pre><p>
+es el resultado de la medida de la distancia entre los
+puntos
+<span class="emphasis"><em>A</em></span>
+y
+<span class="emphasis"><em>B</em></span>
+en la figura llamada
+<span class="emphasis"><em>MiCubo</em></span>.
+La distancia se asignó a la variable
+<span class="emphasis"><em>miDistancia</em></span>.
+El registro:
+</p><pre class="programlisting">
+miAngulo = &lt;PLX : MiPirAmide
+</pre><p>
+es el resultado de medir un ángulo en una figura llamada
+<span class="emphasis"><em>MiPirAmide</em></span>.
+El registro:
+</p><pre class="programlisting">
+miVolumen = volumen : Figura1
+</pre><p>
+es el resultado de calcular el volumen de una figura llamada
+<span class="emphasis"><em>Figura1</em></span>.
+El siguiente registro se añadió como resultado de una 
+<a class="link" href="#Assign" title="6.1.1. Asignaciones">asignación</a>:
+</p><pre class="programlisting">
+h = 2 * miVolumen / miArea
+</pre><p>
+Su una variable se
+<a class="link" href="#PinnedVariable" title="5.3. Variable Extraviada">extravía</a>,
+su definición ya no se muestra en el anotador. Por ejemplo,
+si el punto
+<span class="emphasis"><em>X</em></span>
+se
+<a class="link" href="#EraseElements" title="9. Borra Elementos">borra</a>,
+la variable
+<span class="emphasis"><em>miAngulo</em></span>
+será desvinculada de su definición y en el segundo de los ejemplos previos se leerá como:
+</p><pre class="programlisting">
+miAngulo
+</pre><p>
+Los registros del anotador pertenecen al documento activo, sea un 
+problema o una solución. Cuando se guarda el documento, 
+los registros del anotador se guardarán también.
+</p><p>
+Cuando el documento activo se cierra,
+en el anotador se limpiarán los registros. Si se abre otro documento, 
+aparecerán en su lugar, los registros del anotador que le correspondan.
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="ClearNotepad"></a>7.1. Limpiar Anotador</h3></div></div></div><p>
+Para borrar todos los registros del anotador, durante la
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Edición</a>
+basta con seleccionar 
+<span class="emphasis"><em>Limpiar Anotador</em></span>
+en el menú <span class="emphasis"><em>Edita</em></span>.
+Debe usarse con precaución esta acción irrevocable ya que no se puede
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p></div><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Calculator" title="6. Calculadora">Calculadora</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Undo"></a>8. Deshacer Acciones</h2></div></div></div><p>
+Para deshacer la última acción realizada en el documento activo, basta con seleccionar
+<span class="emphasis"><em>Deshace</em></span>
+en el menú <span class="emphasis"><em>Edita</em></span>
+o pulsar el
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Undo"></span>
+botón en la barra de herramientas. En una solución, la acción también será
+eliminada del
+<a class="link" href="#SolutionLog" title="12. Registro de Solución">registro</a>.
+Las acciones se deshacen en orden inverso
+al de su ejecución.
+</p><p>
+Para ver una breve descripción de la acción a deshacer, basta con
+detener el ratón o mouse sobre el 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Undo"></span>
+botón.
+</p><p>
+Cualquier acción deshecha puede 
+<a class="link" href="#Redo" title="9. Rehacer Acciones">rehacerse</a>.
+</p><p>
+Algunas de las acciones son irrevocables y un mensaje alerta que no podrán deshacerse
+una vez realizadas.
+</p><p>
+Las acciones no pueden deshacerse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la resolución.
+Es preciso detener la reproducción primero. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Redo" title="9. Rehacer Acciones">Rehacer Acciones</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SolutionLog" title="12. Registro de Solución">Solución Registrada</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Redo"></a>9. Rehacer Acciones</h2></div></div></div><p>
+Se puede rehacer la última acción
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshecha</a>
+en el documento activo, seleccionando
+<span class="emphasis"><em>Rehace</em></span>
+en el menú <span class="emphasis"><em>Edita</em></span>
+o pulsando el
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Redo"></span>
+botón en la barra de herramientas. En una solución, la acción volverá a aparecer
+<a class="link" href="#SolutionLog" title="12. Registro de Solución">registrada</a>.
+Las acciones se rehacen en orden inverso al de su ejecución.
+</p><p>
+Para ver una breve descripción de qué acción va a ser rehecha,
+basta detener el ratón o mouse sobre el correspondiente 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Redo"></span>
+botón.
+</p><p>
+Las acciones no pueden ser rehechas durante la reproducción de la solución
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, debe detenerse la reproducción. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Rehacer Acciones</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SolutionLog" title="12. Registro de Solución">Registro de Solución</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Language"></a>10. Idioma</h2></div></div></div><p>
+Para cambiar de idioma, basta con seleccionar
+<span class="emphasis"><em>Idioma</em></span>
+desde el menú
+<span class="emphasis"><em>Documento</em></span>
+y escoger el que se deseara.
+</p><p>
+El idioma no puede cambiarse mientras la solución
+<a class="link" href="#Playback" title="12.1. Reproducción">se reproduce</a>.
+Primero, debe detenerse su reproducción. 
+</p></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Help"></a>11. Ayuda</h2></div></div></div><p>
+Muchas acciones presentan un cuadro de características con un botón de
+<span class="emphasis"><em>Ayuda</em></span>
+en el que un clic despliega una indicación contextual. El tema relevante
+aparecerá sobre el margen derecho de la ventana. Cada clic muestra
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24PreviousTopic"></span>
+los
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24NextTopic"></span>
+botones previos para navegar por los temas de ayuda previos. Cada clic 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Contents"></span>
+sobre el botón lleva a la tabla de contenidos.
+</p><p>
+Para guardar el panel de ayuda, basta un clic sobre
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Help"></span>
+el botón y otro, lo repondrá nuevamente.
+</p></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="KnownLimitations"></a>12. Detalles sobre Limitaciones</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="InordinateSizeOrShape"></a>12.1. Medida o Forma discordantes</h3></div></div></div><p>
+Geometria puede caer en representaciones erráticas si las figuras contienen demasiados elementos, medidas excesivas o formas
+irregulares. A continuación se anotan algunas indicaciones para mantener a salvo las figuras:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+Evitar los factores demasiado grandes (mayores de 100) o chicos (menores que 0.01)
+<a class="link" href="#Scalefigure" title="13.1. Redimensiona Figura">scaling</a>
+al escalar figuras. 
+</li><li class="listitem">
+Al crear un 
+<a class="link" href="#Newfigure" title="1. Nueva Figura">nuevo</a>,
+prisma o una nueva pirámide, limitar razonablemente el número de aristas.
+El diseño de Geometria admite exclusivamente poliedros convexos. Sin embargo,
+parecen cilindros y conos, respectivamente, los prismas y pirámides con
+gran número de caras cuando se desactiva el 
+<a class="link" href="#Wireframe" title="10.4.1. Cuadro">contorno</a>.
+Lamentablemente, resultan lentas e imprecisas las acciones sobre tales figuras.
+La aplicación deviene inestable y deja de responder a posteriores acciones.
+</li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="PreviousVersionsOfGeometria"></a>12.2. Versiones Previas de Geometria</h3></div></div></div><p>
+Los problemas, soluciones y figuras creadas con versiones de Geometria previas
+a la 4.0 ya no se respaldan. De precisar ayuda,se agradece una visita a la 
+<a class="ulink" href="http://geocentral.net/geometria" target="_blank">página de Geometria</a>
+para enviar un mensaje al equipo de desarrollo.
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="SolutionLanguage"></a>12.3. Idioma de la Solución</h3></div></div></div><p>
+Los archivos de solución deben
+<a class="link" href="#OpenSolution" title="10. Abrir Solución">abrirse</a>
+usando el mismo 
+<a class="link" href="#Language" title="10. Idioma">idioma</a>
+en que fueran
+<a class="link" href="#SaveSolution" title="11. Guardar Solución">guardados</a>.
+</p></div></div></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="Documents"></a>Capítulo 2. Documentos</h1></div></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="ProblemText"></a>1. Texto del Problema</h2></div></div></div><p>
+El texto del problema aparece bajo la barra de herramientas, en el margen derecho del 
+<a class="link" href="#Navigator" title="4. Navigador">Navegador</a>.
+</p><p>
+Al
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">editar</a>
+se puede modificar el planteo del problema vía doble-clic sobre el área del texto. El planteo acepta 
+<a class="ulink" href="http://www.w3schools.com/html" target="_blank">señalamientos HTML</a>.
+Un clic afuera del área del planteo permite previsualizar los cambios realizados.
+</p></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="DocumentProperties"></a>2. Propiedades del Documento</h2></div></div></div><p>
+Para ver las propiedades del documento activo, basta con seleccionar
+<span class="emphasis"><em>Propiedades del Documento</em></span>
+en el menú 
+<span class="emphasis"><em>Documento</em></span>
+o pulsando sobre el 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Properties"></span>
+botón en la barra de herramientas. Se desplegará un cuadro de diálogo.
+</p><p>
+Las propiedades del problema se pueden 
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">editar</a>
+vía doble clic en el área de propiedades del problema. Al terminar se debe pulsar sobre 
+<span class="emphasis"><em>OK</em></span>.
+Pulsar sobre 
+<span class="emphasis"><em>Cancela</em></span>
+para desestimar las modificaciones.
+</p><p>
+Durante la
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">resolución</a>
+se verán tanto las propiedades del problema, en el margen superior, como las de la 
+solución, en el inferior. Para editar las propiedades de la solución, quien
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">resuelve</a>
+debe pulsar en el área de las propiedades de la solución un doble clic. Al terminar se pulsa sobre
+<span class="emphasis"><em>OK</em></span>.
+Clic sobre
+<span class="emphasis"><em>Cancela</em></span>
+lleva a desestimar los cambios. No puede, quien 
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">resuelve</a>,
+editar las propiedades del problema.
+</p><p>
+Tanto las propiedades del problema como las de la solución admiten 
+<a class="ulink" href="http://www.w3schools.com/html" target="_blank">señalamientos HTML</a>.
+</p><p>
+Los cambios en las propiedades del documento no pueden
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacerse</a>.
+</p><p>
+Las propiedades no pueden editarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a>
+de la solución. Primero, se la debe detener. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Answer"></a>3. Respuesta</h2></div></div></div><p>
+Hasta que la respuesta no se hubiera ingresado durante la 
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">edición</a>,
+el problema no está listo para la resolución La respuesta de quien 
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">resuelve</a>
+será la considerada correcta si concuerda con la anotada en la 
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">edición</a>.
+Ver también
+<a class="link" href="#Overview" title="4. Pantallazo">Pantallazo</a>
+para mayores detalles.
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="EditorsAnswer"></a>3.1. Respuesta Editada</h3></div></div></div><p>
+Basta con seleccionar
+<span class="emphasis"><em>Respuesta</em></span>
+en el menú 
+<span class="emphasis"><em>Documento</em></span>
+para editar la respuesta del problema activo.
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="AnswerTypes"></a>3.1.1. Tipos de Respuestas</h4></div></div></div><p>
+Se selecciona el tipo de respuesta bajo la pestaña
+<span class="emphasis"><em>Tipo</em></span>
+que ofrece los siguientes:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+Numérica
+</li><li class="listitem">
+Múltiples opciones
+</li><li class="listitem">
+Conjunto de Puntos
+</li><li class="listitem">
+Conjunto de Segmentos
+</li><li class="listitem">
+Plano Fijo, o
+</li><li class="listitem">
+Plano Condicional 
+</li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="AnswerValues"></a>3.1.2. Valores de Respuesta</h4></div></div></div><p>
+Acorde al tipo de respuesta, un clic sobre la pestaña
+<span class="emphasis"><em>Valor</em></span>
+permitirá ingresarlo en las secciones correspondientes.
+</p><p>
+Aunque por regla general al
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">editarla</a>
+la respuesta se ingresa simbólicamente, Geometria almacena las respuestas numéricamente.
+Esto cuadra tanto para
+<a class="link" href="#Variables" title="5. Variables">variables</a>
+como para puntos. Las variables se almacenan como números, los puntos como coordenadas,
+que requieren un trío de números. Una vez anotada,
+la respuesta no será afectada por las acciones subsecuentes sobre las figuras.
+Por eso es conveniente (re)ingresar la respuesta después de la última acción
+antes de guardar el problema y dejarlo disponible para 
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">solucionarlo</a>.
+</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a name="Number"></a>3.1.2.1. Número</h5></div></div></div><p>
+Basta con ingresar una
+<a class="link" href="#Expressions" title="6.1. Expresiones">expresión</a> válida. 
+Pulsando sobre 
+<span class="emphasis"><em>OK</em></span>
+se conservan los cambios en la respuesta y sobre
+<span class="emphasis"><em>Cancela</em></span>
+se desestiman.
+</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a name="PointSet"></a>3.1.2.2. Conjunto de Puntos</h5></div></div></div><p>
+El término
+<span class="emphasis"><em>conjunto de puntos</em></span>
+refiere tanto a un único punto como al par de extremos de un segmento o a los que determinan un trayecto.
+</p><p>
+Basta con anotar cada uno de los rótulos separados por comas. Para facilitar el ingreso, conviene tener
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionadps</a>
+los puntos previamente, sobre la figura. Pulsando sobre
+<span class="emphasis"><em>OK</em></span>
+para conservar los cambios realizados en la respuesta. Sobre
+<span class="emphasis"><em>Cancela</em></span>
+se desestiman los cambios.
+</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a name="SegmentSet"></a>3.1.2.3. Conjunto de Segmentos</h5></div></div></div><p>
+Los segmentos deben cumplir ciertas condiciones. Las siguientes son aceptables:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+Los segmentos conforman un
+<a class="ulink" href="http://en.wikipedia.org/wiki/Hamiltonian_path" target="_blank">ciclo Hamiltoniano</a>.
+</li></ul></div><p>
+Basta seleccionar la figura de destino y luego la condición. Con un clic sobre
+<span class="emphasis"><em>OK</em></span>
+conserva los cambios en la respuesta y sobre
+<span class="emphasis"><em>Cancela</em></span>
+los desestima.
+</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a name="FixedPlane"></a>3.1.2.4. Plano Fijo</h5></div></div></div><p>
+El plano se indica con tres rótulos separados por comas. Para facilitar el ingreso conviene
+tener algunos elementos como 3 puntos, un punto y un segmento, dos segmentos, o una cara
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">indicados</a>
+anticipadamente en la figura seleccionada. Un clic en
+<span class="emphasis"><em>OK</em></span>
+permite conservar los cambios en la respuesta y sobre
+<span class="emphasis"><em>Cancela</em></span>
+los desestima.
+</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a name="ConditionPlane"></a>3.1.2.5. Plano Condicional</h5></div></div></div><p>
+A diferencia del plano fijo que ocupa una posición establecida en el espacio, un
+<span class="emphasis"><em>plano condicional</em></span>
+debe cumplir una serie de condiciones. Suele no ser único.
+</p><p>
+En primer lugar, se debe seleccionar la figura de destino. Luego, las condiciones.
+Elegir una condición en al menos uno de los grupos. Un clic sobre
+<span class="emphasis"><em>OK</em></span>
+permite conservar los cambios en la respuesta. Sobre
+<span class="emphasis"><em>Cancela</em></span>
+los desestima.
+</p><p>
+Hay tres tipos de condiciones.
+</p><p>
+El
+<span class="emphasis"><em>primer grupo</em></span>
+consiste en las siguientes condiciones:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+El plano contiene determinado punto
+</li><li class="listitem">
+El plano contiene determinada recta
+</li><li class="listitem">
+El plano no contiene determinado punto
+</li><li class="listitem">
+El plano no contiene determinada recta
+</li><li class="listitem">
+El plano no contiene los vértices de determinada figura
+</li><li class="listitem">
+El plano no contiene determinada arista de la figura seleccionada
+</li><li class="listitem">
+El plano es paralelo a cierta recta
+</li><li class="listitem">
+El plano es paralelo a cierto plano
+</li><li class="listitem">
+El plano es perpendicular a cierta recta
+</li><li class="listitem">
+El plano es perpendicular a cierto plano
+</li></ul></div><p>
+Cada punto, recta o plano requerido se identifican por sus rótulos 
+separados por comas. Para facilitar el ingreso conviene tener
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">indicados</a>
+anticipadamente ciertos elementos de la figura seleccionada.
+</p><p>
+El
+<span class="emphasis"><em>segundo grupo</em></span>
+comprende las siguientes condiciones:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+El plano corta el volumen de la figura seleccionada según cierta razón
+</li></ul></div><p>
+Deben ingresarse
+<a class="link" href="#Expressions" title="6.1. Expresiones">expresiones</a> válidas
+para el numerador y el denominador de una razón.
+</p><p>
+El
+<span class="emphasis"><em>tercer grupo</em></span>
+establece el modo en que el plano corta a la figura. La forma de la sección resultante puede configurar:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+Un triángulo isósceles
+</li><li class="listitem">
+Un triángulo rectángulo
+</li><li class="listitem">
+Un triángulo equilátero (regular)
+</li><li class="listitem">
+Paralelogramo
+</li><li class="listitem">
+Rombo
+</li><li class="listitem">
+Rectángulo
+</li><li class="listitem">
+Cuadrado
+</li></ul></div><p>
+Los cambios en la respuesta pueden 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacerse</a>.
+</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a name="MultipleChoice"></a>3.1.2.6. Opciones Múltiples</h5></div></div></div><p>
+Se debe ingresar una opción y con un clic sobre el botón
+<span class="emphasis"><em>Añade</em></span>
+se puede pasar a agregar otra. Con clic se resalta una y clic sobre el botón
+<span class="emphasis"><em>Selecciona</em></span>
+la establece como correcta.
+La opción correcta aparece en negritas. Clic sobre el botón
+<span class="emphasis"><em>Elimina</em></span>
+permite eliminar la opción resaltada.
+</p><p>
+Clic sobre
+<span class="emphasis"><em>OK</em></span>
+conserva los cambios en la respuesta y sobre
+<span class="emphasis"><em>Cancela</em></span>
+los desestima.
+</p><p>
+</p></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="SolversAnswer"></a>3.2. De la Solución a la Respuesta</h3></div></div></div><p>
+Durante la
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">resolución</a>
+se llega a la respuesta correcta del problema.
+Conviene recordar que la respuesta de quien
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">resuelve</a>
+se considera correcta si concuerda con la que se hubiera
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">editado</a>.
+</p><p>
+Basta con seleccionar 
+<span class="emphasis"><em>Respuesta</em></span> del menú
+<span class="emphasis"><em>Documento</em></span>.
+Se debe anotar una 
+<a class="link" href="#Expressions" title="6.1. Expresiones">expresión</a> válida
+o la serie de rótulos separados por comas o realizar la selección, según lo que pregunta el problema.
+Si el problema pregunta por un punto, un conjunto de puntos, de segmentos o por un plano,
+conviene tener los elementos apropiados (sean puntos, segmentos o una cara) 
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionados</a>
+previamente en la figura. Para terminar, dar un clic sobre
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+Se desplegará la evaluación de la respuesta (correcta o incorrecta).
+</p><p>
+Si la respuesta fuera correcta, concluirá el
+<a class="link" href="#SolutionLog" title="12. Registro de Solución">registro de la solución</a>.
+No se admitirán más acciones a menos que la respuesta
+<a class="link" href="#Undo" title="8. Deshacer Acciones">se deshaga</a>.
+<a class="link" href="#SaveSolution" title="11. Guardar Solución">Guardar</a>
+la solución para poder 
+<a class="link" href="#SolutionLog" title="12. Registro de Solución">reproducirla</a>
+luego.
+</p><p>
+Esta acción se puede
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+El problema no puede responderse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución.
+Primero, debe detenerse la reproducción. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Overview" title="4. Pantallazo">Pantallazo</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Anotador">Anotador</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Navigator"></a>4. Navigador</h2></div></div></div><p>
+El
+<span class="emphasis"><em>Navegador</em></span>
+permite maniobrar sobre los archivos del problema, la solución y la figura y organizarlos en directorios.
+Tanto los archivos como los directorios quedan guardados en el equipo local en un archivo
+<a class="ulink" href="http://www.sqlite.org" target="_blank">SQLite</a>
+único.
+</p><p>
+El Navegador se expone inicialmente sobre el lado izquierdo de la ventana. Para esconder el Navegador,
+se debe seleccionar
+<span class="emphasis"><em>Alterna Navegador</em></span>
+desde el menú
+<span class="emphasis"><em>Vista</em></span>
+o con un clic sobre el
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Navigator"></span>
+ícono de la barra de herramientas. Para reponer el Navegador, basta un renovado clic sobre el mismo ícono.
+</p><p>
+El ícono distingue el contenido del archivo. Los archivos de problema tiene el ícono 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24ProblemFile"></span>.
+Los de solución tienen el ícono 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24SolutionFile"></span>.
+Los de figuras tienen el ícono 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24figuraFile"></span>.
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="NewFolder"></a>4.1. Nueva Carpeta</h3></div></div></div><p>
+Para crear un nuevo directorio o carpeta, basta un clic sobre el ícono
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24NewFolder"></span>
+de la barra de herramientas para luego anotar el nombre de la carpeta en el cuadro al final del navegador.
+Los nombres de carpeta solo pueden contener caracteres alfanuméricos y espacios. Los subdirectorios
+y archivos de cualquier directorio dado debe tener un nombre exclusivo.
+</p><p>
+Cada directorio nuevo se añade al activo o, de no haber ninguno 
+seleccionado, al directorio raíz.
+</p><p>
+No se pueden crear directorios durante la
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a>.
+de la solución. Primero, se la debe detener. 
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="RenameFile"></a>4.2. Renombrando Archivos</h3></div></div></div><p>
+Para renombrar el archivo o directorio seleccionado, basta un clic sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24RenameFile"></span>
+de la barra de herramientas.
+</p><p>
+Los nombres de archivos o carpetas solo pueden contener caracteres alfanuméricos y espacios.
+Los archivos y subdirectorios de una determinada carpeta deben tener nombres exclusivos.
+</p><p>
+No se pueden renombrar archivos o carpetas durante la
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución.
+Primero, hay que detenerla. 
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="MoveFile"></a>4.3. Mover un Archivo</h3></div></div></div><p>
+Para mover un archivo o carpeta a otro directorio, basta arrastrarlos y depositarlos en el destino deseado.
+</p><p>
+Los archivos y carpetas de un directorio deben tener nombres exclusivos.
+</p><p>
+No se pueden mover archivos o carpetas durante la
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución.
+Primero, hay que detenerla. 
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="DeleteFile"></a>4.4. Borrar un Archivo</h3></div></div></div><p>
+Para borrar un archivo o directorio seleccionados, basta un clic sobre el ícono
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24RemoveFile"></span>
+en la barra de herramientas. Esta acción debe realizarse con cautela porque no se puede
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+No se pueden borrar archivos o carpetas durante la
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución.
+Primero, hay que detenerla. 
+</p></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="NewProblem"></a>5. Nuevo Problema</h2></div></div></div><p>
+Para crear un problema, se lo debe 
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">editar</a>
+sea seleccionando
+<span class="emphasis"><em>Nuevo Problema</em></span> del menú
+<span class="emphasis"><em>Documento</em></span>
+o con un clic sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24NewProblem"></span>
+de la barra de herramientas,
+</p><p>
+El documento activo, sea el de un problema o el de una solución, debe cerrarse primero.
+Si hubiera modificaciones sin guardar, se desplegará un cuadro de diálogo solicitando
+se indique si el documento activo debe guardarse antes de cerrarlo.
+</p><p>
+Un clic sobre <span class="emphasis"><em>Sí</em></span> guardará
+el documento activo. 
+</p><p>
+Un clic sobre <span class="emphasis"><em>No</em></span> cerrará
+el documento activo sin guardarlo. Las modificaciones no guardadas
+del documento activo se perderán.
+</p><p>
+Un clic sobre <span class="emphasis"><em>Cancela</em></span> descartará el cuadro de diálogo
+sin ejecutar acción alguna.
+</p><p>
+No se puede crear un nuevo problema durante
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución.
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#OpenProblem" title="6. Abrir Problema">Abrir Problema</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SaveProblem" title="7. Guardar Problema">Guardar Problema</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="OpenProblem"></a>6. Abrir Problema</h2></div></div></div><p>
+Para abrir un problema, basta un doble clic sobre el 
+<a class="link" href="#Navigator" title="4. Navigador">Navegador</a>
+o seleccionarlo y pulsar sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Open"></span>
+de la barra de herramientas. Se distingue el archivo de un problema por su ícono 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24ProblemFile"></span>.
+</p><p>
+El documento activo, sea el de un problema o el de una solución, debe cerrarse primero.
+De haber modificaciones sin guardar, se desplegará un cuadro de diálogo consultando
+si el documento activo debe guardarse antes de cerrarlo.
+</p><p>
+Un clic sobre <span class="emphasis"><em>Sí</em></span> lleva a guardar 
+el documento activo. 
+</p><p>
+Un clic sobre<span class="emphasis"><em>No</em></span> lleva a cerrar
+el documento activo sin guardarlo. Todas las modificaciones no guardadas 
+del documento activo se perderán.
+</p><p>
+Un clic sobre <span class="emphasis"><em>Cancela</em></span> descartará el cuadro de diálogo
+sin ejecutar acción alguna.
+</p><p>
+Un problema no puede abrirse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#NewProblem" title="5. Nuevo Problema">Nuevo Problema</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SaveProblem" title="7. Guardar Problema">Guardar Problema</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="SaveProblem"></a>7. Guardar Problema</h2></div></div></div><p>
+Para guardar los cambios del problema activo, se lo debe
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">editar</a>
+sea seleccionado
+<span class="emphasis"><em>Guardar Documento</em></span> del 
+menú <span class="emphasis"><em>Documento</em></span> 
+o con un clic sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24SaveDocument"></span>
+de la barra de herramientas.
+</p><p>
+Para guardar el problema con un nombre diferente, basta seleccionar 
+<span class="emphasis"><em>Guardar Documento como</em></span>
+del menú
+<span class="emphasis"><em>Documento</em></span>
+y luego anotar el nombre en el cuadro inferior del navegador.
+Los nombres de archivo solo pueden contener caracteres alfanuméricos y espacios. Los subdirectorios
+y archivos de una carpeta deben tener nombres exclusivos.
+El problema se guardará en el directorio seleccionado en el 
+<a class="link" href="#Navigator" title="4. Navigador">Navegador</a>.
+De no haber directorio seleccionado, el problema se guardará en el raíz.
+</p><p>
+Cuando se trate de la revisión final del problema, quien lo 
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">edite</a>
+debiera considerar
+<a class="link" href="#ClearNotepad" title="7.1. Limpiar Anotador">borrar</a>
+todos los cálculos de trabajo y las medidas del anotador para que durante la 
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">resolución</a>
+no se vean.
+</p><p>
+La acción de limpiar el anotador no se puede
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+En la revisión final del problema también es preciso incluir una
+<a class="link" href="#EditorsAnswer" title="3.1. Respuesta Editada">pregunta</a>.
+</p><p>
+No se puede guardar un problema durante la
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#NewProblem" title="5. Nuevo Problema">Nuevo Problema</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#OpenProblem" title="6. Abrir Problema">Abrir Problema</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#EditorsAnswer" title="3.1. Respuesta Editada">Respuesta</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="LockProblem"></a>8. Sellar Problema</h2></div></div></div><p>
+Para evitar cualquier edición posterior del problema, quien
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Edita</a>
+selecciona
+<span class="emphasis"><em>Problema Sellado</em></span>
+del menú
+<span class="emphasis"><em>Documento</em></span>
+o con un clic sobre el botòn
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LockProblem"></span>
+de la barra de herramientas. Si quien
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Resuelve</a>
+abre un archivo de problema sellado, Geometria automàticamente iniciarà una nueva solución. Así, quien
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">resuelve</a>
+no podrà modificar el problema.
+</p><p>
+Como precaución, conviene 
+<a class="link" href="#SaveProblem" title="7. Guardar Problema">guardar</a>
+una copia editable del problema antes de sellarlo dado que esta acción no se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="SolveProblem"></a>9. Resolver el Problema</h2></div></div></div><p>
+Para resolver el problema activo o iniciar una nueva solución, si el problema activo
+ya estuviera resuelto, basta seleccionar 
+<span class="emphasis"><em>Resolver el Problema</em></span>
+del menú
+<span class="emphasis"><em>Documento</em></span>
+o pulsar sobre
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24SolveProblem"></span>
+en la barra de herramientas.
+</p><p>
+De haber modificaciones sin guardar, se desplegará un cuadro de diálogo solicitando
+indicar si el problema activo debe guardarse antes de cerrarlo.
+</p><p>
+Un clic sobre<span class="emphasis"><em>Sí</em></span> pasa a guardar 
+el problema activo. Se estará resolviendo la versión del 
+problema recién guardado.
+</p><p>
+Un clic sobre<span class="emphasis"><em>No</em></span> cierra
+el problema activo sin guardar. Todas las modificaciones no guardadas 
+del problema activo se perderán y se estará resolviendo
+un problema diferente del menú que el abierto con el 
+<a class="link" href="#Navigator" title="4. Navigador">Navegador</a>.
+</p><p>
+Un clic sobre<span class="emphasis"><em>Cancela</em></span> descartará el cuadro de diálogo
+sin ejecutar acción alguna.
+</p><p>
+Una nueva solución para el problema activo no puede iniciarse durante
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Se la debe detener primero.
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#OpenProblem" title="6. Abrir Problema">Abrir Problema</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#OpenSolution" title="10. Abrir Solución">Abrir Solución</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SaveSolution" title="11. Guardar Solución">Guardar Solución</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="OpenSolution"></a>10. Abrir Solución</h2></div></div></div><p>
+Para abrir una solución, basta darle un doble clic desde el
+<a class="link" href="#Navigator" title="4. Navigador">Navegador</a>
+o seleccionarla y pulsar sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Open"></span>
+de la barra de herramientas. Se distingue un archivo de solución por su ícono 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24SolutionFile"></span>.
+</p><p>
+Una vez abierta la solución, se la puede
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducir</a>.
+</p><p>
+El documento activo, sea el de un problema o el de una solución, debe cerrarse primero.
+De haber modificaciones sin guardar, se desplegará un cuadro de diálogo solicitando
+indicar si el documento activo debe guardarse antes de cerrarlo.
+</p><p>
+Un clic sobre <span class="emphasis"><em>Sí</em></span> pasa a guardar 
+el documento activo. 
+</p><p>
+Un clic sobre <span class="emphasis"><em>No</em></span> cierra
+el documento activo sin guardar. Todas las modificaciones no guardadas 
+del documento activo se perderán.
+</p><p>
+Un clic sobre <span class="emphasis"><em>Cancela</em></span> descartará el cuadro de diálogo
+sin ejecutar acción alguna.
+</p><p>
+Una solución no puede abrirse durante la
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de otra solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SolveProblem" title="9. Resolver el Problema">Resolver el Problema</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SaveSolution" title="11. Guardar Solución">Guardar Solución</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="SaveSolution"></a>11. Guardar Solución</h2></div></div></div><p>
+Para guardar los cambios en la solución activa, quien
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">resuelve</a>
+debe seleccionar
+<span class="emphasis"><em>Guardar Documento</em></span> desde el 
+menú <span class="emphasis"><em>Documento</em></span> o
+con un clic sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24SaveDocument"></span>
+de la barra de herramientas.
+</p><p>
+Para guardar la solución con un nombre diferente, basta seleccionar 
+<span class="emphasis"><em>Guardar Documento como</em></span>
+del menú
+<span class="emphasis"><em>Documento</em></span>
+y luego anotar el nombre en el cuadro al pie del navegador.
+Los nombres de archivo solo pueden contener caracteres alfanuméricos y espacios. Los subdirectorios
+y archivos de una carpeta deben tener nombres exclusivos.
+La solución se guardará en el directorio seleccionado en el 
+<a class="link" href="#Navigator" title="4. Navigador">Navegador</a>.
+Si no hubiera directorio seleccionado, la solución se guardará en el raíz.
+</p><p>
+Si se estuviera frente a la versión final de la solución, no debe olvidarse completarla
+con una correcta
+<a class="link" href="#Answer" title="3. Respuesta">respuesta</a>.
+</p><p>
+La solución no puede guardarse durante su 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a>. 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SolveProblem" title="9. Resolver el Problema">Resolver el Problema</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#OpenSolution" title="10. Abrir Solución">Abrir Solución</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SolversAnswer" title="3.2. De la Solución a la Respuesta">Respuesta</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="SolutionLog"></a>12. Registro de Solución</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="Playback"></a>12.1. Reproducción</h3></div></div></div><p>
+Mientras que 
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">resuelve</a>
+progresa hacia la solución, sus acciones quedan almacenadas en el registro de la solución. Una solución
+<a class="link" href="#SaveSolution" title="11. Guardar Solución">guardada</a>
+se puede, luego, abrir y reproducir.
+</p><p>
+Para iniciar la reproducción de la solución, basta un clic sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LogNext"></span>
+Para reproducir el paso siguiente, otro clic sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LogNext"></span>
+lo ejecutará.
+</p><p>
+Para avanzar o retroceder, basta seleccionar uno de las etapas del registro.
+</p><p>
+Para borrar las subsiguientes a la etapa seleccionada, basta un clic sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LogCut"></span>
+Se debe ejecutar con precaución esta acción ya que no se puede
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Para retroceder la reproducción de la solución y reiniciarla, basta un clic sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LogRewind"></span>
+correspondiente.
+</p><p>
+Para detener la reproducción de la solución y seguir resolviendo el problema, basta un clic sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LogStop"></span>
+correspondiente.
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="SolutionComments"></a>12.2. Comentarios en la Solución</h3></div></div></div><p>
+Para comentar un paso de la solución, basta un doble clic sobre el casillero derecho 
+de la etapa. Se desplegará un cuadro de diálogo. Tras anotar el comentario, de debe pulsar
+<span class="emphasis"><em>OK</em></span>.
+Un clic sobre 
+<span class="emphasis"><em>Cancela</em></span>
+desestima los cambios. Los comentarios pueden incluir
+<a class="ulink" href="http://www.w3schools.com/html" target="_blank">notaciones HTML</a>.
+</p><p>
+Una solución comentada se distingue por el ícono 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24ProblemFile"></span>.
+Basta pasar el ratón o mouse sobre la etapa para ver el comentario.
+</p><p>
+Los comentarios no pueden editarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p></div><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Overview" title="4. Pantallazo">Pantallazo</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SaveSolution" title="11. Guardar Solución">Guardar Solución</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#OpenSolution" title="10. Abrir Solución">Abrir Solución</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="ShareDocument"></a>13. Compartir un Documento</h2></div></div></div><p>
+Para compartir un documento con otros, se lo debe
+<a class="link" href="#ExportDocument" title="13.1. Exportar Documento">exportar</a>
+primero. Debe guardarse el contenido exportado a un archivo normal localmente.
+Se comparte entonces el archivo guardado para que quien se interese lo abra y
+<a class="link" href="#ImportDocument" title="13.2. Importa Documento">lo importe</a>
+a su equipo.
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="ExportDocument"></a>13.1. Exportar Documento</h3></div></div></div><p>
+Para exportar el documento activo, basta seleccionar 
+<span class="emphasis"><em>Exporta Documento</em></span>
+del menú
+<span class="emphasis"><em>Documento</em></span>.
+El contenido de formato
+<a class="ulink" href="http://www.json.org" target="_blank">JSON</a> del 
+documento se desplegará. Un clic sobre el área del texto, basta seleccionar todo, copiar y pegar
+en el editor de texto. Se guarda el archivo en formato de texto. El archivo guardado se puede
+<a class="link" href="#ShareDocument" title="13. Compartir un Documento">compartir</a>
+con otros.
+</p><p>
+Una solución no puede exportarse durante
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="ImportDocument"></a>13.2. Importa Documento</h3></div></div></div><p>
+Para importar el documento que se hubiera compartido, basta abrir un editor de texto,
+se selecciona todo y se lo copia. Se escoge
+<span class="emphasis"><em>Importa Documento</em></span>
+del menú
+<span class="emphasis"><em>Documento</em></span>.
+Se pasa a pegar lo copiado en el área de texto y se da clic en
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+El documento activo, sea el de un problema o el de una solución, debe cerrarse primero.
+De haber modificaciones sin guardar, se desplegará un cuadro de diálogo solicitando
+se indique si el documento activo debe guardarse antes de cerrarlo.
+</p><p>
+Un clic sobre<span class="emphasis"><em>Sí</em></span> lleva a guardar 
+el documento activo. 
+</p><p>
+Un clic sobre<span class="emphasis"><em>No</em></span> lleva a cerrar
+el documento activo sin guardarlo. Todas las modificaciones no guardadas 
+del documento activo se perderán.
+</p><p>
+Un clic sobre<span class="emphasis"><em>Cancela</em></span> descartará el cuadro de diálogo
+sin ejecutar acción alguna.
+</p><p>
+Un documento no puede importarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p></div></div></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="figures"></a>Capítulo 3. Figuras</h1></div></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Newfigure"></a>1. Nueva Figura</h2></div></div></div><p>
+Geometria ofrece una galería de figuras comunes. Como prismas y pirámides regulares
+y los cinco sólidos platónicos: el tetraedro, cubo,
+octaedro, dodecaedro y el icosaedro.
+</p><p>
+Para seleccionar una figura, en el menú
+<span class="emphasis"><em>Figura-&gt;se indicará Nueva Figura</em></span>
+para agregarla en el documento activo.
+</p><p>
+Tras seleccionar un prisma o una pirámide, se debe anotar el número de lados entre 3 y 100.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+No se puede añadir una nueva figura durante la
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Openfigure" title="2. Abre Figura">Abre Figura</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Openfigure"></a>2. Abre Figura</h2></div></div></div><p>
+Para abrir el archivo de una figura, basta un doble clic sobre el
+<a class="link" href="#Navigator" title="4. Navigador">Navegador</a>
+o escogerlo y pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Open"></span>
+de la barra de herramientas. Se distingue un archivo de figura por su ícono 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24figuraFile"></span>.
+</p><p>
+La figura se incorporará al documento activo.
+</p><p>
+Además, la galería de las más usuales 
+<a class="link" href="#Newfigure" title="1. Nueva Figura">figuras</a>
+está disponible para la selección, incluyendo prismas, pirámides y sólidos platónicos.
+</p><p>
+No se puede añadir una nueva figura durante la
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución. 
+Primero, hay que detenerla. 
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+No puede abrirse una figura durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Newfigure" title="1. Nueva Figura">Nueva Figura</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Savefigure" title="4. Guardar Figura">Guardar Figura</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Clonefigure"></a>3. Reproducir Figura</h2></div></div></div><p>
+Para reproducir una figura, basta seleccionar 
+<span class="emphasis"><em>Reproducir Figura</em></span>
+del menú
+<span class="emphasis"><em>Figura</em></span>
+o pulsar sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Clone"></span>
+de la barra de herramientas.
+</p><p>
+Una copia de la figura seleccionada se añadirá al documento activo.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+No se puede calcar una figura durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Savefigure"></a>4. Guardar Figura</h2></div></div></div><p>
+Para guardar una figura, basta seleccionarla en el documento activo, y pasar a 
+<span class="emphasis"><em>Guardar Figura</em></span>
+del menú
+<span class="emphasis"><em>Figura</em></span>
+o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Savefigure"></span>
+de la barra de herramientas. Debe anotarse el nombre del archivo en el cuadro al pie del navegador.
+Los nombres de archivo solo pueden contener caracteres alfanuméricos y espacios. Los subdirectorios
+y archivos de una carpeta deben tener nombres exclusivos.
+</p><p>
+La figura se guardará en el directorio seleccionado en el
+<a class="link" href="#Navigator" title="4. Navigador">Navegador</a>.
+Si no hubiera directorio seleccionado, la figura se guardará en el raíz.
+</p><p>
+Una figura no puede guardarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Openfigure" title="2. Abre Figura">Abre Figura</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Printfigure"></a>5. Imprime Figura</h2></div></div></div><p>
+Para imprimir una figura:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+Se selecciona 
+<span class="emphasis"><em>Imprime Figura</em></span>
+del menú
+<span class="emphasis"><em>Figura</em></span>
+Se desplegará un texto de formato HTML.
+</li><li class="listitem">
+Un clic sobre el área de texto permite seleccionar todo y copiarlo.
+</li><li class="listitem">
+Se pega todo en un editor de texto.
+</li><li class="listitem">
+Se lo guarda en un archivo de formato de texto con extensión
+<span class="emphasis"><em>html</em></span>,
+por ejemplo, MiFigura.html.
+</li><li class="listitem">
+Se debe arrastrar el archivo al navegador.
+</li><li class="listitem">
+De ser preciso, se puede escalar la figura antes de imprimirla.
+</li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Renamefigure"></a>6. Renombra Figura</h2></div></div></div><p>
+Para renombrar una figura del documento activo, basta seleccionarla y escoger 
+<span class="emphasis"><em>Renombra Figura</em></span> del menú
+ <span class="emphasis"><em>Edita</em></span> .
+</p><p>
+El nombre de una figura debe contener caracteres alfanuméricos y empezar con una letra.
+No se permiten caracteres acentuados o especiales ni espacios.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Quien
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Resuelve</a>
+no puede renombrar una figura que conforme el problema. Sí se puede renombrar
+cualquier figura creada durante el proceso de resolución del problema.
+</p><p>
+Una figura no se puede renombrar durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="RenamePoint"></a>7. Renombra Punto</h2></div></div></div><p>
+Para renombrar un punto en una figura, quien
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Edita</a> 
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">debe seleccionar</a>
+el punto, y tras clic derecho, escoger
+<span class="emphasis"><em>Renombra Punto</em></span>
+del menú emergente. La alternativa es seleccionar
+<span class="emphasis"><em>Renombra Punto</em></span>
+en el menú
+<span class="emphasis"><em>Edita</em></span>.
+</p><p>
+Se desplegará un cuadro de diálogo. Se debe corroborar si se seleccionó el punto correcto y
+anotar el nuevo nombre para el punto y pulsar sobre
+<span class="emphasis"><em>OK</em></span>.
+Un rótulo válido consiste en una letra mayúsculas a la que detrás se le pueden añadir números.
+Los rótulos de los puntos en una figura deben ser exclusivos.
+</p><p>
+Renombrar un punto desencadena cambios en el anotador y nuevos
+<a class="link" href="#Notepad" title="7. Anotador">registros</a>
+acorde a la actualización.
+</p><p>
+Quien
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Resuelve</a>
+no puede renombrar un punto en una figura incluida en el problema. Sin embargo, los puntos en figuras
+creadas en el proceso de resolución del problema pueden renombrarse.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Los puntos no pueden renombrarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Seleccionar Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Anotador">Anotador</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Removefigure"></a>8. Elimina Figura</h2></div></div></div><p>
+Para borrar una figura del documento activo, basta seleccionar 
+<span class="emphasis"><em>Elimina Figura</em></span> del menú 
+<span class="emphasis"><em>Edita</em></span> 
+o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Removefigure"></span>
+de la barra de herramientas.
+</p><p>
+Suprimir una figura que hubiera sido
+<a class="link" href="#Measure" title="11. Medida">medida</a>
+provocará la supresión de algunas variables que se
+<a class="link" href="#PinnedVariable" title="5.3. Variable Extraviada">perderán</a>.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Quien
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Resuelve</a>
+no puede suprimirse una figura que es parte del problema. Sin embargo,
+cualquier figura creada mientras se está resolviendo el problema puede borrarse.
+</p><p>
+Una figura no puede borrarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="EraseElements"></a>9. Borra Elementos</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="EraseSegment"></a>9.1. Borra Segmento</h3></div></div></div><p>
+Para borrar un segmento, basta
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>
+sea el segmento o los vértices entre el que se va a borrar y clic derecho y optar por 
+<span class="emphasis"><em>Borra Segmento</em></span>.
+del menú emergente. La alternativa es seleccionar 
+<span class="emphasis"><em>Borra Segmento</em></span>
+del menú
+<span class="emphasis"><em>Edita</em></span>.
+El segmento no puede pertenecer a una arista.
+</p><p>
+Si un cuadro emerge, se deben completar los rótulos de puntos faltantes y pulsar sobre
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+Suprimir un segmento al que se le tomaran medidas
+provocará que algunas variables 
+<a class="link" href="#PinnedVariable" title="5.3. Variable Extraviada">se pierdan</a>.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Un segmento no puede borrarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="EraseSelection"></a>9.2. Borra Selección</h3></div></div></div><p>
+Para borrar uno o más elementos, como puntos y/o segmentos, basta
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionarlos</a>, 
+clic derecho y optar por 
+<span class="emphasis"><em>Borra Selección</em></span>
+del menú emergente. La alternativa es seleccionar 
+<span class="emphasis"><em>Borra Selección</em></span>
+del menú
+<span class="emphasis"><em>Edita</em></span>
+o pulsar sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Erase"></span>
+en la barra de herramientas.
+</p><p>
+Vértices y segmentos que pertenecen a aristas no se borrarán.
+</p><p>
+Para borrar todos los puntos y segmentos en una figura (con excepción de vértices y aristas),
+se
+<a class="link" href="#SelectAndDeselect" title="10.3.2. Seleccionar y Deseleccionar">Selecciona Todo</a>
+en primer lugar.
+</p><p>
+Para borrar solo una parte de un segmento trazado, basta optar por la acción
+<a class="link" href="#EraseSegment" title="9.1. Borra Segmento">Borra Segmento</a>.
+</p><p>
+Suprimir elementos a los que se les tomaran medidas provocará
+que algunas de las variables se
+<a class="link" href="#PinnedVariable" title="5.3. Variable Extraviada">pierdan</a>.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+No pueden borrarse elementos durante la
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="View"></a>10. Vista</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="Attitude"></a>10.1. Comportamiento</h3></div></div></div><p>
+<span class="emphasis"><em>Geometria</em></span> emplea una referencia fija de sistema a mano 
+derecha. El eje Z del sistema de referencia es paralelo al borde vertical de la pantalla.
+Sin embargo, quien
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Edita</a>
+y quien
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">Resuelve</a>
+no precisa conocer todos los detalles técnicos del sistema de referencia.
+</p><p>
+En cada momento, la figura tiene una
+<span class="emphasis"><em>posición</em></span>.
+La posición puede describirse acorde a los ángulos que la figura forma con el sistema de referencia.
+Cuando una
+<a class="link" href="#Newfigure" title="1. Nueva Figura">nueva figura</a>
+se añade al documento, la posición usual
+<span class="emphasis"><em>por omisión</em></span> .
+La posición de la figura cambia cuando se la rota.
+</p><p>
+Para reubicar una figura a la posición inicial, basta seleccionar 
+<span class="emphasis"><em>Comportamiento Inicial</em></span>
+del menú
+<span class="emphasis"><em>Vista</em></span>
+o vía clic derecho, optar por
+<span class="emphasis"><em>Comportamiento Inicial</em></span>
+del menú emergente.
+</p><p>
+Cuando una figura se guarda, su posición queda establecida como la inicial.
+Para reubicarla a la posición que tenía cuando fue añadida al documento, 
+previa a cualquier rotación subsecuente, basta seleccionar 
+<span class="emphasis"><em>Comportamiento por Omisión</em></span>
+del menú
+<span class="emphasis"><em>Vista</em></span>.
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Rotatefigure" title="10.2. Rota Figura">Rota Figura</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="Rotatefigure"></a>10.2. Rota Figura</h3></div></div></div><p>
+Para rotar una figura basta seleccionarla o
+<a class="link" href="#ToggleSelector" title="10.3.1. Alterna Selector">elegir</a>
+la que se desee con el ratón o mouse. La velocidad de rotación 
+y el ángulo dependerá de las pulsaciones.
+</p><p>
+Para detener la rotación de la figura, basta darle un clic.
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Attitude" title="10.1. Comportamiento">Comportamiento</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#ToggleSelector" title="10.3.1. Alterna Selector">Selector</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="SelectElements"></a>10.3. Selección de Elementos</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="ToggleSelector"></a>10.3.1. Alterna Selector</h4></div></div></div><p>
+Clic derecho sobre una figura y seleccionar 
+<span class="emphasis"><em>Alterna Selector</em></span>
+del menú emergente, para cambiar de modo.
+La alternativa es seleccionar 
+<span class="emphasis"><em>Alterna Selector</em></span>
+del menú
+<span class="emphasis"><em>Vista</em></span>
+o pulsar sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Selector"></span>
+de la barra de herramientas.
+</p><p>
+Cuando el selector está
+<span class="emphasis"><em>activo</em></span>
+(su botón aparece resaltada en la barra de herramientas), los elementos se pueden seleccionar
+vía clic indicándolos. Cuando estuviera seleccionado, 
+<span class="emphasis"><em>desactivarlo</em></span>,
+arrastrando el ratón o mouse llevará a la
+<a class="link" href="#Rotatefigure" title="10.2. Rota Figura">rotación</a>
+de la figura.
+</p><p>
+El selector está activo por omisión.
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="SelectAndDeselect"></a>10.3.2. Seleccionar y Deseleccionar</h4></div></div></div><p>
+Hay que asegurarse que el selector esté
+<a class="link" href="#ToggleSelector" title="10.3.1. Alterna Selector">activo</a>.
+</p><p>
+Un clic sobre un elemento, como un punto, un segmento o una cara, lo selecciona (queda resaltado).
+Varios elementos se pueden seleccionar. Para elegir una cara, es preciso desactivar el
+<a class="link" href="#Wireframe" title="10.4.1. Cuadro">cuadro</a>.
+</p><p>
+Para seleccionar todos los puntos y segmentos en una figura (con excepción de vértices y aristas),
+se debe optar por
+<span class="emphasis"><em>Selecciona Todo</em></span>
+del menú
+<span class="emphasis"><em>Edita</em></span>.
+Esta acción ofrece un modo conveniente de
+<a class="link" href="#EraseSelection" title="9.2. Borra Selección">borrar todos los elementos</a>
+simultáneamente.
+</p><p>
+Dándole un clic, se deselecciona un elemento activo. Para limpiar la selección completamente,
+basta un clic derecho optando por 
+<span class="emphasis"><em>Deselecciona Todo</em></span>
+del menú emergente o seleccionar 
+<span class="emphasis"><em>Deselecciona Todo</em></span>
+del menú
+<span class="emphasis"><em>Edita</em></span>.
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Rotatefigure" title="10.2. Rota Figura">Rota Figura</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#ViewModes" title="10.4. Modos de Vista">Modos de Vista</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#EraseSelection" title="9.2. Borra Selección">Borra Selección</a></li></ul></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="ViewModes"></a>10.4. Modos de Vista</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="Wireframe"></a>10.4.1. Cuadro</h4></div></div></div><p>
+Por omisión, las figuras se muestran como cuadros y el
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24WireFrame"></span>
+botón de la barra de herramientas, iluminado. Para desactivar el cuadro basta indicar la figura,
+y seleccionar
+<span class="emphasis"><em>Alterna Cuadro</em></span>
+del menú
+<span class="emphasis"><em>Vista</em></span>
+o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24WireFrame"></span>.
+</p><p>
+En un cuadro, los segmentos y puntos sobre la cara visible de la figura son plenos,
+mientras los del lado opuesto aparecen punteados.
+Cualquier punto o segmento se puede
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>,
+esté visible o no. Las caras solo pueden
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionarse</a>
+cuando el modo cuadro esté desactivado.
+</p><p>
+Si el cuadro está desactivado, los segmentos y puntos sobre el lado posterior de la figura
+no aparecen. Solo los puntos, segmentos y caras del lado visible de la figura puede
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionarse</a>.
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="Color"></a>10.4.2. Fijar Color</h4></div></div></div><p>
+Cuando el
+<a class="link" href="#Wireframe" title="10.4.1. Cuadro">cuadro</a>
+está desactivado, la figura aparece cierto color. Para cambiar el color, basta seleccionar 
+<span class="emphasis"><em>Fija Color</em></span>
+del menú 
+<span class="emphasis"><em>Vista</em></span>
+o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Color"></span>
+de la barra de herramientas. Debe elegirse un color en el cuadro emergente y clic
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+El color de una figura no puede cambiarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="Labels"></a>10.4.3. Rótulos</h4></div></div></div><p>
+Por omisión, los puntos aparecen rotulados. Para ocultar los rótulos, basta seleccionar 
+<span class="emphasis"><em>Alterna Rótulos</em></span> del menú
+<span class="emphasis"><em>Vista</em></span>
+o pulsar sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Labels"></span>
+de la barra de herramientas. Los rótulos no aparecen si el
+<a class="link" href="#Wireframe" title="10.4.1. Cuadro">cuadro</a>
+está desactivado.
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li></ul></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="Zoomfigure"></a>10.5. Amplía Figura</h3></div></div></div><p>
+Para ampliar una figura, basta seleccionar <span class="emphasis"><em>Amplía</em></span> del
+menú <span class="emphasis"><em>Vista</em></span> o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24ZoomIn"></span>
+de la barra de herramientas.
+</p><p>
+Para reducir, basta seleccionar <span class="emphasis"><em>Reduce</em></span> del
+menú <span class="emphasis"><em>Vista</em></span> o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24ZoomOut"></span>
+de la barra de herramientas.
+</p><p>
+Se reescala una figura para que se centre en la ventana, vía clic derecho y seleccionando
+<span class="emphasis"><em>Encuadra Ventana de Visualización</em></span>
+del menú emergente. La alternativa es, seleccionar 
+<span class="emphasis"><em>Encuadra Ventana de Visualización</em></span>
+del menú
+<span class="emphasis"><em>Vista</em></span>
+o pulsar sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24FitToView"></span>
+de la barra de herramientas.
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li></ul></div></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Measure"></a>11. Medida</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="MeasureDistance"></a>11.1. Medir Distancia</h3></div></div></div><p>
+Para medir la distancia entre dos puntos,basta
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>
+ambos puntos o el segmento que los, clic derecho y optar por 
+<span class="emphasis"><em>Mide Distancia</em></span>
+del menú emergente. La alternativa es seleccionar 
+<span class="emphasis"><em>Mide Distancia</em></span>
+del menú
+<span class="emphasis"><em>Medida</em></span>
+o pulsar sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24MeasureDistance"></span>
+en la barra de herramientas.
+</p><p>
+Se desplegará un cuadro de diálogo. Completar, de ser necesario, los rótulos de puntos faltantes, asignar a una
+<a class="link" href="#Variables" title="5. Variables">variable</a> exclusiva
+y clic sobre
+<span class="emphasis"><em>OK</em></span>.
+Aparecerá un registro en el 
+<a class="link" href="#Notepad" title="7. Anotador">anotador</a>,
+por ejemplo:
+</p><pre class="programlisting">
+miDistancia = |AB| : MiCubo
+</pre><p>
+donde
+<span class="emphasis"><em>miDistancia</em></span>
+es la variable asignada a la distancia entre puntos
+<span class="emphasis"><em>A</em></span>
+y
+<span class="emphasis"><em>B</em></span>
+en la figura
+<span class="emphasis"><em>MiCubo</em></span>.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Las distancias no puede medirse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Anotador">Anotador</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="MeasureAngle"></a>11.2. Mide Ángulo</h3></div></div></div><p>
+Para medir un ángulo,
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>
+dos segmentos que lo limiten, clic derecho y optar por 
+<span class="emphasis"><em>Mide Ángulo</em></span>
+del menú emergente. La alternativa es seleccionar 
+<span class="emphasis"><em>Mide Ángulo</em></span>
+del menú
+<span class="emphasis"><em>Medida</em></span>
+o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24MeasureAngle"></span>
+de la barra de herramientas.
+</p><p>
+Se desplegará un cuadro de diálogo. Se deben completar, de ser necesario, los rótulos de puntos faltantes, asignarlos a cada
+<a class="link" href="#Variables" title="5. Variables">variable</a> exclusiva
+y pulsar clic sobre
+<span class="emphasis"><em>OK</em></span>.
+Aparecerá un registro en el 
+<a class="link" href="#Notepad" title="7. Anotador">anotador</a>, por ejemplo:
+</p><pre class="programlisting">
+miAngulo = &lt;ABC : MiPirAmide
+</pre><p>
+donde
+<span class="emphasis"><em>miAngulo</em></span>
+es la variable asignada al ángulo entre
+<span class="emphasis"><em>AB</em></span>
+y
+<span class="emphasis"><em>AC</em></span>
+en la figura
+<span class="emphasis"><em>MiPirAmide</em></span>.
+</p><p>
+Todos los ángulos se expresan en radianes.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Los ángulos no puede medirse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Anotador">Anotador</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="ComputeArea"></a>11.3. Cálculo de Área</h3></div></div></div><p>
+Para calcular el área de una cara, basta
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>
+algunos elementos que la identifican y distinguen inequívocamente, por ejemplo, dos segmentos o tres puntos,
+clic derecho y optar por
+<span class="emphasis"><em>Cálculo de Área</em></span>
+del menú emergente. La alternativa es, optar por 
+<span class="emphasis"><em>Cálculo de Área</em></span>
+en el menú
+<span class="emphasis"><em>Medida</em></span>
+o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Area"></span>
+en la barra de herramientas.
+</p><p>
+Se desplegará un cuadro de diálogo. La cara seleccionada, la activa, se debe asignar a una
+<a class="link" href="#Variables" title="5. Variables">variable</a> exclusiva
+y pulsar sobre
+<span class="emphasis"><em>OK</em></span>.
+Aparecerá un registro en el
+<a class="link" href="#Notepad" title="7. Anotador">anotador</a>, por ejemplo:
+</p><pre class="programlisting">
+miArea = area[ABC] : MiCubo
+</pre><p>
+donde
+<span class="emphasis"><em>miArea</em></span>
+es la variable asignada al área de la cara que contiene los puntos
+<span class="emphasis"><em>A</em></span>,
+<span class="emphasis"><em>B</em></span>,
+<span class="emphasis"><em>C</em></span>
+en la figura
+<span class="emphasis"><em>MiCubo</em></span>.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Ver también:
+</p><p>
+No se puede calcular áreas durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Anotador">Anotador</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="ComputeTotalArea"></a>11.4. Calcula Área Total</h3></div></div></div><p>
+Para calcular el área total de la superficie de una figura, basta seleccionar 
+<span class="emphasis"><em>Calcula Área Total</em></span>
+del menú
+<span class="emphasis"><em>Medida</em></span>.
+</p><p>
+Se desplegará un cuadro de diálogo. Se debe asignar una 
+<a class="link" href="#Variables" title="5. Variables">variable</a> exclusiva
+y pulsar sobre
+<span class="emphasis"><em>OK</em></span>.
+Aparecerá un registro en el
+<a class="link" href="#Notepad" title="7. Anotador">anotador</a>, por ejemplo:
+</p><pre class="programlisting">
+miArea = total área : MiCubo
+</pre><p>
+donde
+<span class="emphasis"><em>miArea</em></span>
+es la variable asignada al área total de la figura
+<span class="emphasis"><em>MiCubo</em></span>.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+El área total no puede calcularse durante la
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Anotador">Anotador</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="ComputeVolume"></a>11.5. Calcula Volumen</h3></div></div></div><p>
+Para calcular el volumen de una figura, basta seleccionar 
+<span class="emphasis"><em>Calcula Volumen</em></span>
+del menú
+<span class="emphasis"><em>Medida</em></span>
+o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Volume"></span>
+de la barra de herramientas.
+</p><p>
+Se desplegará un cuadro de diálogo. Se debe asignar una
+<a class="link" href="#Variables" title="5. Variables">variable</a> exclusiva
+y pulsar sobre
+<span class="emphasis"><em>OK</em></span>.
+Aparecerá un registro en el
+<a class="link" href="#Notepad" title="7. Anotador">anotador</a>,
+por ejemplo:
+</p><pre class="programlisting">
+miVolumen = volumen : MiCubo
+</pre><p>
+donde
+<span class="emphasis"><em>miVolumen</em></span>
+es la variable asignada al volumen de la figura
+<span class="emphasis"><em>MiCubo</em></span>.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+El volumen no puede calcularse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Anotador">Anotador</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Draw"></a>12. Dibuja</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="JoinPoints"></a>12.1. Une Puntos</h3></div></div></div><p>
+Para unir dos puntos con un segmento, basta con 
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>
+ambos puntos, clic derecho y optar por 
+<span class="emphasis"><em>Une Puntos</em></span>
+del menú emergente. La alternativa es seleccionar 
+<span class="emphasis"><em>Une Puntos</em></span>
+del menú
+<span class="emphasis"><em>Dibuja</em></span>
+o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24JoinPoints"></span>
+de la barra de herramientas.
+</p><p>
+Ambos puntos deben pertenecer a la misma cara.
+</p><p>
+Si un cuadro emerge, se deben completar los rótulos de puntos faltantes y clic
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Los puntos no puede unirse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="DrawPerpendicular"></a>12.2. Trazar Perpendicular</h3></div></div></div><p>
+Para trazar la perpendicular a un segmento que pasa por un punto, basta
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">indicar</a>
+el punto y el segmento, luego seleccionar 
+<span class="emphasis"><em>Trazar Perpendicular</em></span>
+del menú emergente. La alternativa es optar por 
+<span class="emphasis"><em>Trazar Perpendicular</em></span>
+del menú
+<span class="emphasis"><em>Dibuja</em></span>
+o clic sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Perpendicular"></span>
+de la barra de herramientas.
+</p><p>
+El punto y el segmento deben pertenecer a la misma cara. El punto pueden o no
+pertenecer al segmento.
+</p><p>
+Si un cuadro emerge, se deben completar los rótulos de puntos faltantes y pulsar sobre
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+Si ambos el punto y el segmento pertenecen a dos caras diferentes simultáneamente,
+se puede trazar una perpendicular a cada una de las caras.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+No se pueden trazar perpendiculares durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="DivideSegment"></a>12.3. Divide Segmento</h3></div></div></div><p>
+Para dividir un segmento según cierta razón, se debe
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>
+el segmento o sus vértices, clic derecho y optar por 
+<span class="emphasis"><em>Divide Segmento</em></span>
+del menú emergente. La alternativa es seleccionar 
+<span class="emphasis"><em>Divide Segmento</em></span>
+del menú
+<span class="emphasis"><em>Dibuja</em></span>
+o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24DivideSegment"></span>
+de la barra de herramientas.
+</p><p>
+Se desplegará un cuadro de diálogo. Se debe completar, de ser necesario, los rótulos de puntos faltantes y anotar 
+<a class="link" href="#Expressions" title="6.1. Expresiones">expresiones</a> válidas 
+para el numerador y denominador de la razón. Clic
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+La razón se define como AX : XB, donde
+<span class="emphasis"><em>X</em></span>
+es el punto de división,
+<span class="emphasis"><em>AB</em></span>
+el segmento. Por ejemplo, si la razón fuera 1 : 2,
+<span class="emphasis"><em>X</em></span>
+estaría dos veces más cerca de
+<span class="emphasis"><em>A</em></span>
+que de
+<span class="emphasis"><em>B</em></span>.
+Si la razón fuera 3 : 1,
+<span class="emphasis"><em>X</em></span>
+estaría tres veces más cerca de
+<span class="emphasis"><em>B</em></span>
+que de 
+<span class="emphasis"><em>A</em></span>.
+</p><p>
+El punto medio divide al segmento según la razón 1 : 1 y por lo tanto se puede
+trazar como ya se expuso. Sin embargo, la acción es más conveniente
+<a class="link" href="#DrawMidpoint" title="12.4. Traza Punto Medio">Traza Punto Medio</a>
+por ser más económíca.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Un segmento no puede dividirse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#DrawMidpoint" title="12.4. Traza Punto Medio">Traza Punto Medio</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="DrawMidpoint"></a>12.4. Traza Punto Medio</h3></div></div></div><p>
+Para trazar el punto medio de un segmento, basta
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>
+el segmento o sus vértices, clic derecho y optar por 
+<span class="emphasis"><em>Traza Punto Medio</em></span>
+del menú emergente. La alternativa es, seleccionar 
+<span class="emphasis"><em>Traza Punto Medio</em></span>
+del menú
+<span class="emphasis"><em>Dibuja</em></span>.
+</p><p>
+Si un cuadro emerge, se deben completar los rótulos de puntos faltantes y clic
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+Debe notarse que trazar el punto medio es equivalente a
+<a class="link" href="#DivideSegment" title="12.3. Divide Segmento">dividir</a> el segmento según la razón 1 : 1.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Los puntos medios no pueden trazarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#DivideSegment" title="12.3. Divide Segmento">Divide Segmento</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="DivideAngle"></a>12.5. Divide Ángulo</h3></div></div></div><p>
+Para dividir un ángulo según determinada razón, basta
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>
+dos segmentos que limiten el ángulo, clic derecho y optar por 
+<span class="emphasis"><em>Divide Ángulo</em></span>
+del menú emergente. La alternativa es seleccionar 
+<span class="emphasis"><em>Divide Ángulo</em></span>
+del menú
+<span class="emphasis"><em>Dibuja</em></span>
+o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24DivideAngle"></span>
+de la barra de herramientas.
+</p><p>
+Los segmentos que limitan el ángulo deben pertenecer a la misma cara.
+</p><p>
+Se desplegará un cuadro de diálogo. Se debe completar, de ser necesario, los rótulos de puntos faltantes y anotar 
+<a class="link" href="#Expressions" title="6.1. Expresiones">expresiones</a> válidas
+para el numerador y el denominador de la razón. Clic
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+La razón se define como &lt;AOX : &lt;XOB, donde
+<span class="emphasis"><em>OX</em></span>
+es el segmento a dividir y
+<span class="emphasis"><em>&lt;AOB</em></span>
+el ángulo. Por ejemplo, si la razón es 1 : 2,
+<span class="emphasis"><em>OX</em></span>
+formará con
+<span class="emphasis"><em>OB</em></span>
+un ángulo dos veces mayor que con
+<span class="emphasis"><em>OA</em></span>.
+Si la razón es 3 : 1,
+<span class="emphasis"><em>OX</em></span>
+formará con
+<span class="emphasis"><em>OA</em></span>
+un ángulo tres veces mayor que con 
+<span class="emphasis"><em>OB</em></span>.
+</p><p>
+La bisectriz divide al ángulo según la razón 1 : 1, por lo tanto se puede
+trazar según se explicara. Sin embargo, es conveniente
+<a class="link" href="#DrawBisector" title="12.6. Traza Bisectriz">Traza Bisectriz</a>
+por ser una acción más económica.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Un ángulo no puede dividirse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#DrawBisector" title="12.6. Traza Bisectriz">Traza Bisectriz</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="DrawBisector"></a>12.6. Traza Bisectriz</h3></div></div></div><p>
+Para trazar la bisectriz de un ángulo, basta
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>
+dos segmentos que limitan el ángulo, clic derecho y basta seleccionar 
+<span class="emphasis"><em>Dibuja Bisectriz</em></span>
+del menú emergente. La alternativa es, seleccionar 
+<span class="emphasis"><em>Traza Bisectriz</em></span>
+del menú
+<span class="emphasis"><em>Dibuja</em></span>.
+</p><p>
+Los segmentos que limitan el ángulo deben pertenecer a la misma cara.
+</p><p>
+Un cuadro puede desplegarse. Se deben completar, de ser necesario, los rótulos de puntos faltantes. Clic
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+Trazar la bisectriz es equivalente a
+<a class="link" href="#DivideAngle" title="12.5. Divide Ángulo">dividir</a> el ángulo según la razón 1 : 1.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Las bisectrices no puede trazarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#DivideAngle" title="12.5. Divide Ángulo">Divide Ángulo</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="DrawIntersection"></a>12.7. Traza Intersección</h3></div></div></div><p>
+Para trazar el punto de intersección entre dos rectas, basta
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>
+dos segmentos que pertenezcan a las rectas, clic derecho y optar por 
+<span class="emphasis"><em>Interseca Rectas</em></span>
+del menú emergente. La alternativa es seleccionar 
+<span class="emphasis"><em>Interseca Rectas</em></span>
+del menú
+<span class="emphasis"><em>Dibuja</em></span>
+ o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Intersection"></span>
+en la barra de herramientas.
+</p><p>
+Ambos segmentos, así como el punto de intersección de sus rectas,
+deben pertenecer a la misma cara.
+</p><p>
+Un cuadro puede desplegarse. Se debe completar, de ser necesario, los rótulos de puntos faltantes. Clic
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Las intersecciones no pueden trazarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="LayDistance"></a>12.8. Traza Distancia</h3></div></div></div><p>
+Para trazar un punto sobre un segmento a cierta distancia de otro dado, basta
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>
+ambos el punto y el segmento, clic derecho y basta seleccionar 
+<span class="emphasis"><em>Traza Distancia</em></span>
+del menú emergente. La alternativa es seleccionar 
+<span class="emphasis"><em>Traza Distancia</em></span>
+del menú
+<span class="emphasis"><em>Dibuja</em></span>
+ o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LayDistance"></span>
+en la barra de herramientas.
+</p><p>
+El punto y el segmento deben pertenecer a la misma cara.
+El punto puede o no pertenecer al segmento.
+</p><p>
+Se desplegará un cuadro de diálogo. Se debe completar, de ser necesario, los rótulos de puntos faltantes y anotar una 
+<a class="link" href="#Expressions" title="6.1. Expresiones">expresión</a> válida
+para la distancia. Clic
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+Esta acción puede resultar en la construcción de uno o dos puntos distintos.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Las distancias no puede trazarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="LayAngle"></a>12.9. Traza Ángulo</h3></div></div></div><p>
+Se debe seleccionar o trazar un segmento y el punto extremo de otro segmento 
+de modo tal que los dos segmentos delimiten un ángulo y tras
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>
+el segmento y su punto extremo, clic derecho y optar por 
+<span class="emphasis"><em>Traza Ángulo</em></span>
+del menú emergente. La alternativa es seleccionar 
+<span class="emphasis"><em>Traza Ángulo</em></span>
+del menú
+<span class="emphasis"><em>Dibuja</em></span>
+o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LayAngle"></span>
+en la barra de herramientas.
+</p><p>
+Se desplegará un cuadro de diálogo. Se debe completar, de ser necesario, los rótulos de puntos faltantes y anotar una 
+<a class="link" href="#Expressions" title="6.1. Expresiones">expresión</a> válida
+para el ángulo. Clic
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+El ángulo debe ser mayor que 0 y menor que 180 grados e ingresarse
+en radianes, no en grados. Por ejemplo, para trazar un ángulo de 60 grados, se anotará PI/3.
+</p><p>
+Si el segmento perteneciera a dos diferentes caras simultáneamente, esta acción puede resultar en
+que se traza un ángulo en cada una de las caras.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Los ángulos no puede trazarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Transform"></a>13. Transforma</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="Scalefigure"></a>13.1. Redimensiona Figura</h3></div></div></div><p>
+Para redimensionar una figura en la dirección de cierto segmento según determinado factor, basta
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>
+el segmento o sus vértices, clic derecho y optar por 
+<span class="emphasis"><em>Redimensiona Figura</em></span>
+del menú emergente. La alternativa es seleccionar 
+<span class="emphasis"><em>Redimensiona Figura</em></span>
+del menú
+<span class="emphasis"><em>Transforma</em></span>
+o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Scale"></span>
+de la barra de herramientas.
+</p><p>
+Se desplegará un cuadro de diálogo. Se deben completar, de ser necesario, los rótulos de puntos faltantes y anotar una 
+<a class="link" href="#Expressions" title="6.1. Expresiones">expresión</a> válida
+para el factor de escala. Clic
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+Debido al redimensionamiento, las variables asignadas a medidas previas sobre la
+figura seleccionada posiblemente se
+<a class="link" href="#PinnedVariable" title="5.3. Variable Extraviada">pierdan</a>.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Quien
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">resuelve</a>
+no puede escalar una figura que es parte del problema. Sin embargo, la figuras creada
+mientras se está resolviendo el problema se puede redimensionar.
+</p><p>
+Una figura no puede redimensionarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="Shearfigure"></a>13.2. Desliza Figura</h3></div></div></div><p>
+<a class="ulink" href="http://en.wikipedia.org/wiki/Shear_mapping" target="_blank">El deslizamiento</a>
+implica una
+<a class="ulink" href="http://en.wikipedia.org/wiki/Affine_transformation" target="_blank">transformación afín</a>
+donde planos paralelos a uno fijo de referencia se desliza a lo largo de una recta
+que está contenida en el de referencia.
+</p><p>
+Si
+<span class="emphasis"><em>XY</em></span>
+la recta fija está en el plano de referencia, el deslizamiento
+es una transformación unicamente identificada por puntos
+<span class="emphasis"><em>X</em></span>,
+<span class="emphasis"><em>Y</em></span>
+y la imagen de cualquier punto
+<span class="emphasis"><em>Z</em></span>
+tal que
+<span class="emphasis"><em>XZ</em></span>
+sea perpendicular al plano de referencia.
+</p><p>
+Para deslizar una figura en relación a un segmento
+<span class="emphasis"><em>XY</em></span>
+y a un punto
+<span class="emphasis"><em>Z</em></span>,
+como se ha descripto, basta
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>
+el segmento
+<span class="emphasis"><em>XY</em></span>,
+su punto
+<span class="emphasis"><em>X</em></span>
+y el punto
+<span class="emphasis"><em>Z</em></span>,
+clic derecho y seleccionar 
+<span class="emphasis"><em>Shear figura</em></span>
+del menú emergente. La alternativa es seleccionar 
+<span class="emphasis"><em>Shear figura</em></span>
+del menú
+<span class="emphasis"><em>Transform</em></span>
+ o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Shear"></span>
+en la barra de herramientas.
+</p><p>
+Si un cuadro emerge, se deben completar los rótulos de puntos faltantes y clic
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+Como resultado del deslizamiento, las variables asignadas a medidas previas sobre
+la figura seleccionada podrían
+<a class="link" href="#PinnedVariable" title="5.3. Variable Extraviada">perderse</a>.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Quien
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">resuelve</a>
+no puede deslizar una figura que es parte del problema. Sin embargo, la figuras creadas
+mientras se está resolviendo el problema se pueden deslizar.
+</p><p>
+Una figura no puede escalarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selección de Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="Cutfigure"></a>13.3. Cortar Figura</h3></div></div></div><p>
+Para cortar una figura con un plano, basta
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">seleccionar</a>
+algunos elementos que identifiquen unívocamente ese plano, como tres puntos, un punto y un
+segmento o dos segmentos, clic derecho y optar por 
+<span class="emphasis"><em>Corta Figura</em></span>
+del menú emergente. La alternativa es seleccionar 
+<span class="emphasis"><em>Corta Figura</em></span>
+del menú
+<span class="emphasis"><em>Transforma</em></span>
+o pulsar sobre el botón 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Cut"></span>
+en la barra de herramientas.
+</p><p>
+El plano debe pasar a través del interior de la figura.
+</p><p>
+Si un cuadro emerge, se deben completar los rótulos de puntos faltantes y clic
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+Ambos fragmentos resultantes de la figura se expondrá en vistas separadas. La figura 
+original permanecerá intacta en su propia vista.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Una figura no puede cortarse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Joinfigures" title="13.4. Unir Figuras">Unir Figuras</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Elegir Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="Joinfigures"></a>13.4. Unir Figuras</h3></div></div></div><p>
+Para unir dos figuras por sus caras:
+<span class="emphasis"><em>Cara1</em></span>
+y
+<span class="emphasis"><em>Cara2</em></span>
+respectivamente, basta
+<a class="link" href="#SelectElements" title="10.3. Selección de Elementos">escoger</a>
+algunos elementos, como puntos y segmentos, en
+<span class="emphasis"><em>Cara1</em></span>,
+y los correspondientes en
+<span class="emphasis"><em>Cara2</em></span>.
+Seleccionar
+<span class="emphasis"><em>Une Figuras</em></span>
+del menú emergente o pulsar sobre el botón
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Joinfigures"></span>
+de la barra de herramientas.
+</p><p>
+Se desplegará un cuadro de diálogo. Se deben seleccionar los nombres de las figuras. Una figura se puede unir con una copia de
+sí misma. Así, la misma figura se puede seleccionar en ambas vistas.
+</p><p>
+Seleccionar
+<span class="emphasis"><em>Une y elegir los elementos</em></span>
+o, si se ignora cuál es la mejor selección,
+<span class="emphasis"><em>Une arbitrariamente</em></span>
+y pulsar
+<span class="emphasis"><em>OK</em></span>.
+</p><p>
+Una nueva vista aparecerá con la figura combinada. Las dos
+figuras originales se mantendrán intactas en sus propias vistas.
+</p><p>
+El sólido combinado debe ser convexo.
+<span class="emphasis"><em>Cara1</em></span>
+y
+<span class="emphasis"><em>Cara2</em></span>
+deben tener la misma forma, que es
+tener ángulos iguales y lados proporcionales a los correspondientes vértices.
+<span class="emphasis"><em>Cara1</em></span>
+y
+<span class="emphasis"><em>Cara2</em></span>
+no necesitan tener la misma medida. De ser preciso, una de las figuras se
+redimensionará automàticamente para ajustarse a la otra.
+</p><p>
+Esta acción se puede 
+<a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
+</p><p>
+Las figuras no pueden unirse durante la 
+<a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
+Primero, hay que detenerla. 
+</p><p>
+Ver también:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Cutfigure" title="13.3. Cortar Figura">Corta Figura</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Selección de Elementos">Selecciona Elementos</a></li><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Deshacer Acciones">Deshacer Acciones</a></li></ul></div></div></div></div></div></body></html>
