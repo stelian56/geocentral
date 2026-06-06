@@ -3,22 +3,24 @@ if (this != top)
 var showComments = false;
 window.onload = function() {
   var commentsLink = document.querySelector("#commentsLink");
-  commentsLink.onclick = function() {
-    showComments = !showComments;
-    if (showComments) {
-      commentsLink.textContent = "Fără comentarii";
-    }
-    else {
-      commentsLink.textContent = "Cu comentarii";
-    }
-    var commentRefs = document.querySelectorAll(".commentRef");
-    commentRefs.forEach(function(commentRef) {
+  if (commentsLink) {
+    commentsLink.onclick = function() {
+      showComments = !showComments;
       if (showComments) {
-        commentRef.style.display = 'inline';
+        commentsLink.textContent = "Fără comentarii";
       }
       else {
-        commentRef.style.display = 'none';
+        commentsLink.textContent = "Cu comentarii";
       }
-    });
+      var commentRefs = document.querySelectorAll(".commentRef");
+      commentRefs.forEach(function(commentRef) {
+        if (showComments) {
+          commentRef.style.display = 'inline';
+        }
+        else {
+          commentRef.style.display = 'none';
+        }
+      });
+    }
   }
 }
