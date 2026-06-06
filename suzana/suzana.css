@@ -11,7 +11,6 @@ body {
   color: white;
   margin: 0;
 }
-
 a:link {
   color: white;
 }
@@ -20,6 +19,7 @@ a:visited {
 }
 a:hover {
   color: #88ff88;
+  text-decoration: underline;
 }
 div.footer {
   font-size: small;
@@ -41,6 +41,16 @@ h2 {
   text-align: left;
   margin-top: 10px;
   margin-bottom: 0;
+}
+h2.identitate {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.poemText {
+  white-space: pre;
+}
+a.translation {
+  text-decoration: none;
 }
 h3 {
   font-size: medium;
@@ -124,10 +134,9 @@ li {
   justify-content:center;
   align-items:center;
 }
-.picturebox {
-  margin: 1em;
-}
-
 .item {
   flex: 1;
+}
+.picturebox {
+  margin: 1em;
 }
