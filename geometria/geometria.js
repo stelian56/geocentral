@@ -4,3 +4,5 @@ window.onload = function() {
   .then(data => {
     document.getElementById('header').innerHTML = data;
     });
+}
+
