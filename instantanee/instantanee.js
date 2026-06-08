@@ -1,5 +1,3 @@
-if (this != top)
-  top.location = ".";
 var showComments = false;
 window.onload = function() {
   var commentsLink = document.querySelector("#commentsLink");
