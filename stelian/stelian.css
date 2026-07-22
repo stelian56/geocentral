@@ -47,3 +47,10 @@ div.footer {
   font-size: small;
   white-space: pre;
 }
+.box {
+    display: inline-flex; /* Aligns children horizontally by default */
+    flex-wrap: wrap;
+}
+.item {
+  flex: 1;
+}
