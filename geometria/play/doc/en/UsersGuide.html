@@ -1,0 +1,3554 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Geometria 4.0</title>
+<link rel="stylesheet" type="text/css" href="../../css/doc.css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div lang="en" class="book">
+<div class="titlepage">
+<div>
+<div><h1 class="title">
+<a name="GeometriaUsersGuide"></a>Geometria 4.0</h1></div>
+<div><h2 class="subtitle">User's Guide</h2></div>
+</div>
+<hr>
+</div>
+<div class="toc"><dl class="toc">
+<dt><span class="chapter"><a href="#General">1. General</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="#QuickStart">1. Quick Start</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="#PlayOnline">1.1. Play Online</a></span></dt>
+<dt><span class="sect2"><a href="#PlayOffline">1.2. Play Offline</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="#License">2. License</a></span></dt>
+<dt><span class="sect1"><a href="#Acknowledgements">3. Acknowledgements</a></span></dt>
+<dt><span class="sect1"><a href="#Overview">4. Overview</a></span></dt>
+<dd><dl><dt><span class="sect2"><a href="#EditorsAndSolvers">4.1. Editors and Solvers</a></span></dt></dl></dd>
+<dt><span class="sect1"><a href="#Variables">5. Variables</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="#CreatingAVariable">5.1. Creating a Variable</a></span></dt>
+<dt><span class="sect2"><a href="#ValueOfAVariable">5.2. Value of a Variable</a></span></dt>
+<dt><span class="sect2"><a href="#PinnedVariable">5.3. Pinned Variable</a></span></dt>
+<dt><span class="sect2"><a href="#LifetimeOfAVariable">5.4. Lifetime of a Variable</a></span></dt>
+<dt><span class="sect2"><a href="#RenameVariable">5.5. Rename Variable</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="#Calculator">6. Calculator</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="#Expressions">6.1. Expressions</a></span></dt>
+<dt><span class="sect2"><a href="#Operators">6.2. Operators</a></span></dt>
+<dt><span class="sect2"><a href="#Functions">6.3. Functions</a></span></dt>
+<dt><span class="sect2"><a href="#Examples">6.4. Examples</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="#Notepad">7. Notepad</a></span></dt>
+<dd><dl><dt><span class="sect2"><a href="#ClearNotepad">7.1. Clear Notepad</a></span></dt></dl></dd>
+<dt><span class="sect1"><a href="#Undo">8. Undo Actions</a></span></dt>
+<dt><span class="sect1"><a href="#Redo">9. Redo Actions</a></span></dt>
+<dt><span class="sect1"><a href="#Language">10. Language</a></span></dt>
+<dt><span class="sect1"><a href="#Help">11. Help</a></span></dt>
+<dt><span class="sect1"><a href="#KnownLimitations">12. Known Limitations</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="#InordinateSizeOrShape">12.1. Inordinate Size or Shape</a></span></dt>
+<dt><span class="sect2"><a href="#PreviousVersionsOfGeometria">12.2. Previous Versions of Geometria</a></span></dt>
+<dt><span class="sect2"><a href="#SolutionLanguage">12.3. Solution Language</a></span></dt>
+</dl></dd>
+</dl></dd>
+<dt><span class="chapter"><a href="#Documents">2. Documents</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="#ProblemText">1. Problem Text</a></span></dt>
+<dt><span class="sect1"><a href="#DocumentProperties">2. Document Properties</a></span></dt>
+<dt><span class="sect1"><a href="#Answer">3. Answer</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="#EditorsAnswer">3.1. Editor's Answer</a></span></dt>
+<dt><span class="sect2"><a href="#SolversAnswer">3.2. Solver's Answer</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="#Navigator">4. Navigator</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="#NewFolder">4.1. New Folder</a></span></dt>
+<dt><span class="sect2"><a href="#RenameFile">4.2. Rename File</a></span></dt>
+<dt><span class="sect2"><a href="#MoveFile">4.3. Move File</a></span></dt>
+<dt><span class="sect2"><a href="#DeleteFile">4.4. Delete File</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="#NewProblem">5. New Problem</a></span></dt>
+<dt><span class="sect1"><a href="#OpenProblem">6. Open Problem</a></span></dt>
+<dt><span class="sect1"><a href="#SaveProblem">7. Save Problem</a></span></dt>
+<dt><span class="sect1"><a href="#LockProblem">8. Lock Problem</a></span></dt>
+<dt><span class="sect1"><a href="#SolveProblem">9. Solve Problem</a></span></dt>
+<dt><span class="sect1"><a href="#OpenSolution">10. Open Solution</a></span></dt>
+<dt><span class="sect1"><a href="#SaveSolution">11. Save Solution</a></span></dt>
+<dt><span class="sect1"><a href="#SolutionLog">12. Solution Log</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="#Playback">12.1. Playback</a></span></dt>
+<dt><span class="sect2"><a href="#SolutionComments">12.2. Solution Comments</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="#ShareDocument">13. Share Document</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="#ExportDocument">13.1. Export Document</a></span></dt>
+<dt><span class="sect2"><a href="#ImportDocument">13.2. Import Document</a></span></dt>
+</dl></dd>
+</dl></dd>
+<dt><span class="chapter"><a href="#Figures">3. Figures</a></span></dt>
+<dd><dl>
+<dt><span class="sect1"><a href="#NewFigure">1. New Figure</a></span></dt>
+<dt><span class="sect1"><a href="#OpenFigure">2. Open Figure</a></span></dt>
+<dt><span class="sect1"><a href="#CloneFigure">3. Clone Figure</a></span></dt>
+<dt><span class="sect1"><a href="#SaveFigure">4. Save Figure</a></span></dt>
+<dt><span class="sect1"><a href="#PrintFigure">5. Print Figure</a></span></dt>
+<dt><span class="sect1"><a href="#RenameFigure">6. Rename Figure</a></span></dt>
+<dt><span class="sect1"><a href="#RenamePoint">7. Rename Point</a></span></dt>
+<dt><span class="sect1"><a href="#RemoveFigure">8. Remove Figure</a></span></dt>
+<dt><span class="sect1"><a href="#EraseElements">9. Erase Elements</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="#EraseSegment">9.1. Erase Segment</a></span></dt>
+<dt><span class="sect2"><a href="#EraseSelection">9.2. Erase Selection</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="#View">10. View</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="#Attitude">10.1. Attitude</a></span></dt>
+<dt><span class="sect2"><a href="#RotateFigure">10.2. Rotate Figure</a></span></dt>
+<dt><span class="sect2"><a href="#SelectElements">10.3. Select Elements</a></span></dt>
+<dt><span class="sect2"><a href="#ViewModes">10.4. View Modes</a></span></dt>
+<dt><span class="sect2"><a href="#ZoomFigure">10.5. Zoom Figure</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="#Measure">11. Measure</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="#MeasureDistance">11.1. Measure Distance</a></span></dt>
+<dt><span class="sect2"><a href="#MeasureAngle">11.2. Measure Angle</a></span></dt>
+<dt><span class="sect2"><a href="#ComputeArea">11.3. Compute Area</a></span></dt>
+<dt><span class="sect2"><a href="#ComputeTotalArea">11.4. Compute Total Area</a></span></dt>
+<dt><span class="sect2"><a href="#ComputeVolume">11.5. Compute Volume</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="#Draw">12. Draw</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="#JoinPoints">12.1. Join Points</a></span></dt>
+<dt><span class="sect2"><a href="#DrawPerpendicular">12.2. Draw Perpendicular</a></span></dt>
+<dt><span class="sect2"><a href="#DivideSegment">12.3. Divide Segment</a></span></dt>
+<dt><span class="sect2"><a href="#DrawMidpoint">12.4. Draw Midpoint</a></span></dt>
+<dt><span class="sect2"><a href="#DivideAngle">12.5. Divide Angle</a></span></dt>
+<dt><span class="sect2"><a href="#DrawBisector">12.6. Draw Bisector</a></span></dt>
+<dt><span class="sect2"><a href="#DrawIntersection">12.7. Draw Intersection</a></span></dt>
+<dt><span class="sect2"><a href="#LayDistance">12.8. Lay Distance</a></span></dt>
+<dt><span class="sect2"><a href="#LayAngle">12.9. Lay Angle</a></span></dt>
+</dl></dd>
+<dt><span class="sect1"><a href="#Transform">13. Transform</a></span></dt>
+<dd><dl>
+<dt><span class="sect2"><a href="#ScaleFigure">13.1. Scale Figure</a></span></dt>
+<dt><span class="sect2"><a href="#ShearFigure">13.2. Shear Figure</a></span></dt>
+<dt><span class="sect2"><a href="#CutFigure">13.3. Cut Figure</a></span></dt>
+<dt><span class="sect2"><a href="#JoinFigures">13.4. Join Figures</a></span></dt>
+</dl></dd>
+</dl></dd>
+</dl></div>
+<div class="chapter">
+<div class="titlepage"><div><div><h1 class="title">
+<a name="General"></a>Chapter 1. General</h1></div></div></div>
+<p>
+Geometria runs in a web browser on your desktop or laptop. Supported web browsers are:
+
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+Chrome
+</li>
+<li class="listitem">
+Safari
+</li>
+<li class="listitem">
+Edge
+</li>
+<li class="listitem">
+Firefox
+</li>
+</ul></div>
+<p>
+
+</p>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="QuickStart"></a>1. Quick Start</h2></div></div></div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="PlayOnline"></a>1.1. Play Online</h3></div></div></div>
+You need to be connected to the Internet in order to load the Geometria page. However, once the page is loaded,
+you will be opening and saving all the files locally on your computer.
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+Point your web browser to the Geometria <a class="ulink" href="https://geocentral.net/geometria" target="_blank">home page</a>.
+</li>
+<li class="listitem">
+Click <span class="emphasis"><em>Play</em></span> to open Geometria.
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="PlayOffline"></a>1.2. Play Offline</h3></div></div></div>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+Install <a class="ulink" href="https://nodejs.org/en/download" target="_blank">node.js</a>.
+</li>
+<li class="listitem">
+Point your web browser to the Geometria <a class="ulink" href="https://geocentral.net/geometria" target="_blank">home page</a>.
+</li>
+<li class="listitem">
+Click <span class="emphasis"><em>Download</em></span>.
+</li>
+<li class="listitem">
+Unzip the archive.
+</li>
+<li class="listitem">
+Open a terminal window in the resulting folder.
+</li>
+<li class="listitem">
+Execute
+<pre class="programlisting">
+npx http-server
+</pre>
+to start a local web server.
+</li>
+<li class="listitem">
+Point your browser to <span class="emphasis"><em>localhost:8080</em></span> to open Geometria.
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="License"></a>2. License</h2></div></div></div>
+Geometria is free software released under the
+<a class="ulink" href="http://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="Acknowledgements"></a>3. Acknowledgements</h2></div></div></div>
+
+Geometria makes use of the following open-source projects:
+
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><a class="ulink" href="http://dojotoolkit.org" target="_blank">Dojo Toolkit</a></li>
+<li class="listitem"><a class="ulink" href="http://jquery.com" target="_blank">jQuery</a></li>
+<li class="listitem"><a class="ulink" href="https://github.com/toji/gl-matrix" target="_blank">gl-matrix</a></li>
+<li class="listitem"><a class="ulink" href="http://mathjs.org" target="_blank">mathjs</a></li>
+<li class="listitem"><a class="ulink" href="http://www.docbook.org" target="_blank">DocBook</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="Overview"></a>4. Overview</h2></div></div></div>
+<p>
+Geometria provides a graphic interface for creating and solving problems in solid geometry.
+</p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="EditorsAndSolvers"></a>4.1. Editors and Solvers</h3></div></div></div>
+<p>
+At any given time, the Geometria user is either a problem
+<span class="emphasis"><em>Editor</em></span>
+(a.k.a. Teacher) or a problem
+<span class="emphasis"><em>Solver</em></span>
+(a.k.a. Student).
+</p>
+</div>
+<p>
+Both problems and solutions are called
+<span class="emphasis"><em>documents</em></span>.
+Documents are saved in files. Users engage in a Geometria process as follows:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>
+creates a problem, provides it with an
+<a class="link" href="#EditorsAnswer" title="3.1. Editor's Answer">answer</a>,
+<a class="link" href="#SaveProblem" title="7. Save Problem">saves</a>
+the problem and
+<a class="link" href="#ShareDocument" title="13. Share Document">shares</a>
+it with the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>.
+</li>
+<li class="listitem">
+The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a> 
+<a class="link" href="#OpenProblem" title="6. Open Problem">opens</a>
+the problem and
+<a class="link" href="#SolveProblem" title="9. Solve Problem">solves</a>
+it.
+</li>
+<li class="listitem">
+The solution consists of a number of actions. The actions are recorded in
+the solution
+<a class="link" href="#SolutionLog" title="12. Solution Log">log</a>.
+</li>
+<li class="listitem">
+The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a> 
+<a class="link" href="#SolversAnswer" title="3.2. Solver's Answer">answers</a>
+the problem. The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>'s
+answer is considered correct if it matches the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>'s.
+</li>
+<li class="listitem">
+The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a> 
+<a class="link" href="#SaveSolution" title="11. Save Solution">saves</a>
+the solution and
+<a class="link" href="#ShareDocument" title="13. Share Document">shares</a>
+it with the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>.
+</li>
+<li class="listitem">
+The solution can be
+<a class="link" href="#Playback" title="12.1. Playback">played back</a>
+by
+<a class="link" href="#OpenSolution" title="10. Open Solution">opening</a>
+it and following the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>'s
+actions.
+</li>
+</ul></div>
+<p>
+Note that Geometria does not perform any semantic analysis of the problem in order
+to determine if the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>'s
+answer is actually correct. The answer may be incorrect or even make no sense at all.
+The problem may make no sense either. Thus, a problem might ask:
+</p>
+<p>
+<span class="emphasis"><em>
+What is the highest point in Arizona?
+</em></span>
+</p>
+<p>
+and be answered as:
+</p>
+<p>
+<span class="emphasis"><em>
+Point Z in figure MyPyramid.
+</em></span>
+</p>
+<p>
+If that is what the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>
+considers a correct answer to the problem, it's fine with Geometria, although it is unlikely
+that such a problem will get much attention from
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">solvers</a>.
+</p>
+<p>
+Every document contains the
+<a class="link" href="#ProblemText" title="1. Problem Text">problem text</a>,
+<a class="link" href="#DocumentProperties" title="2. Document Properties">document properties</a>,
+a number of
+<a class="link" href="#Figures" title="Chapter 3. Figures">figures</a>,
+and a number of notepad
+<a class="link" href="#Notepad" title="7. Notepad">records</a>.
+Additionaly, a solution contains the
+<a class="link" href="#SolutionLog" title="12. Solution Log">solution log</a>.
+</p>
+<p>
+Figures are limited to convex polyhedra. Figures can be
+<a class="link" href="#Measure" title="11. Measure">measured</a>,
+<a class="link" href="#Draw" title="12. Draw">drawn upon</a>,
+<a class="link" href="#Transform" title="13. Transform">transformed</a>,
+<a class="link" href="#RotateFigure" title="10.2. Rotate Figure">rotated</a>,
+<a class="link" href="#ViewModes" title="10.4. View Modes">viewed</a>
+as wireframe or labeled,
+<a class="link" href="#PrintFigure" title="5. Print Figure">printed</a>.
+</p>
+<p>
+Drawings can only be made on the surface of a figure. Drawings in the figure's interior
+are possible by, first,
+<a class="link" href="#CutFigure" title="13.3. Cut Figure">cutting</a>
+the figure with a suitable plane, then drawing on a fragment's surface.
+</p>
+<p>
+Labels and
+<a class="link" href="#Variables" title="5. Variables">variables</a>
+provide a convenient abstraction over numeric coordinates
+and measurements.
+<a class="link" href="#Variables" title="5. Variables">Variables</a>
+are used in
+<a class="link" href="#Calculator" title="6. Calculator">calculations</a>
+and referenced in measurements and drawings. Labels and variables are also used to
+<a class="link" href="#Answer" title="3. Answer">answer</a>
+the problem.
+</p>
+<p>
+The
+<a class="link" href="#Answer" title="3. Answer">answer</a>
+is not necessarily numeric. In fact, some of the most challenging
+problems cannot be answered with a number. The problem may ask for a certain
+point, segment, path or plane to be constructed. For example:
+</p>
+<p>
+<span class="emphasis"><em>
+Find a plane that is parallel to the diagonal of the cube and cuts its volume in a 2:3 ratio.
+</em></span>
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Calculator" title="6. Calculator">Calculator</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Notepad">Notepad</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="Variables"></a>5. Variables</h2></div></div></div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="CreatingAVariable"></a>5.1. Creating a Variable</h3></div></div></div>
+<p>
+A <span class="emphasis"><em>variable</em></span> is created as a result of a
+<a class="link" href="#Measure" title="11. Measure">measurement</a>
+or a
+<a class="link" href="#Calculator" title="6. Calculator">calculation</a>.
+A newly created variable has
+a name and a definition. For instance, the variable myDistance in the
+example below is defined as the distance between points
+<span class="emphasis"><em>P</em></span>
+and
+<span class="emphasis"><em>W</em></span>
+in figure
+<span class="emphasis"><em>MyCube</em></span>:
+</p>
+<pre class="programlisting">
+myDistance = |PW| : MyCube
+</pre>
+<p>
+In another example, variable
+<span class="emphasis"><em>myArea</em></span>
+is a result of a calculation upon
+previously defined variables
+<span class="emphasis"><em>myVolume</em></span>
+and
+<span class="emphasis"><em>myDistance</em></span>:
+</p>
+<pre class="programlisting">
+myArea = 2 * myVolume / myDistance
+</pre>
+<p>
+Newly created variables are automatically recorded,
+along with their definitions, on the
+<a class="link" href="#Notepad" title="7. Notepad">notepad</a>.
+</p>
+<p>
+A variable name must consist of alphanumeric characters and begin with a letter.
+Special and accented characters are not allowed. A variable name cannot
+contain spaces.
+</p>
+<p>
+Variable names are case sensitive. Thus,
+<span class="emphasis"><em>myArea</em></span>
+and
+<span class="emphasis"><em>MyArea</em></span>
+will reference two distinct variables.
+</p>
+<p>
+<span class="emphasis"><em>PI</em></span>
+is reserved for the
+<a class="ulink" href="http://en.wikipedia.org/wiki/Pi" target="_blank">ratio of a circle's circumference
+to its diameter</a>
+and cannot be used for newly
+created variables. However, it can be used in
+<a class="link" href="#Calculator" title="6. Calculator">calculations</a>.
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ValueOfAVariable"></a>5.2. Value of a Variable</h3></div></div></div>
+<p>
+Each variable has a numeric value. However, in most cases, this value
+remains transparent to the user. One can create and solve
+Geometria problems without ever knowing the underlying values of the
+variables one has defined. To see the numerical value of a variable,
+type the variable in the
+<a class="link" href="#Calculator" title="6. Calculator">calculator</a>
+and press the Enter key.
+Due to roundup errors, the numeric values may slightly vary in time, as you go on
+editing or solving the problem.
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="PinnedVariable"></a>5.3. Pinned Variable</h3></div></div></div>
+<p>
+After certain actions, the definition of a variable may become obsolete.
+For example, if point
+<span class="emphasis"><em>P</em></span>
+or point
+<span class="emphasis"><em>W</em></span>
+is
+<a class="link" href="#EraseElements" title="9. Erase Elements">erased</a>,
+the definition of the variable
+<span class="emphasis"><em>myDistance</em></span>
+<a class="link" href="#CreatingAVariable" title="5.1. Creating a Variable">above</a>
+will become obsolete. The same if figure
+<span class="emphasis"><em>MyCube</em></span>
+is
+<a class="link" href="#Transform" title="13. Transform">transformed</a>
+or
+<a class="link" href="#RemoveFigure" title="8. Remove Figure">removed</a>.
+Such a variable is called <span class="emphasis"><em>pinned</em></span>.
+</p>
+<p>
+A pinned variable has a fixed value no longer dependent upon its original definition. For example,
+<a class="link" href="#EraseElements" title="9. Erase Elements">erasing</a>
+point
+<span class="emphasis"><em>P</em></span>
+in figure
+<span class="emphasis"><em>MyCube</em></span>
+will pin variable
+<span class="emphasis"><em>myDistance</em></span>.
+Likewise,
+<a class="link" href="#ScaleFigure" title="13.1. Scale Figure">scaling</a> 
+<span class="emphasis"><em>MyCube</em></span>
+will pin variable
+<span class="emphasis"><em>myDistance</em></span>.
+Its value will be unaffected by scaling.
+</p>
+<p>
+If the action that pinned a variable is
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>,
+the definition of the variable is restored.
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="LifetimeOfAVariable"></a>5.4. Lifetime of a Variable</h3></div></div></div>
+<p>
+Once a variable is defined, it can be used in
+<a class="link" href="#Calculator" title="6. Calculator">calculations</a> and
+referenced in actions, such as
+<a class="link" href="#Measure" title="11. Measure">measuring</a>,
+<a class="link" href="#Draw" title="12. Draw">drawing</a>
+and
+<a class="link" href="#Transform" title="13. Transform">transforming</a>
+figures. A variable can also be used to
+<a class="link" href="#Answer" title="3. Answer">answer</a> a problem. A
+<a class="link" href="#PinnedVariable" title="5.3. Pinned Variable">pinned</a>
+variable can still be used in calculations and references.
+</p>
+<p>
+A variable exists as long as it is recorded on the
+<a class="link" href="#Notepad" title="7. Notepad">notepad</a>.
+<a class="link" href="#ClearNotepad" title="7.1. Clear Notepad">Clearing</a>
+the notepad will remove all variables. Use caution since this action cannot be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+When the document, such as a problem or a solution, is saved,
+all the variables recorded on the
+<a class="link" href="#Notepad" title="7. Notepad">notepad</a>
+are saved, too. 
+</p>
+</div>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Notepad">Notepad</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Calculator" title="6. Calculator">Calculator</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SaveProblem" title="7. Save Problem">Save Problem</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SaveSolution" title="11. Save Solution">Save Solution</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="RenameVariable"></a>5.5. Rename Variable</h3></div></div></div>
+<p>
+To rename a variable, select
+<span class="emphasis"><em>Rename Variable</em></span>
+from the
+<span class="emphasis"><em>Edit</em></span>
+menu. A dialog will pop up. Select the variable you wish to rename from the drop-down list,
+enter the new name for the variable and click
+<span class="emphasis"><em>OK</em></span>.
+The new name must be a
+<a class="link" href="#CreatingAVariable" title="5.1. Creating a Variable">valid</a>
+variable name.
+</p>
+<p>
+Renaming a variable will result in some of the notepad
+<a class="link" href="#Notepad" title="7. Notepad">records</a>
+being updated accordingly.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+Variables cannot be renamed during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Notepad">Notepad</a></li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="Calculator"></a>6. Calculator</h2></div></div></div>
+<p>
+The calculator is located at the bottom of the window, just under the
+<a class="link" href="#Notepad" title="7. Notepad">notepad</a>.
+The calculator operates in the context of the current document.
+</p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="Expressions"></a>6.1. Expressions</h3></div></div></div>
+<p>
+Calculations are performed upon valid expressions. Expressions can contain
+numbers,
+<a class="link" href="#Variables" title="5. Variables">variables</a>,
+the constant
+<span class="emphasis"><em>PI</em></span>,
+operators, functions and parentheses.
+</p>
+<div class="sect3">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="Assign"></a>6.1.1. Assign</h4></div></div></div>
+<p>
+To evaluate an expression
+<span class="emphasis"><em>myExpression</em></span>
+and assign the result to a new variable
+<span class="emphasis"><em>myVariable</em></span>,
+type in:
+</p>
+<pre class="programlisting">
+myVariable = myExpression
+</pre>
+<p>
+and press
+<span class="emphasis"><em>Enter</em></span>.
+The variable name must be unique in the context of the current
+document. A new record will be added to the
+<a class="link" href="#Notepad" title="7. Notepad">notepad</a>. The newly created variable can be
+used in subsequent calculations and references.
+</p>
+</div>
+<div class="sect3">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="Evaluate"></a>6.1.2. Evaluate</h4></div></div></div>
+<p>
+To evaluate the expression without assigning it to a variable, type in:
+
+</p>
+<pre class="programlisting">
+myExpression
+</pre>
+<p>
+
+and press
+<span class="emphasis"><em>Enter</em></span>.
+The numeric value of
+<span class="emphasis"><em>myExpression</em></span>
+will be displayed. No new variable will be created.
+</p>
+</div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="Operators"></a>6.2. Operators</h3></div></div></div>
+<p>
+The following operators are supported:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
++ (add)
+</li>
+<li class="listitem">
+- (negate, subtract)
+</li>
+<li class="listitem">
+* (multiply)
+</li>
+<li class="listitem">
+/ (divide)
+</li>
+<li class="listitem">
+^ (power operator)
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="Functions"></a>6.3. Functions</h3></div></div></div>
+<p>
+The following functions are supported:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+sqrt (square root)
+</li>
+<li class="listitem">
+sin
+</li>
+<li class="listitem">
+cos
+</li>
+<li class="listitem">
+tan
+</li>
+<li class="listitem">
+asin
+</li>
+<li class="listitem">
+acos
+</li>
+<li class="listitem">
+atan
+</li>
+</ul></div>
+<p>
+Function arguments must be taken into parentheses.
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="Examples"></a>6.4. Examples</h3></div></div></div>
+<p>
+Calculate the side of a cube whose volume is
+<span class="emphasis"><em>myVolume</em></span>:
+</p>
+<pre class="programlisting">
+mySide = myVolume ^ (1/3)
+</pre>
+<p>
+Calculate the side adjacent to angle
+<span class="emphasis"><em>myAngle</em></span>
+in a right triangle whose hypothenuse is
+<span class="emphasis"><em>myHypothenuse</em></span>:
+</p>
+<pre class="programlisting">
+mySide = myHypothenuse * cos(myAngle)
+</pre>
+</div>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Notepad">Notepad</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="Notepad"></a>7. Notepad</h2></div></div></div>
+<p>
+The notepad is located under the
+<a class="link" href="#ProblemText" title="1. Problem Text">problem text</a>.
+</p>
+<p>
+Each time a new
+<a class="link" href="#CreatingAVariable" title="5.1. Creating a Variable">variable</a>
+is created as a result of a measurement or
+<a class="link" href="#Assign" title="6.1.1. Assign">assigned</a>
+in a calculation, a record is automatically added to the notepad.
+Each record consists of a unique variable name and an expression.
+Measurement records also contain the name of
+the figure where the measurement has been taken. For example, the following record:
+</p>
+<pre class="programlisting">
+myDistance = |AB| : MyCube
+</pre>
+<p>
+is the result of measuring the distance between
+points
+<span class="emphasis"><em>A</em></span>
+and
+<span class="emphasis"><em>B</em></span>
+in a figure named
+<span class="emphasis"><em>MyCube</em></span>.
+The distance has been assigned to variable
+<span class="emphasis"><em>myDistance</em></span>.
+The record:
+</p>
+<pre class="programlisting">
+myAngle = &lt;PLX : MyPyramid
+</pre>
+<p>
+is a result of measuring an angle in a figure named
+<span class="emphasis"><em>MyPyramid</em></span>.
+The record:
+</p>
+<pre class="programlisting">
+myVolume = volume : Figure1
+</pre>
+<p>
+is the result of computing the volume of a figure named
+<span class="emphasis"><em>Figure1</em></span>.
+The following record was added as the result of an
+<a class="link" href="#Assign" title="6.1.1. Assign">assignment</a>:
+</p>
+<pre class="programlisting">
+h = 2 * myVolume / myArea
+</pre>
+<p>
+If a variable is
+<a class="link" href="#PinnedVariable" title="5.3. Pinned Variable">pinned</a>,
+its definition no longer shows on the notepad. For example,
+if point
+<span class="emphasis"><em>X</em></span>
+is
+<a class="link" href="#EraseElements" title="9. Erase Elements">erased</a>,
+variable
+<span class="emphasis"><em>myAngle</em></span>
+will be stripped of its definition and the second example above will read:
+</p>
+<pre class="programlisting">
+myAngle
+</pre>
+<p>
+Notepad records are owned by the current document, whether it is
+a problem or a solution. When the document is saved,
+the notepad records will be saved with it.
+</p>
+<p>
+When the current document is closed,
+the notepad will be cleared of records. If another document is
+opened, its notepad records will be displayed instead.
+</p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ClearNotepad"></a>7.1. Clear Notepad</h3></div></div></div>
+<p>
+To erase all records from the notepad, the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>
+selects
+<span class="emphasis"><em>Clear Notepad</em></span>
+from the <span class="emphasis"><em>Edit</em></span> menu.
+Use caution since this action cannot be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+</div>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Calculator" title="6. Calculator">Calculator</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="Undo"></a>8. Undo Actions</h2></div></div></div>
+<p>
+To undo the last action performed on the current document, select
+<span class="emphasis"><em>Undo</em></span>
+from the <span class="emphasis"><em>Edit</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Undo"></span>
+button on the tool bar. In a solution, the action will be also
+erased from the
+<a class="link" href="#SolutionLog" title="12. Solution Log">log</a>.
+The actions are undone in the reverse order
+as they have been performed.
+</p>
+<p>
+To view a short description of the action that would be undone,
+pause the mouse over the 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Undo"></span>
+button.
+</p>
+<p>
+Any undone action can be
+<a class="link" href="#Redo" title="9. Redo Actions">redone</a>.
+</p>
+<p>
+Some of the actions cannot be undone. A warning is displayed when such
+an action is about to take place.
+</p>
+<p>
+Actions cannot be undone during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Redo" title="9. Redo Actions">Redo Actions</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SolutionLog" title="12. Solution Log">Solution Log</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="Redo"></a>9. Redo Actions</h2></div></div></div>
+<p>
+To redo the last
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>
+action on the current document, select
+<span class="emphasis"><em>Redo</em></span>
+from the <span class="emphasis"><em>Edit</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Redo"></span>
+button on the tool bar. In a solution, the action will be added back to the
+<a class="link" href="#SolutionLog" title="12. Solution Log">log</a>.
+The actions are redone in the reverse order as they have been undone.
+</p>
+<p>
+To view a short description of the action that would be redone,
+pause the mouse over the 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Redo"></span>
+button.
+</p>
+<p>
+Actions cannot be redone during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SolutionLog" title="12. Solution Log">Solution Log</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="Language"></a>10. Language</h2></div></div></div>
+<p>
+To switch to a different language, select
+<span class="emphasis"><em>Language</em></span>
+from the
+<span class="emphasis"><em>Document</em></span>
+menu, then select the desired language.
+</p>
+<p>
+The current document, whether it is a problem or a solution, will be closed first.
+If there are unsaved modifications, a dialog will be displayed asking
+if the current document should be saved before it is closed.
+</p>
+<p>
+Click <span class="emphasis"><em>Yes</em></span> to save
+the current document. 
+</p>
+<p>
+Click <span class="emphasis"><em>No</em></span> to close
+the current document without saving. Note that all unsaved modifications
+to the current document will be lost.
+</p>
+<p>
+The language cannot be changed during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="Help"></a>11. Help</h2></div></div></div>
+<p>
+Many action dialogs feature a
+<span class="emphasis"><em>Help</em></span>
+button. Click that button for context-sensitive help. The relevant topic
+will be displayed on the right side of the window. Click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24PreviousTopic"></span>
+and
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24NextTopic"></span>
+buttons to navigate the previously viewed help topics. Click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Contents"></span>
+button to go to the table of contents.
+</p>
+<p>
+To hide the help pane, click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Help"></span>
+button. To bring it back, click the button again.
+</p>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="KnownLimitations"></a>12. Known Limitations</h2></div></div></div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="InordinateSizeOrShape"></a>12.1. Inordinate Size or Shape</h3></div></div></div>
+<p>
+Geometria may behave erratically if the figures contain excessively sized or oddly shaped
+elements. Here are some guidelines for keeping the figures safe:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+Avoid both very large (over 100) and very small (under 0.01)
+<a class="link" href="#ScaleFigure" title="13.1. Scale Figure">scaling</a>
+factors. 
+</li>
+<li class="listitem">
+When creating a
+<a class="link" href="#NewFigure" title="1. New Figure">new</a>,
+prism or pyramid, keep the number of sides within reasonable limit.
+By design, Geometria cannot handle any solids but convex polyhedra. However
+prisms and pyramids with a large number of sides do look like
+cylinders and cones respectively when the
+<a class="link" href="#Wireframe" title="10.4.1. Wireframe">wireframe</a>
+is off. Unfortunately, actions upon such figures may be slow and unimpressive.
+The application may become unstable and fail to respond to user actions.
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="PreviousVersionsOfGeometria"></a>12.2. Previous Versions of Geometria</h3></div></div></div>
+<p>
+Problems, solutions and figures created with Geometria versions prior
+to 4.0 are no longer supported. If you need help, please visit the Geometria
+<a class="ulink" href="http://geocentral.net/geometria" target="_blank">home page</a>
+and email the development team.
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="SolutionLanguage"></a>12.3. Solution Language</h3></div></div></div>
+<p>
+Solution files must be
+<a class="link" href="#OpenSolution" title="10. Open Solution">opened</a>
+using the same
+<a class="link" href="#Language" title="10. Language">language</a>
+in which they have been
+<a class="link" href="#SaveSolution" title="11. Save Solution">saved</a>.
+</p>
+</div>
+</div>
+</div>
+<div class="chapter">
+<div class="titlepage"><div><div><h1 class="title">
+<a name="Documents"></a>Chapter 2. Documents</h1></div></div></div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="ProblemText"></a>1. Problem Text</h2></div></div></div>
+<p>
+The text of the problem is located under the tool bar, on the right side of the
+<a class="link" href="#Navigator" title="4. Navigator">Navigator</a>.
+</p>
+<p>
+The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>
+can edit the problem text by double-clicking the text area. The problem text supports
+<a class="ulink" href="http://www.w3schools.com/html" target="_blank">HTML markup</a>.
+Click away to preview the changes.
+</p>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="DocumentProperties"></a>2. Document Properties</h2></div></div></div>
+<p>
+To view the properties of the current document, select
+<span class="emphasis"><em>Document Properties</em></span>
+from the
+<span class="emphasis"><em>Document</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Properties"></span>
+button on the tool bar. A dialog will pop up.
+</p>
+<p>
+To edit the properties of the problem, the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>
+double clicks the problem properties area.
+Click away to preview the changes.
+When done editing, click
+<span class="emphasis"><em>OK</em></span>.
+Click
+<span class="emphasis"><em>Cancel</em></span>
+to ignore the changes.
+</p>
+<p>
+The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>
+will see both the properties of the problem, at the top, and the properties of the
+solution, at the bottom. To edit the properties of the solution, the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>
+double clicks the solution properties area.
+Click away to preview the changes.
+When done editing, click
+<span class="emphasis"><em>OK</em></span>.
+Click
+<span class="emphasis"><em>Cancel</em></span>
+to ignore the changes. The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>
+cannot edit the properties of the problem.
+</p>
+<p>
+Both the problem and the solution properties support
+<a class="ulink" href="http://www.w3schools.com/html" target="_blank">HTML markup</a>.
+</p>
+<p>
+Changes to the document properties cannot be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+Solution properties cannot be edited during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li></ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="Answer"></a>3. Answer</h2></div></div></div>
+<p>
+A problem is not ready to be solved until the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>
+supplies it with an answer. The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>'s
+answer is considered correct if it matches the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>'s.
+See the
+<a class="link" href="#Overview" title="4. Overview">Overview</a>
+for details.
+</p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="EditorsAnswer"></a>3.1. Editor's Answer</h3></div></div></div>
+<p>
+To edit the answer to the current problem, select
+<span class="emphasis"><em>Answer</em></span>
+from the 
+<span class="emphasis"><em>Document</em></span>
+menu.
+</p>
+<p>
+The changes to the answer can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<div class="sect3">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="AnswerTypes"></a>3.1.1. Answer Types</h4></div></div></div>
+<p>
+Select the answer type under the
+<span class="emphasis"><em>Type</em></span>
+tab:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+Number
+</li>
+<li class="listitem">
+Multiple choice
+</li>
+<li class="listitem">
+Point Set
+</li>
+<li class="listitem">
+Segment Set
+</li>
+<li class="listitem">
+Fixed Plane, or
+</li>
+<li class="listitem">
+Condition Plane
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="AnswerValues"></a>3.1.2. Answer Values</h4></div></div></div>
+<p>
+Click the
+<span class="emphasis"><em>Value</em></span>
+tab. Depending on the answer type, proceed as directed in the sections below.
+</p>
+<p>
+Note that although, as a rule, the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>
+enters the answer symbolically, Geometria stores answers numerically.
+This refers to both
+<a class="link" href="#Variables" title="5. Variables">variables</a>
+and points. Variables are stored as numbers, points are stored as coordinates,
+that is triplets of numbers. Once entered,
+the answer will be unaffected by all subsequent actions upon figures.
+Therefore it is a good idea to (re)enter the answer as a last action
+before saving the problem and making it available to
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">solvers</a>.
+</p>
+<div class="sect4">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="Number"></a>3.1.2.1. Number</h5></div></div></div>
+<p>
+Enter a valid
+<a class="link" href="#Expressions" title="6.1. Expressions">expression</a>.
+Click
+<span class="emphasis"><em>OK</em></span>
+to keep the changes to the answer. Click
+<span class="emphasis"><em>Cancel</em></span>
+to discard the changes.
+</p>
+</div>
+<div class="sect4">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="PointSet"></a>3.1.2.2. Point Set</h5></div></div></div>
+<p>
+The term
+<span class="emphasis"><em>point set</em></span>
+refers to a single point, end points of a segment (2 points) or a path (2 or more points).
+</p>
+<p>
+Select the target figure. Enter one or more labels separated by commas. To minimize the input, have the points
+<a class="link" href="#SelectElements" title="10.3. Select Elements">selected</a>
+ahead of time in the selected figure.Click
+<span class="emphasis"><em>OK</em></span>
+to keep the changes to the answer. Click
+<span class="emphasis"><em>Cancel</em></span>
+to discard the changes.
+</p>
+</div>
+<div class="sect4">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="SegmentSet"></a>3.1.2.3. Segment Set</h5></div></div></div>
+<p>
+The segments must satisfy a certain condition. Currently, the following conditions are supported:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+The segments form a
+<a class="ulink" href="http://en.wikipedia.org/wiki/Hamiltonian_path" target="_blank">Hamiltonian cycle</a>.
+</li></ul></div>
+<p>
+Select the target figure, then select a condition. Click
+<span class="emphasis"><em>OK</em></span>
+to keep the changes to the answer. Click
+<span class="emphasis"><em>Cancel</em></span>
+to discard the changes.
+</p>
+</div>
+<div class="sect4">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="FixedPlane"></a>3.1.2.4. Fixed Plane</h5></div></div></div>
+<p>
+Select the target figure.
+Reference the plane by 3 comma-separated labels. To minimize the input,
+have some reference elements, such as 3 points, a point and a segment, two segments, or a face
+<a class="link" href="#SelectElements" title="10.3. Select Elements">selected</a>
+ahead of time in the selected figure. Click
+<span class="emphasis"><em>OK</em></span>
+to keep the changes to the answer. Click
+<span class="emphasis"><em>Cancel</em></span>
+to discard the changes.
+</p>
+</div>
+<div class="sect4">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="ConditionPlane"></a>3.1.2.5. Condition Plane</h5></div></div></div>
+<p>
+Unlike a fixed plane, which is a plane occupying a fixed position in space, a
+<span class="emphasis"><em>condition plane</em></span>
+must satisfy a number of conditions. Generally, a condition plane is not unique.
+</p>
+<p>
+First, select the target figure. Then select the conditions.
+Select a condition in at least one of the groups.Click
+<span class="emphasis"><em>OK</em></span>
+to keep the changes to the answer. Click
+<span class="emphasis"><em>Cancel</em></span>
+to discard the changes.
+</p>
+<p>
+There are three groups of conditions.
+</p>
+<p>
+The
+<span class="emphasis"><em>first group</em></span>
+consists of the following conditions:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+Plane contains a given point
+</li>
+<li class="listitem">
+Plane contains a given line
+</li>
+<li class="listitem">
+Plane does not contain a given point
+</li>
+<li class="listitem">
+Plane does not contain a given line
+</li>
+<li class="listitem">
+Plane contains no vertex of the selected figure
+</li>
+<li class="listitem">
+Plane contains no edge of the selected figure
+</li>
+<li class="listitem">
+Plane is parallel to a given line
+</li>
+<li class="listitem">
+Plane is parallel to a given plane
+</li>
+<li class="listitem">
+Plane is perpendicular to a given line
+</li>
+<li class="listitem">
+Plane is perpendicular to a given plane
+</li>
+</ul></div>
+<p>
+Reference the given point, line or plane, as required, by
+comma-separated labels. To minimize the input, have the elements
+<a class="link" href="#SelectElements" title="10.3. Select Elements">selected</a>
+ahead of time in the selected figure.
+</p>
+<p>
+The
+<span class="emphasis"><em>second group</em></span>
+consists of the following conditions:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+Plane cuts the volume of the selected figure in the given ratio
+</li></ul></div>
+<p>
+Enter valid
+<a class="link" href="#Expressions" title="6.1. Expressions">expressions</a>
+for the ratio's numerator and denominator.
+</p>
+<p>
+The
+<span class="emphasis"><em>third group</em></span>
+refers to the way the plane cuts the figure. The section may be shaped as:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+Isoscelles triangle
+</li>
+<li class="listitem">
+Right triangle
+</li>
+<li class="listitem">
+Equilateral (regular) triangle
+</li>
+<li class="listitem">
+Parallelogram
+</li>
+<li class="listitem">
+Rhombus
+</li>
+<li class="listitem">
+Rectangle
+</li>
+<li class="listitem">
+Square
+</li>
+</ul></div>
+<p>
+Click
+<span class="emphasis"><em>OK</em></span>
+to keep the changes to the answer. Click
+<span class="emphasis"><em>Cancel</em></span>
+to discard the changes.
+</p>
+</div>
+<div class="sect4">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="MultipleChoice"></a>3.1.2.6. Multiple choice</h5></div></div></div>
+<p>
+Enter an option. Click the
+<span class="emphasis"><em>Add</em></span>
+button to add another option. Click on any option to highlight it. Click the
+<span class="emphasis"><em>Select</em></span>
+button to select the highlighted option as the correct option.
+The correct option is displayed in bold face. Click the
+<span class="emphasis"><em>Remove</em></span>
+button to remove the highlighted option.
+</p>
+<p>
+Click
+<span class="emphasis"><em>OK</em></span>
+to keep the changes to the answer. Click
+<span class="emphasis"><em>Cancel</em></span>
+to discard the changes.
+</p>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="SolversAnswer"></a>3.2. Solver's Answer</h3></div></div></div>
+<p>
+The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>
+concludes the solution by providing a correct answer to the problem.
+Note, again, that the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>'s
+answer is considered correct if it matches the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>'s.
+</p>
+<p>
+Select
+<span class="emphasis"><em>Answer</em></span> from the
+<span class="emphasis"><em>Document</em></span> menu.
+Enter a valid
+<a class="link" href="#Expressions" title="6.1. Expressions">expression</a>
+or comma-separated labels or make a selection, according to what the problem is asking for.
+If the problem is asking for a point, a point set, a segment set or a plane,
+have some appropriate elements, such as points, segments or a face
+<a class="link" href="#SelectElements" title="10.3. Select Elements">selected</a>
+ahead of time in the selected figure. Click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+An evaluation of the answer (corect or incorrect) will pop up.
+</p>
+<p>
+If the answer is correct, it will conclude the
+<a class="link" href="#SolutionLog" title="12. Solution Log">solution log</a>.
+No more actions will be possible unless the answer is
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+<a class="link" href="#SaveSolution" title="11. Save Solution">Save</a>
+the solution so that it can be
+<a class="link" href="#SolutionLog" title="12. Solution Log">played back</a>
+later on.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+The problem cannot be answered during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Overview" title="4. Overview">Overview</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Notepad">Notepad</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="Navigator"></a>4. Navigator</h2></div></div></div>
+<p>
+The
+<span class="emphasis"><em>Navigator</em></span>
+allows you to manipulate problem, solution and figure files and organize them into folders.
+Both the files and the folders are stored on your computer.
+</p>
+<p>
+The Navigator is initially displayed on the left side of the window. To hide the Navigator,
+select
+<span class="emphasis"><em>Toggle Navigator</em></span>
+from the
+<span class="emphasis"><em>View</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Navigator"></span>
+icon on the tool bar. To bring the Navigator back, click the same icon again.
+</p>
+<p>
+You can tell the content of a file by its icon.
+The  <span class="geometriaIcon24 geometriaIconDoc geometriaIcon24ProblemFile"></span>icon
+indicates a problem file.
+The  <span class="geometriaIcon24 geometriaIconDoc geometriaIcon24SolutionFile"></span>icon
+indicates a solution file.
+The  <span class="geometriaIcon24 geometriaIconDoc geometriaIcon24FigureFile"></span>icon
+indicates a figure file.
+</p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="NewFolder"></a>4.1. New Folder</h3></div></div></div>
+<p>
+To create a new folder, click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24NewFolder"></span>
+icon on the toolbar, then enter the folder name in the box at the bottom of the navigator.
+Folder names can only contain alphanumeric characters and spaces. Note that the subfolders
+and files in any given folder must have unique names.
+</p>
+<p>
+The new folder will be added to the currently selected folder or,
+if no folder is selected, to the root folder.
+</p>
+<p>
+New folders cannot be created during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="RenameFile"></a>4.2. Rename File</h3></div></div></div>
+<p>
+To rename the selected file or folder, click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24RenameFile"></span>
+button on the tool bar.
+</p>
+<p>
+Folder and file names can only contain alphanumeric characters and spaces.
+Note that the subfoders and files in any given folder must have unique names.
+</p>
+<p>
+Files and folders cannot be renamed during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="MoveFile"></a>4.3. Move File</h3></div></div></div>
+<p>
+To move a file or a folder to another folder, drag and drop it onto the desired folder.
+</p>
+<p>
+Note that the subfoders and files in any given folder must have unique names.
+</p>
+<p>
+Files and folders cannot be moved during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="DeleteFile"></a>4.4. Delete File</h3></div></div></div>
+<p>
+To delete the selected file or folder, click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24RemoveFile"></span>
+icon on the tool bar. Use caution as this action cannot be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+Files and folders cannot be deleted during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+</div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="NewProblem"></a>5. New Problem</h2></div></div></div>
+<p>
+The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>
+creates a problem by either selecting
+<span class="emphasis"><em>New Problem</em></span> from the
+<span class="emphasis"><em>Document</em></span>
+menu or by clicking the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24NewProblem"></span>
+button on the tool bar.
+</p>
+<p>
+The current document, whether it is a problem or a solution, will be closed first.
+If there are unsaved modifications, a dialog will be displayed asking
+if the current document should be saved before it is closed.
+</p>
+<p>
+Click <span class="emphasis"><em>Yes</em></span> to save
+the current document. 
+</p>
+<p>
+Click <span class="emphasis"><em>No</em></span> to close
+the current document without saving. Note that all unsaved modifications
+to the current document will be lost.
+</p>
+<p>
+Click <span class="emphasis"><em>Cancel</em></span> to dismiss the dialog
+with no action taken.
+</p>
+<p>
+A new problem cannot be created during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#OpenProblem" title="6. Open Problem">Open Problem</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SaveProblem" title="7. Save Problem">Save Problem</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="OpenProblem"></a>6. Open Problem</h2></div></div></div>
+<p>
+To open a problem, double click it in the
+<a class="link" href="#Navigator" title="4. Navigator">Navigator</a>
+or select it and click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Open"></span>
+button on the tool bar. You can tell a problem file by its icon 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24ProblemFile"></span>.
+</p>
+<p>
+The current document, whether it is a problem or a solution, will be closed first.
+If there are unsaved modifications, a dialog will be displayed asking
+if the current document should be saved before it is closed.
+</p>
+<p>
+Click <span class="emphasis"><em>Yes</em></span> to save
+the current document. 
+</p>
+<p>
+Click <span class="emphasis"><em>No</em></span> to close
+the current document without saving. Note that all unsaved modifications
+to the current document will be lost.
+</p>
+<p>
+Click <span class="emphasis"><em>Cancel</em></span> to dismiss the dialog
+with no action taken.
+</p>
+<p>
+A problem cannot be opened during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#NewProblem" title="5. New Problem">New Problem</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SaveProblem" title="7. Save Problem">Save Problem</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="SaveProblem"></a>7. Save Problem</h2></div></div></div>
+<p>
+To save the changes to the current problem, the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>
+either selects
+<span class="emphasis"><em>Save Document</em></span> from
+the <span class="emphasis"><em>Document</em></span> menu
+or clicks the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24SaveDocument"></span>
+button on the tool bar.
+</p>
+<p>
+To save the problem under a different name, select
+<span class="emphasis"><em>Save Document As</em></span>
+from the
+<span class="emphasis"><em>Document</em></span>
+menu, then enter the file name in the box at the bottom of the navigator.
+File names can only contain alphanumeric characters and spaces. Note that the subfolders
+and files in any given folder must have unique names.
+The problem will be saved in the folder currently selected in the
+<a class="link" href="#Navigator" title="4. Navigator">Navigator</a>.
+If no folder is selected, the problem will be saved in the root folder.
+</p>
+<p>
+If this is a final revision of the problem, the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>
+may consider
+<a class="link" href="#ClearNotepad" title="7.1. Clear Notepad">erasing</a>
+all working calculations and measurements from the notepad so that
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">solvers</a>
+cannot see them.
+</p>
+<p>
+Beware, though, that the action of clearing the notepad cannot be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+A final revision of the problem should also be provided with an
+<a class="link" href="#EditorsAnswer" title="3.1. Editor's Answer">answer</a>.
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#NewProblem" title="5. New Problem">New Problem</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#OpenProblem" title="6. Open Problem">Open Problem</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#EditorsAnswer" title="3.1. Editor's Answer">Answer</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="LockProblem"></a>8. Lock Problem</h2></div></div></div>
+<p>
+To prevent any further editing of the problem, the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a>
+selects
+<span class="emphasis"><em>Lock Problem</em></span>
+from the
+<span class="emphasis"><em>Document</em></span>
+menu or clicks the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LockProblem"></span>
+button on the tool bar. When the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>
+opens a locked problem file, Geometria will automatically start a new solution. The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>
+will not be able to modify the problem itself.
+</p>
+<p>
+Use caution and
+<a class="link" href="#SaveProblem" title="7. Save Problem">save</a>
+an editable copy of the problem before locking it as this action cannot be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="SolveProblem"></a>9. Solve Problem</h2></div></div></div>
+<p>
+To solve the current problem or start a new solution, if the current problem
+is already being solved, select
+<span class="emphasis"><em>Solve Problem</em></span>
+from the
+<span class="emphasis"><em>Document</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24SolveProblem"></span>
+on the tool bar.
+</p>
+<p>
+If there are unsaved modifications, a dialog will be displayed asking
+if the current problem should be saved before it is closed.
+</p>
+<p>
+Click <span class="emphasis"><em>Yes</em></span> to save
+the current problem. Note that you will be solving the version of
+the problem you just saved.
+</p>
+<p>
+Click <span class="emphasis"><em>No</em></span> to close
+the current problem without saving. Note that all unsaved modifications
+to the current problem will be lost and you will be solving
+a problem different from the one you opened in the
+<a class="link" href="#Navigator" title="4. Navigator">Navigator</a>.
+</p>
+<p>
+Click <span class="emphasis"><em>Cancel</em></span> to dismiss the dialog
+with no action taken.
+</p>
+<p>
+A new solution to the current problem cannot be started during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#OpenProblem" title="6. Open Problem">Open Problem</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#OpenSolution" title="10. Open Solution">Open Solution</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SaveSolution" title="11. Save Solution">Save Solution</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="OpenSolution"></a>10. Open Solution</h2></div></div></div>
+<p>
+To open a solution, double click on it in the
+<a class="link" href="#Navigator" title="4. Navigator">Navigator</a>
+or select it and click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Open"></span>
+button on the tool bar. You can tell a solution file by its icon 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24SolutionFile"></span>.
+</p>
+<p>
+Once the solution is opened, it can be
+<a class="link" href="#Playback" title="12.1. Playback">played back</a>.
+</p>
+<p>
+The current document, whether it is a problem or a solution, will be closed first.
+If there are unsaved modifications, a dialog will be displayed asking
+if the current document should be saved before it is closed.
+</p>
+<p>
+Click <span class="emphasis"><em>Yes</em></span> to save
+the current document. 
+</p>
+<p>
+Click <span class="emphasis"><em>No</em></span> to close
+the current document without saving. Note that all unsaved modifications
+to the current document will be lost.
+</p>
+<p>
+Click <span class="emphasis"><em>Cancel</em></span> to dismiss the dialog
+with no action taken.
+</p>
+<p>
+A solution cannot be opened during another solution's
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SolveProblem" title="9. Solve Problem">Solve Problem</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SaveSolution" title="11. Save Solution">Save Solution</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="SaveSolution"></a>11. Save Solution</h2></div></div></div>
+<p>
+To save the changes to the current solution, the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>
+either selects
+<span class="emphasis"><em>Save Document</em></span> from
+the <span class="emphasis"><em>Document</em></span> menu
+or clicks the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24SaveDocument"></span>
+button on the tool bar.
+</p>
+<p>
+To save the solution under a different name, select
+<span class="emphasis"><em>Save Document As</em></span>
+from the
+<span class="emphasis"><em>Document</em></span>
+menu, then enter the file name in the box at the bottom of the navigator.
+File names can only contain alphanumeric characters and spaces. Note that the subfolders
+and files in any given folder must have unique names.
+The solution will be saved in the folder currently selected in the
+<a class="link" href="#Navigator" title="4. Navigator">Navigator</a>.
+If no folder is selected, the solution will be saved in the root folder.
+</p>
+<p>
+If this is a final revision of the solution, do not forget to conclude it
+with a correct
+<a class="link" href="#Answer" title="3. Answer">answer</a>.
+</p>
+<p>
+The solution cannot be saved during its
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SolveProblem" title="9. Solve Problem">Solve Problem</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#OpenSolution" title="10. Open Solution">Open Solution</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SolversAnswer" title="3.2. Solver's Answer">Answer</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="SolutionLog"></a>12. Solution Log</h2></div></div></div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="Playback"></a>12.1. Playback</h3></div></div></div>
+<p>
+As the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>
+progresses through the solution, his actions are recorded in the solution log. A
+<a class="link" href="#SaveSolution" title="11. Save Solution">saved</a>
+solution can later be opened and played back.
+</p>
+<p>
+To start the solution playback, click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LogNext"></span>
+button. To play back the next step, click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LogNext"></span>
+button again.
+</p>
+<p>
+To jump forward or backward, select an arbitrary record in the log.
+</p>
+<p>
+To erase all records following the selected record, click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LogCut"></span>
+button. Use caution since this action cannot be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+To rewind the solution playback so that you can start over, click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LogRewind"></span>
+button.
+</p>
+<p>
+To stop the solution playback and resume solving the problem, click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LogStop"></span>
+button.
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="SolutionComments"></a>12.2. Solution Comments</h3></div></div></div>
+<p>
+To comment on a solution step, double click on the small box on the right side of
+the record. A dialog will pop up. Type in some comments and click
+<span class="emphasis"><em>OK</em></span>.
+Click
+<span class="emphasis"><em>Cancel</em></span>
+to discard the changes. The comments support
+<a class="ulink" href="http://www.w3schools.com/html" target="_blank">HTML markup</a>.
+</p>
+<p>
+A commented solution is marked with the 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24ProblemFile"></span>icon.
+To view the comments, pause the mouse over the corresponding record.
+</p>
+<p>
+Comments cannot be edited during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+</div>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Overview" title="4. Overview">Overview</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SaveSolution" title="11. Save Solution">Save Solution</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#OpenSolution" title="10. Open Solution">Open Solution</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="ShareDocument"></a>13. Share Document</h2></div></div></div>
+<p>
+To share a document with another user, you need to
+<a class="link" href="#ExportDocument" title="13.1. Export Document">export</a>
+it first. Save the exported content to a regular file on your computer.
+Share the saved file. The other user will open the file and
+<a class="link" href="#ImportDocument" title="13.2. Import Document">import</a>
+its content.
+</p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ExportDocument"></a>13.1. Export Document</h3></div></div></div>
+<p>
+To export the current document, select
+<span class="emphasis"><em>Export Document</em></span>
+from the
+<span class="emphasis"><em>Document</em></span>
+menu. The
+<a class="ulink" href="http://www.json.org" target="_blank">JSON</a>-formatted
+content of the document will pop up. Click in the text area, select all, copy, and
+paste into a text editor. Save the file in plain text format. The saved file can be
+<a class="link" href="#ShareDocument" title="13. Share Document">shared</a>
+with other users.
+</p>
+<p>
+A solution cannot be exported during its
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ImportDocument"></a>13.2. Import Document</h3></div></div></div>
+<p>
+To import the document another user has shared with you, open the file in a text editor,
+select all and copy. Select
+<span class="emphasis"><em>Import Document</em></span>
+from the
+<span class="emphasis"><em>Document</em></span>
+menu. Paste into the text area and click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+The current document, whether it is a problem or a solution, will be closed first.
+If there are unsaved modifications, a dialog will be displayed asking
+if the current document should be saved before it is closed.
+</p>
+<p>
+Click <span class="emphasis"><em>Yes</em></span> to save
+the current document. 
+</p>
+<p>
+Click <span class="emphasis"><em>No</em></span> to close
+the current document without saving. Note that all unsaved modifications
+to the current document will be lost.
+</p>
+<p>
+Click <span class="emphasis"><em>Cancel</em></span> to dismiss the dialog
+with no action taken.
+</p>
+<p>
+A document cannot be imported during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+</div>
+</div>
+</div>
+<div class="chapter">
+<div class="titlepage"><div><div><h1 class="title">
+<a name="Figures"></a>Chapter 3. Figures</h1></div></div></div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="NewFigure"></a>1. New Figure</h2></div></div></div>
+<p>
+Geometria offers a gallery of common figures, such as regular prisms, regular pyramids
+and the five platonic solids, namely, the tetrahedron, cube,
+octahedron, dodecahedron and icosahedron.
+</p>
+<p>
+Select a figure from the
+<span class="emphasis"><em>Figure-&gt;New Figure</em></span>
+menu to add it to the current document.
+</p>
+<p>
+When selecting a prism or a pyramid, enter a number of sides between 3 and 100.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+A new figure cannot be added during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#OpenFigure" title="2. Open Figure">Open Figure</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="OpenFigure"></a>2. Open Figure</h2></div></div></div>
+<p>
+To open a figure file, double click it in the
+<a class="link" href="#Navigator" title="4. Navigator">Navigator</a>
+or select it and click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Open"></span>
+button on the tool bar. You can tell a figure file by its icon 
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24FigureFile"></span>.
+</p>
+<p>
+The figure will be added to the current document.
+</p>
+<p>
+In addition, a gallery of common
+<a class="link" href="#NewFigure" title="1. New Figure">figures</a>
+is available to choose from, including prisms, pyramids and platonic solids.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+A figure cannot be opened during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#NewFigure" title="1. New Figure">New Figure</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SaveFigure" title="4. Save Figure">Save Figure</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="CloneFigure"></a>3. Clone Figure</h2></div></div></div>
+<p>
+To clone a figure, select
+<span class="emphasis"><em>Clone Figure</em></span>
+from the
+<span class="emphasis"><em>Figure</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Clone"></span>
+button on the tool bar.
+</p>
+<p>
+A copy of the selected figure will be added to the current document.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+Figures cannot be cloned during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li></ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="SaveFigure"></a>4. Save Figure</h2></div></div></div>
+<p>
+To save a figure, select it in the current document, then select
+<span class="emphasis"><em>Save Figure</em></span>
+from the
+<span class="emphasis"><em>Figure</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24SaveFigure"></span>
+button on the tool bar. Enter the file name in the box at the bottom of the navigator.
+File names can only contain alphanumeric characters and spaces. Note that the subfolders
+and files in any given folder must have unique names.
+</p>
+<p>
+The figure will be saved in the folder currently selected in the
+<a class="link" href="#Navigator" title="4. Navigator">Navigator</a>.
+If no folder is selected, the figure will be saved in the root folder.
+</p>
+<p>
+A figure cannot be saved during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#OpenFigure" title="2. Open Figure">Open Figure</a></li></ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="PrintFigure"></a>5. Print Figure</h2></div></div></div>
+<p>
+To print a figure:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+Select
+<span class="emphasis"><em>Print Figure</em></span>
+from the
+<span class="emphasis"><em>Figure</em></span>
+menu. An HTML-formatted text will pop up.
+</li>
+<li class="listitem">
+Click in the text area, select all and copy.
+</li>
+<li class="listitem">
+Paste into a text editor.
+</li>
+<li class="listitem">
+Save to a file in plain text format with extension
+<span class="emphasis"><em>html</em></span>,
+for example, MyFigure.html.
+</li>
+<li class="listitem">
+Drag the file into your web browser.
+</li>
+<li class="listitem">
+Scale the figure if necessary and print it.
+</li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="RenameFigure"></a>6. Rename Figure</h2></div></div></div>
+<p>
+To rename a figure in the current document, select it, then select
+<span class="emphasis"><em>Rename Figure</em></span> from
+the <span class="emphasis"><em>Edit</em></span> menu.
+</p>
+<p>
+A figure name must consist of alphanumeric characters and begin with a letter.
+Special and accented characters are not allowed. A figure name cannot contain spaces.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>
+cannot rename a figure that is part of the problem. However,
+any figures created in the process of solving the problem can be renamed.
+</p>
+<p>
+A figure cannot be renamed during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li></ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="RenamePoint"></a>7. Rename Point</h2></div></div></div>
+<p>
+To rename a point in a figure, the
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editor</a> 
+<a class="link" href="#SelectElements" title="10.3. Select Elements">selects</a>
+the point, right-clicks and selects
+<span class="emphasis"><em>Rename Point</em></span>
+from the popup menu. Alternatively,
+<span class="emphasis"><em>Rename Point</em></span>
+can be selected in the
+<span class="emphasis"><em>Edit</em></span>
+menu.
+</p>
+<p>
+A dialog will pop up. Make sure the correct point is selected, enter a new
+label for the point and click
+<span class="emphasis"><em>OK</em></span>.
+A valid label consists of a capital letter, which may be followed by one or more digits.
+Point labels in a figure must be unique.
+</p>
+<p>
+Renaming a point may result in some of the notepad
+<a class="link" href="#Notepad" title="7. Notepad">records</a>
+being updated accordingly.
+</p>
+<p>
+The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>
+cannot rename a point in any figure that is part of the problem. However, points in figures
+that have been created in the process of solving the problem can be renamed.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+Points cannot be renamed during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Notepad">Notepad</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="RemoveFigure"></a>8. Remove Figure</h2></div></div></div>
+<p>
+To remove a figure from the current document, select
+<span class="emphasis"><em>Remove Figure</em></span> from
+the <span class="emphasis"><em>Edit</em></span> menu
+or click
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24RemoveFigure"></span>
+button on the tool bar.
+</p>
+<p>
+Removing a figure that has been
+<a class="link" href="#Measure" title="11. Measure">measured</a>
+will result in some of the variables being
+<a class="link" href="#PinnedVariable" title="5.3. Pinned Variable">pinned</a>.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>
+cannot remove a figure that is part of the problem. However,
+any figures created in the process of solving the problem can be removed.
+</p>
+<p>
+A figure cannot be removed during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="EraseElements"></a>9. Erase Elements</h2></div></div></div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="EraseSegment"></a>9.1. Erase Segment</h3></div></div></div>
+<p>
+To erase a segment,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+either the segment or the end points between which to erase, right-click and select
+<span class="emphasis"><em>Erase Segment</em></span>.
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Erase Segment</em></span>
+from the
+<span class="emphasis"><em>Edit</em></span>
+menu. The segment cannot belong to an edge.
+</p>
+<p>
+If a dialog pops up, fill in the missing point labels and click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+Erasing a segment that has been referenced in measurements
+will result in some of the variables being
+<a class="link" href="#PinnedVariable" title="5.3. Pinned Variable">pinned</a>.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+A segment cannot be erased during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="EraseSelection"></a>9.2. Erase Selection</h3></div></div></div>
+<p>
+To erase one or more elements, such as points and/or segments,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+them, right-click and select
+<span class="emphasis"><em>Erase Selection</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Erase Selection</em></span>
+from the
+<span class="emphasis"><em>Edit</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Erase"></span>
+button on the tool bar.
+</p>
+<p>
+Vertices and segments that belong to edges will not be erased.
+</p>
+<p>
+To erase all points and segments in a figure (with the exception of vertices and edges),
+use the
+<a class="link" href="#SelectAndDeselect" title="10.3.2. Select and Deselect">Select All</a>
+action first.
+</p>
+<p>
+To erase only a part of a drawn segment, use the
+<a class="link" href="#EraseSegment" title="9.1. Erase Segment">Erase Segment</a>
+action.
+</p>
+<p>
+Erasing elements that have been referenced in measurements will result in
+some of the variables being
+<a class="link" href="#PinnedVariable" title="5.3. Pinned Variable">pinned</a>.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+The selection cannot be erased during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="View"></a>10. View</h2></div></div></div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="Attitude"></a>10.1. Attitude</h3></div></div></div>
+<p>
+<span class="emphasis"><em>Geometria</em></span> employs a fixed right-hand reference
+system. The Z axis of the reference system is parallel to the vertical edge of the screen.
+However,
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Editors</a>
+and
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solvers</a>
+require no knowledge of the technical aspects of the reference system.
+</p>
+<p>
+At any given time, the figure has a certain
+<span class="emphasis"><em>attitude</em></span>.
+The attitude can be described in terms of angles the figure forms with the reference system.
+When a
+<a class="link" href="#NewFigure" title="1. New Figure">new figure</a>
+is added to the document, it has the
+<span class="emphasis"><em>default</em></span> attitude.
+The figure's attitude changes as the figure is rotated.
+</p>
+<p>
+To revert a figure to the initial attitude, select
+<span class="emphasis"><em>Initial Attitude</em></span>
+from the
+<span class="emphasis"><em>View</em></span>
+menu or right-click and select
+<span class="emphasis"><em>Initial Attitude</em></span>
+from the popup menu.
+</p>
+<p>
+When a figure is saved, its current attitude becomes its initial attitude.
+To revert to the attitude the figure had when it was first added to the document, before
+any subsequent rotations, select 
+<span class="emphasis"><em>Default Attitude</em></span>
+from the
+<span class="emphasis"><em>View</em></span>
+menu.
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#RotateFigure" title="10.2. Rotate Figure">Rotate Figure</a></li></ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="RotateFigure"></a>10.2. Rotate Figure</h3></div></div></div>
+<p>
+Turn the selector
+<a class="link" href="#ToggleSelector" title="10.3.1. Toggle Selector">off</a>
+and stroke a figure with the mouse to rotate the figure. The rotation speed
+and angle will depend on the stroke.
+</p>
+<p>
+To pin a rotating figure, click on it.
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Attitude" title="10.1. Attitude">Attitude</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#ToggleSelector" title="10.3.1. Toggle Selector">Selector</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="SelectElements"></a>10.3. Select Elements</h3></div></div></div>
+<div class="sect3">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="ToggleSelector"></a>10.3.1. Toggle Selector</h4></div></div></div>
+<p>
+Right-click on a figure and select
+<span class="emphasis"><em>Toggle Selector</em></span>
+from the popup menu.
+Alternatively, select
+<span class="emphasis"><em>Toggle Selector</em></span>
+from the
+<span class="emphasis"><em>View</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Selector"></span>
+button on the tool bar.
+</p>
+<p>
+When the selector is
+<span class="emphasis"><em>on</em></span>
+(its tool bar button highlighted), elements can be selected
+by clicking on them. When the selector is
+<span class="emphasis"><em>off</em></span>,
+dragging the mouse will
+<a class="link" href="#RotateFigure" title="10.2. Rotate Figure">rotate</a>
+the figure.
+</p>
+<p>
+The selector is on by default.
+</p>
+</div>
+<div class="sect3">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="SelectAndDeselect"></a>10.3.2. Select and Deselect</h4></div></div></div>
+<p>
+Make sure the selector is
+<a class="link" href="#ToggleSelector" title="10.3.1. Toggle Selector">on</a>.
+</p>
+<p>
+Click an element, such as a point, a segment or a face, to select (highlight) it.
+Any number of elements can be selected. To select a face, turn the
+<a class="link" href="#Wireframe" title="10.4.1. Wireframe">wireframe</a>
+off.
+</p>
+<p>
+To select all points and segments in a figure (with the exception of vertices and edges),
+select
+<span class="emphasis"><em>Select All</em></span>
+from the
+<span class="emphasis"><em>Edit</em></span>
+menu. This action offers a convenient way to
+<a class="link" href="#EraseSelection" title="9.2. Erase Selection">erase all elements</a>
+at once.
+</p>
+<p>
+To deselect a selected element, click on it again. To clear the selection completely,
+right-click and select
+<span class="emphasis"><em>Deselect All</em></span>
+from the popup menu or select
+<span class="emphasis"><em>Deselect All</em></span>
+from the
+<span class="emphasis"><em>Edit</em></span>
+menu.
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#RotateFigure" title="10.2. Rotate Figure">Rotate Figure</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#ViewModes" title="10.4. View Modes">View Modes</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#EraseSelection" title="9.2. Erase Selection">Erase Selection</a></li>
+</ul></div>
+</div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ViewModes"></a>10.4. View Modes</h3></div></div></div>
+<div class="sect3">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="Wireframe"></a>10.4.1. Wireframe</h4></div></div></div>
+<p>
+By default, figures are displayed as wireframes and the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24WireFrame"></span>
+button on the tool bar is highlighted. To turn the wireframe off on the selected figure,
+select
+<span class="emphasis"><em>Toggle Wireframe</em></span>
+from the
+<span class="emphasis"><em>View</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24WireFrame"></span>
+button.
+</p>
+<p>
+In a wireframe, the segments and points on the visible side of the figure are solid,
+whereas the ones on the back side are dashed.
+Any point or segment can be
+<a class="link" href="#SelectElements" title="10.3. Select Elements">selected</a>,
+whether it is visible or not. Faces can only be
+<a class="link" href="#SelectElements" title="10.3. Select Elements">selected</a>
+when the wireframe is off.
+</p>
+<p>
+If the wireframe is off, the segments and points on the back side of the figure
+are not shown. Only points, segments and faces on the visible side of the figure can be
+<a class="link" href="#SelectElements" title="10.3. Select Elements">selected</a>.
+</p>
+</div>
+<div class="sect3">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="Color"></a>10.4.2. Set Color</h4></div></div></div>
+<p>
+When the
+<a class="link" href="#Wireframe" title="10.4.1. Wireframe">wireframe</a>
+is off, the figure is painted in a certain color. To change the color, select
+<span class="emphasis"><em>Set Color</em></span>
+from the 
+<span class="emphasis"><em>View</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Color"></span>
+button on the tool bar. Select a color in the popup dialog and click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+The color of a figure cannot be changed during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+</div>
+<div class="sect3">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="Labels"></a>10.4.3. Labels</h4></div></div></div>
+<p>
+By default, figure points are labeled. To hide the labels, select
+<span class="emphasis"><em>Toggle Labels</em></span> from the
+<span class="emphasis"><em>View</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Labels"></span>
+button on the tool bar. Labels will not show if the
+<a class="link" href="#Wireframe" title="10.4.1. Wireframe">wireframe</a>
+is off.
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li></ul></div>
+</div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ZoomFigure"></a>10.5. Zoom Figure</h3></div></div></div>
+<p>
+To zoom in on a figure, select <span class="emphasis"><em>Zoom In</em></span> from
+the <span class="emphasis"><em>View</em></span> menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24ZoomIn"></span>
+button on the tool bar.
+</p>
+<p>
+To zoom out, select <span class="emphasis"><em>Zoom Out</em></span> from
+the <span class="emphasis"><em>View</em></span> menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24ZoomOut"></span>
+button on the tool bar.
+</p>
+<p>
+To resize a figure so it fits into the window, right-click and select
+<span class="emphasis"><em>Fit To View</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Fit To View</em></span>
+from the
+<span class="emphasis"><em>View</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24FitToView"></span>
+button on the tool bar.
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; "><li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li></ul></div>
+</div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="Measure"></a>11. Measure</h2></div></div></div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="MeasureDistance"></a>11.1. Measure Distance</h3></div></div></div>
+<p>
+To measure the distance between two points,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+both points or the segment that joins them, right-click and select
+<span class="emphasis"><em>Measure Distance</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Measure Distance</em></span>
+from the
+<span class="emphasis"><em>Measure</em></span>
+menu, or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24MeasureDistance"></span>
+button on the tool bar.
+</p>
+<p>
+A dialog will pop up. Fill in, if necessary, the missing point labels, assign a unique
+<a class="link" href="#Variables" title="5. Variables">variable</a>
+and click
+<span class="emphasis"><em>OK</em></span>.
+A record will appear on the
+<a class="link" href="#Notepad" title="7. Notepad">notepad</a>,
+for example:
+</p>
+<pre class="programlisting">
+myDistance = |AB| : MyCube
+</pre>
+<p>
+where
+<span class="emphasis"><em>myDistance</em></span>
+is the variable assigned to the distance between points
+<span class="emphasis"><em>A</em></span>
+and
+<span class="emphasis"><em>B</em></span>
+in figure
+<span class="emphasis"><em>MyCube</em></span>.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+Distances cannot be measured during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Notepad">Notepad</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="MeasureAngle"></a>11.2. Measure Angle</h3></div></div></div>
+<p>
+To measure an angle,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+two segments that make it, right-click and select
+<span class="emphasis"><em>Measure Angle</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Measure Angle</em></span>
+from the
+<span class="emphasis"><em>Measure</em></span>
+menu, or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24MeasureAngle"></span>
+button on the tool bar.
+</p>
+<p>
+A dialog will pop up. Fill in, if necessary, the missing point labels, assign a unique
+<a class="link" href="#Variables" title="5. Variables">variable</a>
+and click
+<span class="emphasis"><em>OK</em></span>.
+A record will appear on the
+<a class="link" href="#Notepad" title="7. Notepad">notepad</a>, for example:
+</p>
+<pre class="programlisting">
+myAngle = &lt;ABC : MyPyramid
+</pre>
+<p>
+where
+<span class="emphasis"><em>myAngle</em></span>
+is the variable assigned to the angle between
+<span class="emphasis"><em>AB</em></span>
+and
+<span class="emphasis"><em>AC</em></span>
+in figure
+<span class="emphasis"><em>MyPyramid</em></span>.
+</p>
+<p>
+All angles are expressed in radians.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+Angles cannot be measured during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Notepad">Notepad</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ComputeArea"></a>11.3. Compute Area</h3></div></div></div>
+<p>
+To compute the area of a face,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+some elements that identify uniquely that face, for example, two segments or three points,
+right-click and select
+<span class="emphasis"><em>Compute Area</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Compute Area</em></span>
+from the
+<span class="emphasis"><em>Measure</em></span>
+menu, or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Area"></span>
+button on the tool bar.
+</p>
+<p>
+A dialog will pop up. Make sure the face selection is correct, assign a unique
+<a class="link" href="#Variables" title="5. Variables">variable</a>
+and click
+<span class="emphasis"><em>OK</em></span>.
+A record will appear on the
+<a class="link" href="#Notepad" title="7. Notepad">notepad</a>, for example:
+</p>
+<pre class="programlisting">
+myArea = area[ABC] : MyCube
+</pre>
+<p>
+where
+<span class="emphasis"><em>myArea</em></span>
+is the variable assigned to the area of the face that contains points
+<span class="emphasis"><em>A</em></span>,
+<span class="emphasis"><em>B</em></span>,
+<span class="emphasis"><em>C</em></span>
+in figure
+<span class="emphasis"><em>MyCube</em></span>.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+See also:
+</p>
+<p>
+Areas cannot be computed during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Notepad">Notepad</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ComputeTotalArea"></a>11.4. Compute Total Area</h3></div></div></div>
+<p>
+To compute the total area of a figure's surface, select
+<span class="emphasis"><em>Compute Total Area</em></span>
+from the
+<span class="emphasis"><em>Measure</em></span>
+menu.
+</p>
+<p>
+A dialog will pop up. Assign a unique
+<a class="link" href="#Variables" title="5. Variables">variable</a>
+and click
+<span class="emphasis"><em>OK</em></span>.
+A record will appear on the
+<a class="link" href="#Notepad" title="7. Notepad">notepad</a>, for example:
+</p>
+<pre class="programlisting">
+myArea = total area : MyCube
+</pre>
+<p>
+where
+<span class="emphasis"><em>myArea</em></span>
+is the variable assigned to the total area of figure
+<span class="emphasis"><em>MyCube</em></span>.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+The total area cannot be computed during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Notepad">Notepad</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ComputeVolume"></a>11.5. Compute Volume</h3></div></div></div>
+<p>
+To compute the volume of a figure, select
+<span class="emphasis"><em>Compute Volume</em></span>
+from the
+<span class="emphasis"><em>Measure</em></span>
+menu, or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Volume"></span>
+button on the tool bar.
+</p>
+<p>
+A dialog will pop up. Assign a unique
+<a class="link" href="#Variables" title="5. Variables">variable</a>
+and click
+<span class="emphasis"><em>OK</em></span>.
+A record will appear on the
+<a class="link" href="#Notepad" title="7. Notepad">notepad</a>,
+for example:
+</p>
+<pre class="programlisting">
+myVolume = volume : MyCube
+</pre>
+<p>
+where
+<span class="emphasis"><em>myVolume</em></span>
+is the variable assigned to the volume of figure
+<span class="emphasis"><em>MyCube</em></span>.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+The volume cannot be computed during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Notepad" title="7. Notepad">Notepad</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="Draw"></a>12. Draw</h2></div></div></div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="JoinPoints"></a>12.1. Join Points</h3></div></div></div>
+<p>
+To join two points with a segment,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+both points, right-click and select
+<span class="emphasis"><em>Join Points</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Joint Points</em></span>
+from the
+<span class="emphasis"><em>Draw</em></span>
+menu, or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24JoinPoints"></span>
+button on the tool bar.
+</p>
+<p>
+The two points must belong to the same face.
+</p>
+<p>
+If a dialog pops up, fill in the missing point labels and click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+Points cannot be joined during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="DrawPerpendicular"></a>12.2. Draw Perpendicular</h3></div></div></div>
+<p>
+To draw the perpendicular through a point to a segment,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+the point and the segment, then select
+<span class="emphasis"><em>Draw Perpendicular</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Draw Perpendicular</em></span>
+from the
+<span class="emphasis"><em>Draw</em></span>
+menu, or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Perpendicular"></span>
+button on the tool bar.
+</p>
+<p>
+The point and the segment must belong to the same face. The point may or may not
+belong to the segment.
+</p>
+<p>
+If a dialog pops up, fill in the missing point labels and click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+If both the point and the segment belong to two different faces at the same time,
+a perpendicular in each of those faces may be drawn.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+Perpendiculars cannot be drawn during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="DivideSegment"></a>12.3. Divide Segment</h3></div></div></div>
+<p>
+To divide a segment in a given ratio,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+the segment or its end points, right-click and select
+<span class="emphasis"><em>Divide Segment</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Divide Segment</em></span>
+from the
+<span class="emphasis"><em>Draw</em></span>
+menu, or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24DivideSegment"></span>
+button on the tool bar.
+</p>
+<p>
+A dialog will pop up. Fill in, if necessary, the missing point labels and type in valid
+<a class="link" href="#Expressions" title="6.1. Expressions">expressions</a>
+for the numerator and denominator of the ratio. Click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+The ratio is defined as AX : XB, where
+<span class="emphasis"><em>X</em></span>
+is the division point,
+<span class="emphasis"><em>AB</em></span>
+the segment. For example, if the ratio is 1 : 2,
+<span class="emphasis"><em>X</em></span>
+will be twice closer to
+<span class="emphasis"><em>A</em></span>
+than to
+<span class="emphasis"><em>B</em></span>.
+If the ratio is 3 : 1,
+<span class="emphasis"><em>X</em></span>
+will be three times closer to
+<span class="emphasis"><em>B</em></span>
+than to
+<span class="emphasis"><em>A</em></span>.
+</p>
+<p>
+The midpoint divides the segment in the ratio 1 : 1 and therefore can be
+drawn as shown above. However, a convenience
+<a class="link" href="#DrawMidpoint" title="12.4. Draw Midpoint">Draw Midpoint</a>
+action offers a shortcut.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+A segment cannot be divided during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#DrawMidpoint" title="12.4. Draw Midpoint">Draw Midpoint</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="DrawMidpoint"></a>12.4. Draw Midpoint</h3></div></div></div>
+<p>
+To draw the midpoint of a segment,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+the segment or its end points, right-click and select
+<span class="emphasis"><em>Draw Midpoint</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Draw Midpoint</em></span>
+from the
+<span class="emphasis"><em>Draw</em></span>.
+</p>
+<p>
+If a dialog pops up, fill in the missing point labels and click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+Note that drawing the midpoint is equivalent to
+<a class="link" href="#DivideSegment" title="12.3. Divide Segment">dividing</a> the segment in the ratio 1 : 1.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+Midpoints cannot be drawn during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#DivideSegment" title="12.3. Divide Segment">Divide Segment</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="DivideAngle"></a>12.5. Divide Angle</h3></div></div></div>
+<p>
+To divide an angle in a given ratio,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+two segments that make the angle, right-click and select
+<span class="emphasis"><em>Divide Angle</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Divide Angle</em></span>
+from the
+<span class="emphasis"><em>Draw</em></span>
+menu, or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24DivideAngle"></span>
+button on the tool bar.
+</p>
+<p>
+The segments that make the angle must belong to the same face.
+</p>
+<p>
+A dialog will pop up. Fill in, if necessary, the missing point labels and type in valid
+<a class="link" href="#Expressions" title="6.1. Expressions">expressions</a>
+for the numerator and denominator of the ratio. Click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+The ratio is defined as &lt;AOX : &lt;XOB, where
+<span class="emphasis"><em>OX</em></span>
+is the division segment,
+<span class="emphasis"><em>&lt;AOB</em></span>
+the angle. For example, if the ratio is 1 : 2,
+<span class="emphasis"><em>OX</em></span>
+will make with
+<span class="emphasis"><em>OB</em></span>
+a twice greater angle than with
+<span class="emphasis"><em>OA</em></span>.
+If the ratio is 3 : 1,
+<span class="emphasis"><em>OX</em></span>
+will make with
+<span class="emphasis"><em>OA</em></span>
+three times greater an angle than with
+<span class="emphasis"><em>OB</em></span>.
+</p>
+<p>
+The bisector divides the angle in the ratio 1 : 1, therefore can be
+drawn as shown above. However, the convenience
+<a class="link" href="#DrawBisector" title="12.6. Draw Bisector">Draw Bisector</a>
+action offers a shortcut.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+An angle cannot be divided during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#DrawBisector" title="12.6. Draw Bisector">Draw Bisector</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="DrawBisector"></a>12.6. Draw Bisector</h3></div></div></div>
+<p>
+To draw the bisector of an angle,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+two segments that make the angle, right-click and select
+<span class="emphasis"><em>Draw Bisectory</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Draw Bisector</em></span>
+from the
+<span class="emphasis"><em>Draw</em></span>
+menu.
+</p>
+<p>
+The segments that make the angle must belong to the same face.
+</p>
+<p>
+A dialog may pop up. Fill in, if necessary, the missing point labels. Click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+Note that drawing the bisector is equivalent to
+<a class="link" href="#DivideAngle" title="12.5. Divide Angle">dividing</a> the angle in the ratio 1 : 1.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+Bisectors cannot be drawn during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#DivideAngle" title="12.5. Divide Angle">Divide Angle</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="DrawIntersection"></a>12.7. Draw Intersection</h3></div></div></div>
+<p>
+To draw the intersection point of two lines,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+two segments that belong to the lines, right-click and select
+<span class="emphasis"><em>Intersect Lines</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Intersect Lines</em></span>
+from the
+<span class="emphasis"><em>Draw</em></span>
+menu, or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Intersection"></span>
+button on the tool bar.
+</p>
+<p>
+Both segments, as well as the intersection point of their lines,
+must belong to the same face.
+</p>
+<p>
+A dialog may pop up. Fill in, if necessary, the missing point labels. Click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+Intersections cannot be drawn during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="LayDistance"></a>12.8. Lay Distance</h3></div></div></div>
+<p>
+To draw a point on a given segment at a given distance from another given point,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+both the point and the segment, right-click and select
+<span class="emphasis"><em>Lay Distance</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Lay Distance</em></span>
+from the
+<span class="emphasis"><em>Draw</em></span>
+menu, or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LayDistance"></span>
+button on the tool bar.
+</p>
+<p>
+The point and the segment must belong to the same face.
+The point may or may not belong to the segment.
+</p>
+<p>
+A dialog will pop up. Fill in, if necessary, the missing point labels and type in a valid 
+<a class="link" href="#Expressions" title="6.1. Expressions">expression</a>
+for the distance. Click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+This action may result in the construction of one or two distinct points.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+Distances cannot be laid during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="LayAngle"></a>12.9. Lay Angle</h3></div></div></div>
+<p>
+To draw a segment from the end point of another segment so that
+the two segments make a given angle,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+the segment and its end point, right-click and select
+<span class="emphasis"><em>Lay Angle</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Lay Angle</em></span>
+from the
+<span class="emphasis"><em>Draw</em></span>
+menu, or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24LayAngle"></span>
+button on the tool bar.
+</p>
+<p>
+A dialog will pop up. Fill in, if necessary, the missing point labels and type in a valid 
+<a class="link" href="#Expressions" title="6.1. Expressions">expression</a>
+for the angle. Click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+The angle must be greater than 0 and less than 180 degrees and be entered
+in radians, as opposed to degrees. For example, to lay an angle of 60 degrees, enter PI/3.
+</p>
+<p>
+If the segment belongs to two different faces at the same time, this action may result in
+the angle being laid off in each of those faces.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+Angles cannot be laid during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="Transform"></a>13. Transform</h2></div></div></div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ScaleFigure"></a>13.1. Scale Figure</h3></div></div></div>
+<p>
+To scale a figure in the direction of a given segment by a given factor,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+the segment or its end points, right-click and select
+<span class="emphasis"><em>Scale Figure</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Scale Figure</em></span>
+from the
+<span class="emphasis"><em>Transform</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Scale"></span>
+button on the tool bar.
+</p>
+<p>
+A dialog will pop up. Fill in, if necessary, the missing point labels and type in a valid
+<a class="link" href="#Expressions" title="6.1. Expressions">expression</a>
+for the scaling factor. Click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+As a result of scaling, the variables assigned to prior measurements performed upon
+the selected figure  will become
+<a class="link" href="#PinnedVariable" title="5.3. Pinned Variable">pinned</a>.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>
+cannot scale a figure that is part of the problem. However, the figures that have been created
+in the process of solving the problem can be scaled.
+</p>
+<p>
+A figure cannot be scaled during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="ShearFigure"></a>13.2. Shear Figure</h3></div></div></div>
+<p>
+<a class="ulink" href="http://en.wikipedia.org/wiki/Shear_mapping" target="_blank">Shearing</a>
+refers to an
+<a class="ulink" href="http://en.wikipedia.org/wiki/Affine_transformation" target="_blank">affine transformation</a>
+where planes parallel to a fixed reference plane slide along a fixed line
+contained in the reference plane.
+</p>
+<p>
+If
+<span class="emphasis"><em>XY</em></span>
+is the fixed line in the reference plane, the shearing
+transformation is uniquely identified by points
+<span class="emphasis"><em>X</em></span>,
+<span class="emphasis"><em>Y</em></span>
+and the image of any point
+<span class="emphasis"><em>Z</em></span>
+such that
+<span class="emphasis"><em>XZ</em></span>
+is perpendicular to the reference plane.
+</p>
+<p>
+To shear a figure relatively to segment
+<span class="emphasis"><em>XY</em></span>
+and point
+<span class="emphasis"><em>Z</em></span>,
+as described above,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+segment
+<span class="emphasis"><em>XY</em></span>,
+its point
+<span class="emphasis"><em>X</em></span>
+and point
+<span class="emphasis"><em>Z</em></span>,
+ right-click and select
+<span class="emphasis"><em>Shear Figure</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Shear Figure</em></span>
+from the
+<span class="emphasis"><em>Transform</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Shear"></span>
+button on the tool bar.
+</p>
+<p>
+If a dialog pops up, fill in the missing point labels and click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+As a result of shearing, the variables assigned to prior measurements performed upon
+the selected figure  will become
+<a class="link" href="#PinnedVariable" title="5.3. Pinned Variable">pinned</a>.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+The
+<a class="link" href="#EditorsAndSolvers" title="4.1. Editors and Solvers">Solver</a>
+cannot shear a figure that is part of the problem. However, the figures that have been created
+in the process of solving the problem can be sheared.
+</p>
+<p>
+A figure cannot be scaled during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Variables" title="5. Variables">Variables</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="CutFigure"></a>13.3. Cut Figure</h3></div></div></div>
+<p>
+To cut a figure with a plane,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+some elements that uniquely identify that plane, such as three points, a point and a
+segment, or two segments, right-click and select
+<span class="emphasis"><em>Cut Figure</em></span>
+from the popup menu. Alternatively, select
+<span class="emphasis"><em>Cut Figure</em></span>
+from the
+<span class="emphasis"><em>Transform</em></span>
+menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24Cut"></span>
+button on the tool bar.
+</p>
+<p>
+The plane must pass through the figure's interior.
+</p>
+<p>
+If a dialog pops up, fill in the missing point labels and click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+The two resulting fragments of the figure will be displayed in separate views. The original
+figure will be kept intact in its own view.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+A figure cannot be cut during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#JoinFigures" title="13.4. Join Figures">Join Figures</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="JoinFigures"></a>13.4. Join Figures</h3></div></div></div>
+<p>
+To join two figures at their faces
+<span class="emphasis"><em>Face1</em></span>
+and
+<span class="emphasis"><em>Face2</em></span>
+respectively,
+<a class="link" href="#SelectElements" title="10.3. Select Elements">select</a>
+some elements, such as points and segments, on
+<span class="emphasis"><em>Face1</em></span>,
+then select the corresponding elements on
+<span class="emphasis"><em>Face2</em></span>.
+Select
+<span class="emphasis"><em>Join Figures</em></span>
+from the popup menu or click the
+<span class="geometriaIcon24 geometriaIconDoc geometriaIcon24JoinFigures"></span>
+button on the tool bar.
+</p>
+<p>
+A dialog will pop up. Select the names of the figures. A figure can be joined with a copy of
+itself. Therefore the same figure can be selected in both lists.
+</p>
+<p>
+Select
+<span class="emphasis"><em>Join at selected elements</em></span>
+or, if you would rather ignore the selection,
+<span class="emphasis"><em>Join arbitrarily</em></span>
+and click
+<span class="emphasis"><em>OK</em></span>.
+</p>
+<p>
+A new view will appear with the combined figure in it. The two
+original figures will be kept intact in their own views.
+</p>
+<p>
+The combined solid must be convex.
+<span class="emphasis"><em>Face1</em></span>
+and
+<span class="emphasis"><em>Face2</em></span>
+must have the same shape, that is
+have equal angles  and proportional sides at corresponding vertices.
+<span class="emphasis"><em>Face1</em></span>
+and
+<span class="emphasis"><em>Face2</em></span>
+do not have to have the same size. If need be, one of the figures will be
+automatically scaled to fit the other.
+</p>
+<p>
+This action can be
+<a class="link" href="#Undo" title="8. Undo Actions">undone</a>.
+</p>
+<p>
+Figures cannot be joined during the solution
+<a class="link" href="#Playback" title="12.1. Playback">playback</a>.
+You have to stop the playback first. 
+</p>
+<p>
+See also:
+</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: none; ">
+<li class="listitem" style="list-style-type: none"><a class="link" href="#CutFigure" title="13.3. Cut Figure">Cut Figure</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#SelectElements" title="10.3. Select Elements">Select Elements</a></li>
+<li class="listitem" style="list-style-type: none"><a class="link" href="#Undo" title="8. Undo Actions">Undo Actions</a></li>
+</ul></div>
+</div>
+</div>
+</div>
+</div></body>
+</html>
