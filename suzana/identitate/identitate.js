@@ -1,5 +1,5 @@
 window.onload = function() {
-  fetch('/suzana/identitate/menu.html')
+  fetch('menu.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('menu').innerHTML = data;
