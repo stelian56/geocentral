@@ -22,6 +22,7 @@
 <dd><dl>
 <dt><span class="sect2"><a href="#PlayOnline">1.1. Ejecutar en Línea</a></span></dt>
 <dt><span class="sect2"><a href="#PlayOffline">1.2. Ejecutar sin Conexión</a></span></dt>
+<dt><span class="sect2"><a href="#SaveFiles">1.3. Guardar los archivos indefinidamente</a></span></dt>
 </dl></dd>
 <dt><span class="sect1"><a href="#License">2. Licencia</a></span></dt>
 <dt><span class="sect1"><a href="#Acknowledgements">3. Reconocimientos</a></span></dt>
@@ -172,7 +173,7 @@ Firefox
 <div class="titlepage"><div><div><h3 class="title">
 <a name="PlayOnline"></a>1.1. Ejecutar en Línea</h3></div></div></div>
 Necesitas estar conectado a Internet para cargar la página de Geometria. Sin embargo, una vez cargada la página,
-abrirás y guardarás todos los archivos localmente en tu ordenador.
+abrirás y guardarás todos los archivos desde y hacia la caché de tu navegador.
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
 <li class="listitem">
 Dirige el navegador a <a class="ulink" href="https://geocentral.net/geometria/es" target="_blank">la página de inicio</a> de Geometria.
@@ -187,19 +188,19 @@ Haz clic en <span class="emphasis"><em>Ejecuta</em></span> para abrir Geometria.
 <a name="PlayOffline"></a>1.2. Ejecutar sin Conexión</h3></div></div></div>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
 <li class="listitem">
-Instale <a class="ulink" href="https://nodejs.org/en/download" target="_blank">node.js</a>.
+Instala <a class="ulink" href="https://nodejs.org/en/download" target="_blank">node.js</a>.
 </li>
 <li class="listitem">
 Dirige el navegador a <a class="ulink" href="https://geocentral.net/geometria/es" target="_blank">la página de inicio</a> de Geometria.
 </li>
 <li class="listitem">
-Has clic en <span class="emphasis"><em>Descarga</em></span>.
+Haz clic en <span class="emphasis"><em>Descarga</em></span>.
 </li>
 <li class="listitem">
 Descomprime el archivo.
 </li>
 <li class="listitem">
-Abra una ventana de terminal en el directorio resultante.
+Abre una ventana de terminal en el directorio resultante.
 </li>
 <li class="listitem">
 Ejecuta
@@ -212,6 +213,26 @@ para iniciar un servidor web local.
 Dirige el navegador a <span class="emphasis"><em>localhost:8080</em></span> para abrir Geometria.
 </li>
 </ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="SaveFiles"></a>1.3. Guardar los archivos indefinidamente</h3></div></div></div>
+<p>
+Tanto si ejecutas a Geometria en línea como sin conexión, los cambios que hayas realizado en tus archivos se perderán cuando borres la caché de tu navegador.
+
+Por ejemplo, cuando le indicas a tu navegador que:
+<span class="emphasis"><em>Elimine los datos de navegación</em></span>,
+los cambios que hayas realizado en los archivos de Geometria se eliminarán
+y se descargará una copia nueva de los problemas y soluciones de ejemplo originales.
+</p>
+<p>
+Para guardar un archivo indefinidamente,
+<a class="link" href="#ExportDocument" title="13.1. Exportar Documento">expórtelo</a>
+y guarde su contenido en el sistema de archivos de su computadora o de forma remota.
+Luego siempre puedes
+<a class="link" href="#ImportDocument" title="13.2. Importa Documento">importar</a>
+el documento guardado y almacenarlo en la caché de tu navegador.
+</p>
 </div>
 </div>
 <div class="sect1">
@@ -244,11 +265,14 @@ Geometria ofrece una interfaz gráfica para crear y resolver problemas de geomet
 <div class="titlepage"><div><div><h3 class="title">
 <a name="EditorsAndSolvers"></a>4.1. Edición y Resolución</h3></div></div></div>
 <p>
-Por ahora, quienes emplean Geometria se dedican a plantear desde la edición o a resolver problemas. Son, entonces la:
-<span class="emphasis"><em>Edición</em></span>
-(tarea Docente) del planteo y la
-<span class="emphasis"><em>Resolución</em></span>
-(Estudiante en general).
+En uno u otro momento, quien estuviera ejecutando Geometria podría dedicarse a la edición del planteo de un problema (quien
+<span class="emphasis"><em>Edita</em></span>
+actúa como
+<span class="emphasis"><em>Docente</em></span>)
+o a la resolución del problema (quien
+<span class="emphasis"><em>Resuelve</em></span>
+actúa como
+<span class="emphasis"><em>Estudiante</em></span>).
 </p>
 </div>
 <p>
@@ -488,16 +512,16 @@ se
 la definición de la variable
 <span class="emphasis"><em>miDistancia</em></span>
 <a class="link" href="#CreatingAVariable" title="5.1. Creando una Variable">referida</a>
-devendrá obsoleta. Ídem si la figura
+devendría obsoleta. Ídem si la figura
 <span class="emphasis"><em>MiCubo</em></span>
 se
-<a class="link" href="#Transform" title="13. Transforma">transforma</a>
+<a class="link" href="#Transform" title="13. Transforma">transformara</a>
 o
-<a class="link" href="#Removefigure" title="8. Elimina Figura">borra</a>.
-Tal variable queda <span class="emphasis"><em>extraviada</em></span>.
+<a class="link" href="#Removefigure" title="8. Elimina Figura">borrara</a>.
+En ambos casos, tal variable quedaría <span class="emphasis"><em>extraviada</em></span>.
 </p>
 <p>
-Una variable extraviada tiene un valor fijo ya no más dependiente de su definición original. Por ejemplo,
+Una variable extraviada toma un valor fijo ya no más dependiente de su definición original. Por ejemplo,
 <a class="link" href="#EraseElements" title="9. Borra Elementos">borrar</a>
 el punto
 <span class="emphasis"><em>P</em></span>
@@ -980,8 +1004,8 @@ irregulares. A continuación se anotan algunas indicaciones para mantener a salv
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
 <li class="listitem">
 Evitar los factores demasiado grandes (mayores de 100) o chicos (menores que 0.01)
-<a class="link" href="#Scalefigure" title="13.1. Redimensiona Figura">scaling</a>
-al escalar figuras. 
+<a class="link" href="#Scalefigure" title="13.1. Redimensiona Figura">al escalar</a>
+figuras. 
 </li>
 <li class="listitem">
 Al crear un 
@@ -3331,15 +3355,16 @@ Esta acción se puede
 <a class="link" href="#Undo" title="8. Deshacer Acciones">deshacer</a>.
 </p>
 <p>
-Quien
-<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">resuelve</a>
-no puede escalar una figura que es parte del problema. Sin embargo, la figuras creada
-mientras se está resolviendo el problema se puede redimensionar.
+Durante la
+<a class="link" href="#EditorsAndSolvers" title="4.1. Edición y Resolución">resolución</a>
+no puede escalarse una figura que es parte del problema. Sin embargo, las figuras
+que hubieran sido creadas durante el proceso de resolución del problema, se pueden
+redimensionar.
 </p>
 <p>
 Una figura no puede redimensionarse durante la 
 <a class="link" href="#Playback" title="12.1. Reproducción">reproducción</a> de la solución 
-Primero, hay que detenerla. 
+Primero, hay que detenerla la reproducción de la resolución. 
 </p>
 <p>
 Ver también:
